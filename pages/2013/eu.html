@@ -1,0 +1,1611 @@
+<script>{
+	"title": "jQuery Europe 2013",
+	"pageTemplate": "page-blank.php",
+	"customFields": [
+		{
+			"key": "stylesheets",
+			"value": [
+				"http://fonts.googleapis.com/css?family=Rokkitt",
+				"http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed&amp;subset=latin,latin-ext",
+				"http://fonts.googleapis.com/css?family=Quicksand",
+				"/resources/2013/eu/css/reset.css",
+				"/resources/2013/eu/css/style.css",
+				"/resources/2013/eu/css/980.css",
+				"/resources/2013/eu/css/1280.css",
+				"/resources/2013/eu/css/1600.css",
+				"/resources/2013/eu/css/2600.css"
+			]
+		},
+		{
+			"key": "scripts",
+			"value": [
+				"https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js",
+				"/resources/2013/eu/js/modernizr.custom.20092.js",
+				"/resources/2013/eu/js/jquery.parallax-1.1.3.js",
+				"/resources/2013/eu/js/jquery.localscroll-1.2.7-min.js",
+				"/resources/2013/eu/js/jquery.scrollTo-1.4.2-min.js",
+				"/resources/2013/eu/js/css3-mediaqueries.js",
+				"/resources/2013/eu/js/waypoints.min.js",
+				"/resources/2013/eu/js/end.js"
+			]
+		}
+	]
+}</script>
+
+<div id="background">
+	<div id="head">
+		<div id="spotlight"></div>
+	</div>
+	<div id="intro" >
+		<div class="content">
+			<div id="steffl"></div>
+			<div id="paper"></div>
+		</div>
+	</div>
+	<div id="paperbackground"></div>
+	<div id="locationwaypointstart" style="position:relative; top: 3200px"></div>
+	<div id="locationwaypointend" style="position:relative; top: 4340px"></div>
+	<div id="speakers">
+		<div id="speakersbackground"></div>
+		<div id="sessions"></div>
+		<div id="sessionbackground"></div>
+		<div id="cloud1"></div>
+		<div id="cloud2"></div>
+	</div>
+	<div id="palaisclick"></div>
+	<div id="palaisclick2"></div>
+	<div id="planecontainer">
+		<div id="bookflight">
+			<p>Book your flights to the jQuery Europe online at <br />
+				<a href="http://www.austrian.com">www.austrian.com</a> and  <b>save 15 %</b> on all applicable fares! To do so, simply enter <br />
+				the following code in the <b>eVoucher</b> field on the Austrian homepage booking-engine:</p>
+			<h3>Code: JQE13</h3>
+			<p class="condition">Booking period: now until February 23rd, 2013. Valid for flights to Vienna and return as of<br />
+				February 14th, 2013 until February 28th, 2012 (final date for return flight)<br /> on OS flight numbers.</p>
+		</div>
+		<div id="plane"></div>
+	</div>
+	<div id="map">&nbsp;</div>
+	<div id="palais" class="pin">
+	<div id="palaisliechtenstein" itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+		<div class="content palais">
+			<div class="map">See on the map</div>
+			<h2 itemprop="name">Palais Liechtenstein</h2>
+			<p><span itemprop="streetAddress">Fürstengasse 1</span>, <span itemprop="postalCode">1090</span> <span itemprop="addressLocality">Vienna</span></p>
+
+			<p itemprop="description">The conference will be held in the GARDEN PALACE of the Palais Liechtenstein.
+			It was build in end of the 17th century. The Palais Liechtenstein is a very historic
+			venue located in the center of Vienna.<br />
+
+			It is usually used as a Museum to display one of the biggest private art collections<br />
+			The GARDEN PALACE has a unique atmosphere, conveying<br />
+			an impression of aristocratic life in bygone ages.</p>
+		</div>
+	</div>
+		<div id="palaislayercontainer">
+			<div id="palaislayertop"></div>
+			<div id="palaislayerbottom"></div>
+		</div>
+		<span class="black">Palais</span><br /><span class="black">Liechtenstein</span><br />
+		<a href="https://maps.google.com/maps?q=F%C3%BCrstengasse+1,+1090+Vienna&amp;ie=UTF8&amp;hnear=F%C3%BCrstengasse+1,+Alsergrund+1090+Wien,+Austria&amp;t=m&amp;z=16" title="Open Google maps at Palais Liechtenstein" target="_blank"><img src="/resources/2013/eu/img/google_white.png" alt="Location Symbol"/></a>
+	</div>
+	<div id="bottom">
+		<div id="bottom1"></div>
+		<div id="bottom2"></div>
+		<div id="bottom3"></div>
+	</div>
+</div>
+<div class="cinema">
+<div class="content">
+	<div id="jquery-eu-logo"><img src="/resources/2013/eu/img/jquery_eu_logo.png" alt="jQuery Europe 2013 logo" /></div>
+	<ul id="headline">
+		<li><span>jQuery Europe 2013</span></li>
+		<li><span>22nd/23rd February 2013</span></li>
+		<li><span>Palais Liechtenstein, Vienna</span></li>
+	</ul>
+	<div id="navigationcontainer">
+		<ul id="navigation">
+			<li class="trainings"><a href="#h2trainings" class="local jump" title="jQuery Trainings">Trainings</a></li>
+		    <li class="sessions"><a href="#h2sessions" class="local jump" title="Sessions program">Sessions</a></li>
+		    <li class="speakers"><a href="#speakers" class="local jump" title="All speakers">Speakers</a></li>
+		    <li class="register"><a href="http://jquery-eu-2013.eventbrite.com" class="jump" title="register for the conference now" target="_blank">Register now!</a></li>
+		    <li class="location"><a href="#locationmenu" class="local jump" title="The event location">Location</a></li>
+		    <li class="premium-sponsors">
+		    	<span class="hostdesc">host</span>
+		    	<a id="host" href="http://gentics.com" class="local" title="Premium Sponsors" target="_blank">
+		    		<img id="hostlogo" src="/resources/2013/eu/img/sponsor-gentics.png">
+		    	</a>
+		    	<span class="sponsordesc">diamond sponsor</span>
+		    	<a id="premium" href=" http://www.codefest.at" class="local">
+		    		<img id="premiumlogo" src="/resources/2013/eu/img/MSFT.png">
+		    	</a>
+		    </li>
+		</ul>
+	</div>
+	<div id="vienna">
+        <h2 id="meet-jquery">jQuery<br /><span class="meets">meets</span><br />historic Vienna</h2>
+
+		<img src="/resources/2013/eu/img/star.png" class="star" align="center" alt="star"/>
+
+		<p class="teaser"><b>Be part and learn at this unique event. Experience the 1st jQuery conference in the heart of Europe.</b></p>
+
+		<p>International speakers and web pioneers show the newest trends and techniques for <b>web, apps and smart TV development</b> with jQuery. Two days of conference with awesome <b>sessions</b>, one additional day of <a href="#training"><b>jQuery training</b></a> and lots of opportunities to meet and greet with developers from all Europe.</p>
+
+		<p>Vienna was ranked first for the world´s <a href="http://en.wikipedia.org/wiki/World's_most_livable_cities" target="blank">most livable cities</a> and is <a  href="http://www.vienna.convention.at/Home/News/Wien-bei-Kongressen-erneut-weltweit-Nr--1-%E2%80%93-Stadt-.aspx" target="blank">the world´s number one destination</a> for international congresses and conventions.</p>
+	</div>
+	<ul id="performers" itemprop="performers">
+		<li id="speaker01" class="speaker" itemscope itemtype="http://schema.org/Person">
+
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Richard D</span><br><span class="name" itemprop="familyName">Worth</span><br />
+				<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+				<span itemprop="name">jQuery</span></span><br><span class="company">Foundation</span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio leftside" >
+				<h3>The State of jQuery</h3>
+				<div class="left" itemprop="jobTitle" >
+					<p class="job" >
+						jQuery Foundation
+					</p>
+					<p class="job" itemprop="jobTitle" >
+						Director
+					</p>
+					<p class="sidedescription">
+						Richard is Executive Director of the jQuery Foundation and former lead of the jQuery UI project. He lives in the Washington, D.C. area and works for Bocoup, training mobile and web developers in JavaScript, jQuery, and HTML5.
+					</p>
+				</div>
+				<div class="right" itemprop="description">
+					<p>
+						jQuery has grown over 7 years to become the most widely used JavaScript library ever. This talk will cover the current state of jQuery and related projects, jQuery UI, jQuery Mobile, QUnit, and TestSwarm. We will also discuss the jQuery Foundation, which supports the development of these and the community around them.
+					</p>
+					<p>
+						<a href="#" class="close">
+							close
+						</a>
+					</p>
+				</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker02" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Todd</span><br><span class="name" itemprop="familyName">Parker</span><br />
+				<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+					<span itemprop="name">jQuery mobile</span></span><br><span class="company">lead</span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio leftside" >
+					<h3>jQuery Mobile and Responsive Web Design</h3>
+					<div class="left" itemprop="jobTitle" >
+						<p class="job" >
+							jQuery mobile
+						</p>
+						<p class="job" itemprop="jobTitle" >
+							mobile
+						</p>
+						<p class="sidedescription">
+							Todd, a principal at Filament Group Inc., is a jQuery board member, project and design lead for the jQuery Mobile team, and design lead for jQuery UI. He is involved with the design of the ThemeRoller application and CSS class frameworks. Todd is co-author of the Peachpit book "Designing With Progressive Enhancement", contributor to the O'Reilly "jQuery Cookbook" and frequent presenter on the topics of mobile, progressive enhancement, accessibility, and responsive web design.
+						</p>
+					</div>
+					<div class="right" itemprop="description">
+						<p>
+							Learn how to leverage the power of jQuery Mobile and Responsive Web Design (RWD) techniques to create web experiences that adapt to all devices from phones, tablets, to desktops and beyond. This session will cover the built-in RWD capabilities of the Mobile framework and walk through real-world examples of how to use media queries and mobile-first thinking to build responsive sites and apps. Techniques for improving  performance will also be covered including how to minimize bandwidth and server requests, handling high resolution displays for images and scalable vector graphics, and selectively layering content and features based on device capabilities.
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker03" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">J&ouml;rn</span><br><span class="name" itemprop="familyName">Zaefferer</span><br />
+				<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+					<span itemprop="name">jQuery UI</span></span><br><span class="company">core</span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio leftside" >
+					<h3>Talk To Me - Making web sites accessible to those who can benefit the most from them</h3>
+					<div class="left" itemprop="jobTitle" >
+						<p class="job" >
+							jQuery UI
+						</p>
+						<p class="job" itemprop="jobTitle" >
+							core
+						</p>
+						<p class="sidedescription">
+							Jörn is a freelance web developer, consultant and trainer, residing in Cologne, Germany. Jörn evolved jQuery’s testsuite into QUnit, a JavaScript unit testing framework, and maintains it. He created and maintains a number of popular plugins. As a jQuery UI development lead, he focuses on the development of new plugins, widgets and utilities.
+						</p>
+					</div>
+					<div class="right" itemprop="description">
+						<p>
+							A computer that can talk to us has been part of science fiction for a long time. For those with limited or no sight at all it has been a reality for a while. It's this group that often benefits the most from the web, since it can give them a form of independence they might not have in their day to day life.
+						</p>
+						<p>
+							What do we need to make web sites usable for them?
+							<ul>
+								<li>Arguments to convince your boss of the value of making web sites accessible.</li>
+								<li>Software to work with and test against.</li>
+								<li>Examples of the challenges and how to overcome them with JavaScript.</li>
+							</ul>
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker04" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Doug</span><br><span class="name" itemprop="familyName">Neiner</span><br />
+				<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+					<span itemprop="name">appendTo</span></span><br>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio leftside" >
+				<h3>CSS3 Animations, Transitions and jQuery</h3>
+				<div class="left" itemprop="jobTitle" >
+					<p class="job" >
+						appendTo
+					</p>
+					<p class="job" itemprop="jobTitle" >
+					</p>
+					<p class="sidedescription">
+						Doug Neiner is a front-end web developer with a love for semantic markup, powerful CSS, and efficient, reusable JavaScript. Doug loves sharing what he has learned and helping both new and developing JavaScript developers perfect their craft. When he isn't programming or designing on the computer, you might find him playing with his four wonderful children, hanging out with his beautiful wife, cooking up something in the kitchen or talking about the farm he wants to own one day.
+					</p>
+				</div>
+				<div class="right" itemprop="description">
+					<p>
+						CSS3 animations and transitions offer increased browser performance for animations on desktop and mobile. However, they also introduce a completely different approach to animations than jQuery's animate functions. Even if you choose to use CSS3, are fallbacks using jQuery animation even worth it? Are there ever situations where jQuery’s animate function would be preferred over CSS3 animation?
+					</p>
+					<p>
+						In this session you will learn when to use jQuery, CSS3 or both together; how to control animations and transitions from jQuery and how to account for animation fallbacks in your code. This session will also cover how the jQuery animation queue behaves and present strategies for using that queue with CSS3 and other custom code in your application.
+					</p>
+					<p>
+						<a href="#" class="close">
+							close
+						</a>
+					</p>
+				</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker05" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Christian</span><br><span class="name" itemprop="familyName">Heilmann</span><br />
+				<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+					<span itemprop="name">Mozilla</span></span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio rightside" >
+					<h3>Helping or hurting?</h3>
+					<div class="left" itemprop="description">
+						<p>
+						We are in a time of change. The web as we knew it is not only changing in terms of technologies and demands - but user preferences are changing, too. More and more people are experiencing the web first and foremost on mobile devices and tablets which brings new challenges to us as developers. For years now libraries have made it easier for developers to build engaging and beautiful products by abstracting away issues like DOM access and event handling into a predictable and simple syntax. This is great and it gave the web a much bigger boost than anything else. Now is the time for libraries to help with the newer challenge of a changing environment.
+						"The web always wins" is not a given - we have to keep evolving and innovating with it. Libraries are a great solution to make it easy for developers to build products without much hassle but the libraries we use nowadays more and more solve problems of the past rather than simplifying the near future. In this talk Chris Heilmann of Mozilla will show how we can lead the next generation of developers to build for the web instead of adding cruft to it. The mobile revolution is upon us and we have the means and the knowledge to lead it.
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+					<div class="right" itemprop="jobTitle" >
+						<p class="job" >
+							Mozilla Developer
+						</p>
+						<p class="job" itemprop="jobTitle" >
+							JavaScript Author
+						</p>
+						<p class="sidedescription">
+							Chris Heilmann has dedicated a lot of his time making the web better. Originally coming from a radio journalism background, he built his first web site from scratch around 1997 and spent the following years working on lots of large, international web sites. He then spent a few years in Yahoo building products and explaining and training people and is now at Mozilla.Chris wrote and contributed to four books on web development and wrote many articles and hundreds of blog posts for Ajaxian, Smashingmagazine, Yahoo, Mozilla, ScriptJunkie and many more.
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker06" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Patrick</span><br><span class="name" itemprop="familyName">Lauke</span><br />
+				<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+					<span itemprop="name"></span></span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio rightside" >
+					<h3>Web on TV</h3>
+					<div class="left" itemprop="description">
+						<p>
+							In this talk, we'll take a look at the unique challenges that developer's face when creating webapps and content for so-called "Smart TVs". What role does jQuery have, if any, in relation to cross-TV/platform/device development?
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+					<div class="right" itemprop="jobTitle" >
+						<p class="job" >
+
+						</p>
+						<p class="job" itemprop="jobTitle" >
+							JavaScript Author
+						</p>
+						<p class="sidedescription">
+							Patrick Lauke is an open web standards evangelist who until recently worked in the Developer Relations team at Opera Software ASA. Patrick has been engaged in the discourse on standards and accessibility since early 2001 - regularly speaking at conferences and contributing to a variety of web development and accessibility related mailing lists and initiatives such as the Web Standards Project. Published works include a chapter in Web Accessibility: Web Standards and Regulatory Compliance, as well as various articles for .net magazine, where he sits on the advisory panel.
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker07" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Mike</span><br><span class="name" itemprop="familyName">West</span><br />
+				<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+					<span itemprop="name">Google</span></span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio leftside" >
+					<h3>Mitigate Maliciousness: Securing the client side.</h3>
+					<div class="left" itemprop="jobTitle" >
+						<p class="job" >
+							Google
+						</p>
+						<p class="job" itemprop="jobTitle" >
+						</p>
+						<p class="sidedescription">
+							Mike is a philosophy student, cleverly disguised as a developer advocate on Google's Chrome team in Munich, Germany. Since it was relatively clear early on that it would be slightly more than difficult to make a living sitting under a tree while reading Kant, he's focused his energies on the web, which happily has proven itself to be a wonderful decision. He's a committer to both Chromium and WebKit, and has even landed a single patch to Firefox.
+						</p>
+					</div>
+					<div class="right" itemprop="description">
+						<p>
+							jQuery has made it possible for developers to move more and more complex application logic down from the server to the client. This is a huge opportunity for JavaScript developers, and at the same time presents a tempting target for folks with malicious intent. It's more critical than ever to ensure that we're doing the right things with regard to security, and happily, modern browsers are here to help. Here, we'll talk about some of the new ways in which you can mitigate the effects of cross-site scripting and other attacks.
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker08" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Sebastian</span><br><span class="name" itemprop="familyName">Kurf&uuml;rst</span><br />
+				<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+					<span itemprop="name">TYPO3</span></span><span class="company">core</span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio leftside" >
+					<h3>Using RequireJS for building component-based JavaScript applications</h3>
+					<div class="left" itemprop="jobTitle" >
+						<p class="job" >
+							TYPO3
+						</p>
+						<p class="job" itemprop="jobTitle" >
+							core
+						</p>
+						<p class="sidedescription">
+							Sebastian Kurfürst is a member of the TYPO3 Core Team, especially involved the development of TYPO3 Phoenix, our next-generation CMS. Besides his work as PHP developer, he has mainly worked on JavaScript projects based on EmberJS and RequireJS. He loves clean code, design patterns and agile methodologies, but tries to stay pragmatic at the same time.
+						</p>
+					</div>
+					<div class="right" itemprop="description">
+						<p>
+							For building the TYPO3 Phoenix User Interface, we've used a wide variety of frameworks and technologies. Besides jQuery and EmberJS at its core, we also use jQuery UI and a number of frameworks for in-page content editing such as VIE, CreateJS and Aloha. For managing this number of external dependencies, we soon started to embrace RequireJS as dependency management solution.            However, during implementation, it turns out that some problems such as multiple jQuery versions, external non-AMD code, importing complete requireJS applications or debugging loading-order issues are non-trivial to solve. In this talk, you will get an overview about these problems, together with the solutions we found for them, as these are applicable for many big JavaScript projects.
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker09" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Theodore</span><br><span class="name" itemprop="familyName">Biadala</span><br />
+				<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+					<span itemprop="name">Drupal</span></span><span class="company">core</span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio rightside" >
+				<h3>Drupal uses jQuery, 6 years later</h3>
+				<div class="left" itemprop="jobTitle" >
+					<p class="job" >
+						Drupal
+					</p>
+					<p class="job" itemprop="jobTitle" >
+						Core
+					</p>
+					<p class="sidedescription">
+						Contributes to drupal anything javascript. And maps. He is the javascript maintainer for Drupal 7 and 8.
+					</p>
+				</div>
+				<div class="right" itemprop="description">
+					<p>
+						With Drupal powering more than 2% of existing websites (including big websites!) the Drupal community has had a lot of exposure to the goodness of jQuery and also to it's bugs and shortcomings. This talk is an outside point of view on jQuery's internals. After explaining some of the genesis of jQuery inside Drupal, we'll focus on what the Drupal community is using, underusing or misusing from jQuery. Then we'll talk about the challenges of Drupal's next version — scheduled to ship this year — and how jQuery fits in the picture, giving some feedback in the process.
+					</p>
+					<p>
+						<a href="#" class="close">
+							close
+						</a>
+					</p>
+				</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker10" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Henri</span><br><span class="name" itemprop="familyName">Bergius</span><br />
+				<span class="company" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+					<span itemprop="name">createJS</span></span>
+
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio leftside" >
+					<h3>Create.js - Make websites editable with jQuery</h3>
+					<div class="left" itemprop="jobTitle" >
+						<p class="job" >
+							createJS
+						</p>
+						<p class="sidedescription">
+							Henri Bergius, a.k.a. Bergie, is a former Viking originally from Finland but living in Berlin. When he is not exploring Georgia’s cave cities or running with the bulls in Pamplona, Bergie works on web services built on top of the Midgard toolkit. His company, Nemein, provides web and mobile solutions for  major companies in Finland and abroad. Bergie is involved with free software in 1999 by coordinating the public release of the Midgard cms. Since then, he has been actively working on integrating standards like RDFa into the system and traveling the world advocating interoperation between open-source CMSs.
+						</p>
+					</div>
+					<div class="right" itemprop="description">
+						<p>
+							Create.js is an inline editing toolkit for JavaScript, designed to be used by content management systems and other web applications. It allows users to edit content directly on the web pages where it is presented. Built as a set of jQuery UI widgets, it integrates easily with any web framework, allowing developers to decouple their content editing tools from the rest of the system. This session will introduce the ideas of Decoupled Content Management, and show how jQuery UI and Create.js can be used as the front-end editing tool in any web application.
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker11" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Golo</span><br><span class="name" itemprop="familyName">Roden</span><br />
+				<span class="company">consultant,</span><br /><span class="company">author</span>
+
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio leftside" >
+					<h3>What jQuery is good for on the server</h3>
+					<div class="left" itemprop="jobTitle" >
+						<p class="job" >
+						</p>
+						<p class="job" itemprop="jobTitle" >
+							consultant, author
+						</p>
+						<p class="sidedescription">
+							<a href="www.goloroden.de">Golo Roden</a> is a freelance broadcaster of knowledge and technology consultant for web technologies, code quality and agile methods. He advises companies on these topics to help them evaluate, explore and apply suitable technologies and methods. He also works as a journalist for various trade publications and as a speaker and content manager for conferences at home and abroad. Microsoft has awarded Golo the Most Valuable Professional (MVP) for C# accolade twice in recognition of his excellent work in the community.
+						</p>
+					</div>
+					<div class="right" itemprop="description">
+						<p>
+							For years you have been using jQuery on the client-side. And now there is Node.js on the server-side. And this basically means that all the things you have loved about jQuery are dead and gone, right? Wrong! Although there is no DOM on the server (at least not by default) there are lots of tasks you can accomplish using jQuery *and* Node.js! In this talk Golo Roden presents three server-side scenarios where jQuery is the perfect companion for Node.js! So if do you love jQuery and you need to do server-side programming with Node.js, join :-)!
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker12" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name" itemprop="name">Sascha</span><br><span class="name" itemprop="familyName">Wolter</span><br />
+				<span class="company">Deutsche</span><br /><span class="company">Telekom</span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio leftside" >
+					<h3>Next Generation Media made easy thanks to APIs and jQuery</h3>
+					<div class="left" itemprop="jobTitle" >
+						<p class="job" >
+							Deutsche Telekom
+						</p>
+						<p class="job" itemprop="jobTitle" >
+						</p>
+						<p class="sidedescription">
+							Sascha Wolter is a professional developer and craftsman for Pervasive Computing, Rich Applications and Mobile Apps in all flavors. He also works as a consultant, trainer, software-architect and author and contributes articles to a number of magazines. His books and video-trainings are bestselling publications in Germany.If he is not tinkering with new soft- and hardware as Developer Evangelist for the Developer Garden, he likes playing Lego with his kids in his spare time.
+						</p>
+					</div>
+					<div class="right" itemprop="description">
+						<p>
+							Nowadays apps are available not only for traditional PCs. We have to deal with more and more devices, capabilities, screen sizes, and so on. It requires that designers and developers have to explore new ways of thinking and have to discover new approaches. Fortunately the acquired knowledge is not lost: Adapt it and build around new, technology independent concepts in an agile and prototypic way. Sascha shows inspiring examples and how to create this new way of interactive systems in practice.
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker13" class="speaker">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name">Dio</span><br><span class="name">Synodinos</span><br />
+				<span class="company">C4Media</span><br /><span class="company"></span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio rightside" >
+					<h3></h3>
+				<div class="left" itemprop="description">
+							<p>The more information-rich our societies become, the more demand there is for representing information visually, and the HTML5 platform is one of the best ways to create visualizations and communicate a message. Either for making sense of quantitative data, displaying qualitative information or simply creating the next Mona Lisa, technologies like CSS3, SVG, Canvas, WebGL, etc, provide a very powerful toolbox for developers, designers and artists.</p>
+
+							<p>In this presentation we’re going to start of by examining all the enabling HTML5 technologies that were mentioned, their features and how they are used in practice to deliver captivating user experiences. Then we’re going to move one level up and talk about the frameworks that make these powerful but sometimes overly complex technologies, more accessible to programmers. We’re going to see frameworks like Raphaël, Processing.js, D3.js, Fabric.js, etc, their features and their applicability. Finally, time permitting, we’re going to go over online examples that best demonstrate the power of the web platform for visualizations and analyze how they were created.</p>
+					<p>
+						<a href="#" class="close">
+							close
+						</a>
+					</p>
+				</div>
+				<div class="right" itemprop="jobTitle" >
+					<p class="job" >
+						C4Media
+					</p>
+					<p class="job" itemprop="jobTitle" >
+					</p>
+					<p class="sidedescription">
+						Dio Synodinos is the research platform team lead at C4Media and a freelance consultant, focusing on rich Internet applications, web application security, mobile web, and web services. He’s also the lead editor for HTML5 and JavaScript at InfoQ where he also regularly writes about the JVM platform. He is the coauthor of "Pro HTML5 and CSS3 Design Patterns" (published by Apress) and "The Essential Guide to HTML5 and CSS3 Web Design" (published by friendsofED). Going back and forth between server-side programming and UI design for more than a decade, he has been involved in diverse software projects and has contributed to different technical publications.
+					</p>
+				</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker14" class="speaker" itemscope itemtype="http://schema.org/Person">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name">Corey</span><br><span class="name">Frang</span><br />
+				<span class="company">jQuery board</span>
+			</div>
+
+			<div class="biowrapper" >
+				<div class="bio leftside" >
+					<h3>The anatomy of a jQuery UI widget.</h3>
+					<div class="left" itemprop="jobTitle" >
+						<p class="job" >
+						</p>
+						<p class="sidedescription">
+							Corey is a freelance web developer, speaker, and system administrator, living in Rockford, IL. He is an active contributor to most of the jQuery teams and is active in the jQuery community on IRC, and Stack Overflow. Corey has restructured the effects modules in both UI and Core, maintains the jQuery Color effects plugin and leads the jQuery Infrastructure team.
+						</p>
+					</div>
+					<div class="right" itemprop="description">
+						<p>
+							Learn about enhancments in the jQuery UI 1.9 widget factory, and how to organize your code to make easily extensible and reusable plugins for your sites. We will study how several of the jQuery UI widgets were rebuilt in 1.9.
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker15" class="speaker">
+			<div class="background"></div>
+
+			<div class="speakermain">
+				<span class="name">Anne-Gaelle</span><br><span class="name">Colom</span><br />
+				<span class="company">University of</span><br /><span class="company">Westminster</span>
+			</div>
+
+			<div class="biowrapper">
+				<div class="bio leftside">
+					<h3>Good UI design principles with jQuery Mobile</h3>
+					<div class="left" itemprop="jobTitle" >
+						<p class="job" itemprop="jobTitle" >Course Leader Mobile and Web Computing
+						</p>
+						<p class="sidedescription">
+							Anne-Gaelle Colom is a Senior Lecturer at the University of Westminster in London, UK and the Course Leader for BEng Mobile and Web Computing. She is passionate about the use of technology in Higher Education as well as the Web and Mobile world. Anne-Gaelle joined the jQuery Mobile team in October 2011 to become the documentation lead a few months later.
+						</p>
+					</div>
+					<div class="right" itemprop="description">
+						<p>
+							When developing Mobile Web applications, it is essential to ensure that the user will be able to carry out the tasks they require effectively, and that the experience of doing so is a good and enjoyable one. This session will cover how jQuery Mobile naturally helps designers and developers incorporate good UI design principles in their mobile applications. Each good UI design rule will be illustrated with jQuery Mobile examples and demos to show how the framework helps incorporate these rules into mobile web applications. Such illustrations will cover but won't be restricted to the automatic back button in the header, the page loading widget, shortcuts with the searchable lists and panels, affordance with icons, and consistency of style through themes and swatches.
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li id="speaker16" class="speaker">
+			<div class="background"></div>
+			<div class="speakermain">
+				<span class="name">Maximilian</span><br><span class="name">Knor</span><br />
+				<span class="company">Microsoft</span><br /><span class="company"></span>
+			</div>
+			<div class="biowrapper" >
+				<div class="bio rightside" >
+					<h3>Microsoft ASP.NET &lt;3 jQuery</h3>
+					<div class="left" itemprop="description">
+						<p>
+							How ASP.NET MVC and ASP.NET SignalR builds on top of jQuery & jQuery Mobile for client-side features & Single Page Applications.
+						</p>
+						<p>
+							<a href="#" class="close">
+								close
+							</a>
+						</p>
+					</div>
+					<div class="right" itemprop="jobTitle" >
+						<p class="job" >
+						</p>
+						<p class="job" itemprop="jobTitle" >
+						</p>
+						<p class="sidedescription">
+							Maximilian is developer evangelist at Microsoft and speaker at several conference.
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<div id="program">
+		<h2 id="h2trainings"></h2>
+		<span id="trainingdate"></span>
+		<ul id="thursday" class="trainings" itemprop="subevents">
+			<li id="training1" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">9:00</span>
+					<span class="speaker">Doug Neiner</span>
+					<span class="topic">Advanced jQuery</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio leftside">
+						<div class="left" itemprop="description">
+							<h3>Trainer</h3>
+							<h4>Doug Neiner</h4>
+							<p>
+								Doug Neiner is a front-end web developer with a love for semantic markup, powerful CSS, and efficient, reusable jQuery/JavaScript. With over 14 years of web development experience, Doug works to combine his love for design with his passion for new technology as the Senior Designer at appendTo, LLC. Doug is an alumni of the jQuery Board.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<h3>Abstract</h3>
+							<h4>Advanced jQuery</h4>
+							<p>It is time to realize the full potential of jQuery in the realm of professional web development and delve into advanced topics surrounding the front-end. Utilize the jQuery library in the context of large-scale applications by learning how to dramatically improve performance, increase maintainability and reusability, and write cleaner and more concise code. Our goal is to give you the understanding of how to adopt an application architecture that is maintainable and scalable while keeping simplicity as a core tenant to successful web development. Once completed you should feel confident creating and maintaining advanced front-end-focused web applications.</p>
+							<h3>Topics Schedule</h3>
+							<ul>
+								<li>Event Delegation</li>
+								<li>Traversal, Filters, and Advanced Selectors</li>
+								<li>Simplifying Code with Conventions</li>
+								<li>Just-in-time Initialization Patterns</li>
+								<li>Modules and Code Reuse</li>
+								<li>jQuery Plugins</li>
+								<li>jQuery UI Widget Factory</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="training2" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">9:00</span>
+					<span class="speaker">Mike Hostetler</span>
+					<span class="topic">jQuery mobile</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside">
+						<div class="left" itemprop="description">
+							<h3>Abstract</h3>
+							<h4>jQuery mobile</h4>
+							<p> jQuery Mobile has gained aggressive market share and is a great solution to mobile web development. With a progressive enhancement approach, jQuery Mobile aims to allow a mobile web experience for all, while rewarding those phones capable of a rich experience.  Learn to get the most of the jQuery Mobile library by engineering single-page approaches with advanced Ajax functionality. Create rich and interactive mobile user experiences with wide device support and even utilize advanced functionality to completely customize a mobile site into a mobile application. Our goal is to give you the most comprehensive jQuery Mobile knowledge one can gain in a single day of training.</p>
+							<h3>Topics Schedule</h3>
+							<ul>
+								<li>Getting Started with jQuery Mobile</li>
+								<li>Pages and Navigation</li>
+								<li>The User Interface: Lists, Forms, and Themes</li>
+								<li>jQuery and jQuery Mobile: Events and Ajax</li>
+								<li>Advanced Usage and Mobile Applications</li>
+							</ul>
+						</div>
+						<div class="right" itemprop="description">
+							<h3>Trainer</h3>
+							<h4>Mike Hostetler</h4>
+							<p>Entrepreneur and Ethical Hacker, Mike Hostetler is passionate about Open Source, Working Virtually, Entrepreneurship, HTML5 and JavaScript. Mike currently works as the CEO of appendTo.</p>
+
+							<p>Mike is a published co-author of the jQuery Cookbook (O'Reilly, 2009) and speaks widely on technical and business topics. Mike has spoken at OSCON, jQuery Conferences, BlackBerry DevCon and StarTechConf in Santiago, Chile.</p>
+
+							<p>You can follow Mike on Twitter (@mikehostetler) or via his blog at <a href="http://mike-hostetler.com">http://mike-hostetler.com</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div id="sessionmenu">
+			<div class="chooser">
+				<h1>Sessions</h1>
+				<ul>
+					<li class="friday active"><a href>Friday, Feb 22nd</a></li>
+					<li class="saturday"><a href>Saturday, Feb 23rd</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h2 id="h2sessions"></h2>
+		<span id="sessiondate" class="friday"></span>
+		<ul id="friday" class="sessions" itemprop="subevents">
+			<li id="break1" class="break">
+				<div class="sessionmain">
+					<span class="time">8:00</span>
+					<span class="topic">registration</span>
+				</div>
+			</li>
+			<li id="break2" class="break">
+				<div class="sessionmain">
+					<span class="time">9:00</span>
+					<span class="topic">welcome</span>
+				</div>
+			</li>
+			<li id="subevent1" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">9:15</span>
+					<span class="speaker">Richard D. Worth</span>
+					<span class="topic">The State of jQuery</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="description">
+							<p>
+								jQuery has grown over 7 years to become the most widely used JavaScript library ever. This talk will cover the current state of jQuery and related projects, jQuery UI, jQuery Mobile, QUnit, and TestSwarm. We will also discuss the jQuery Foundation, which supports the development of these and the community around them.
+							</p>
+							<p>
+								second paragraph
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+						<div class="right" itemprop="jobTitle" >
+							<p class="job" >
+								jQuery Foundation
+							</p>
+							<p class="job" itemprop="jobTitle" >
+								Director
+							</p>
+							<p class="sidedescription">
+								Richard is Executive Director of the jQuery Foundation and former lead of the jQuery UI project. He lives in the Washington, D.C. area and works for Bocoup, training mobile and web developers in JavaScript, jQuery, and HTML5.
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="subevent2" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">10:00</span>
+					<span class="speaker">Corey Frang</span>
+					<span class="topic">The anatomy of a <br>jQuery UI widget</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio leftside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+							</p>
+							<p class="job" itemprop="jobTitle" >
+							</p>
+							<p class="sidedescription">
+								Corey is a freelance web developer, speaker, and system administrator, living in Rockford, IL. He is an active contributor to most of the jQuery teams and is active in the jQuery community on IRC, and Stack Overflow. Corey has restructured the effects modules in both UI and Core, maintains the jQuery Color effects plugin and leads the jQuery Infrastructure team.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								Learn about enhancments in the jQuery UI 1.9 widget factory, and how to organize your code to make easily extensible and reusable plugins for your sites. We will study how several of the jQuery UI widgets were rebuilt in 1.9.
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="break3" class="break">
+				<div class="sessionmain">
+					<span class="time">10:45</span>
+					<span class="topic">coffee</span>
+				</div>
+			</li>
+			<li id="subevent3" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">11:15</span>
+					<span class="speaker">Doug Neiner</span>
+					<span class="topic">CSS3 Animations, Transitions<br> and jQuery</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio leftside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+								appendTo
+							</p>
+							<p class="job" itemprop="jobTitle" >
+							</p>
+							<p class="sidedescription">
+								Doug Neiner is a front-end web developer with a love for semantic markup, powerful CSS, and efficient, reusable JavaScript. Doug loves sharing what he has learned and helping both new and developing JavaScript developers perfect their craft. When he isn't programming or designing on the computer, you might find him playing with his four wonderful children, hanging out with his beautiful wife, cooking up something in the kitchen or talking about the farm he wants to own one day.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								CSS3 animations and transitions offer increased browser performance for animations on desktop and mobile. However, they also introduce a completely different approach to animations than jQuery's animate functions. Even if you choose to use CSS3, are fallbacks using jQuery animation even worth it? Are there ever situations where jQuery’s animate function would be preferred over CSS3 animation?
+							</p>
+							<p>
+								In this session you will learn when to use jQuery, CSS3 or both together; how to control animations and transitions from jQuery and how to account for animation fallbacks in your code. This session will also cover how the jQuery animation queue behaves and present strategies for using that queue with CSS3 and other custom code in your application.
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="subevent4" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">12:00</span>
+					<span class="speaker">Sebastian Kurf&uuml;rst</span>
+					<span class="topic">Using RequireJS for building <br>component-based JavaScript applications</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio leftside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+								TYPO3
+							</p>
+							<p class="job" itemprop="jobTitle" >
+								core
+							</p>
+							<p class="sidedescription">
+								Sebastian Kurfürst is a member of the TYPO3 Core Team, especially involved the development of TYPO3 Phoenix, our next-generation CMS. Besides his work as PHP developer, he has mainly worked on JavaScript projects based on EmberJS and RequireJS. He loves clean code, design patterns and agile methodologies, but tries to stay pragmatic at the same time.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								For building the TYPO3 Phoenix User Interface, we've used a wide variety of frameworks and technologies. Besides jQuery and EmberJS at its core, we also use jQuery UI and a number of frameworks for in-page content editing such as VIE, CreateJS and Aloha. For managing this number of external dependencies, we soon started to embrace RequireJS as dependency management solution.            However, during implementation, it turns out that some problems such as multiple jQuery versions, external non-AMD code, importing complete requireJS applications or debugging loading-order issues are non-trivial to solve. In this talk, you will get an overview about these problems, together with the solutions we found for them, as these are applicable for many big JavaScript projects.
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="break4" class="break">
+				<div class="sessionmain">
+					<span class="time">12:45</span>
+					<span class="topic">lunch</span>
+				</div>
+			</li>
+			<li id="subevent5" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">13:30</span>
+					<span class="speaker">J&ouml;rn Zaefferer</span>
+					<span class="topic">Talk To Me - Making web sites accessible to those who can benefit the most from them</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+								jQuery UI
+							</p>
+							<p class="job" itemprop="jobTitle" >
+								core
+							</p>
+							<p class="sidedescription">
+								Jörn is a freelance web developer, consultant and trainer, residing in Cologne, Germany. Jörn evolved jQuery’s testsuite into QUnit, a JavaScript unit testing framework, and maintains it. He created and maintains a number of popular plugins. As a jQuery UI development lead, he focuses on the development of new plugins, widgets and utilities.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								A computer that can talk to us has been part of science fiction for a long time. For those with limited or no sight at all it has been a reality for a while. It's this group that often benefits the most from the web, since it can give them a form of independence they might not have in their day to day life.
+							</p>
+							<p>
+								What do we need to make web sites usable for them?
+								<ul>
+									<li>Arguments to convince your boss of the value of making web sites accessible.</li>
+									<li>Software to work with and test against.</li>
+									<li>Examples of the challenges and how to overcome them with JavaScript.</li>
+								</ul>
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="subevent6" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">14:15</span>
+					<span class="speaker">Golo Roden</span>
+					<span class="topic">What jQuery is good for on the server</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+							</p>
+							<p class="job" itemprop="jobTitle" >
+								consultant, author
+							</p>
+							<p class="sidedescription">
+								<a href="www.goloroden.de">Golo Roden</a> is a freelance broadcaster of knowledge and technology consultant for web technologies, code quality and agile methods. He advises companies on these topics to help them evaluate, explore and apply suitable technologies and methods. He also works as a journalist for various trade publications and as a speaker and content manager for conferences at home and abroad. Microsoft has awarded Golo the Most Valuable Professional (MVP) for C# accolade twice in recognition of his excellent work in the community.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								For years you have been using jQuery on the client-side. And now there is Node.js on the server-side. And this basically means that all the things you have loved about jQuery are dead and gone, right? Wrong! Although there is no DOM on the server (at least not by default) there are lots of tasks you can accomplish using jQuery *and* Node.js! In this talk Golo Roden presents three server-side scenarios where jQuery is the perfect companion for Node.js! So if do you love jQuery and you need to do server-side programming with Node.js, join :-)!
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="break5" class="break">
+				<div class="sessionmain">
+					<span class="time">15:00</span>
+					<span class="topic">coffee</span>
+				</div>
+			</li>
+			<li id="subevent7" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">15:30</span>
+					<span class="speaker">Sascha Wolter</span>
+					<span class="topic">Next Generation Media made easy thanks to APIs and jQuery</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+								Deutsche Telekom
+							</p>
+							<p class="job" itemprop="jobTitle" >
+							</p>
+							<p class="sidedescription">
+								Sascha Wolter is a professional developer and craftsman for Pervasive Computing, Rich Applications and Mobile Apps in all flavors. He also works as a consultant, trainer, software-architect and author and contributes articles to a number of magazines. His books and video-trainings are bestselling publications in Germany.If he is not tinkering with new soft- and hardware as Developer Evangelist for the Developer Garden, he likes playing Lego with his kids in his spare time.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								Nowadays apps are available not only for traditional PCs. We have to deal with more and more devices, capabilities, screen sizes, and so on. It requires that designers and developers have to explore new ways of thinking and have to discover new approaches. Fortunately the acquired knowledge is not lost: Adapt it and build around new, technology independent concepts in an agile and prototypic way. Sascha shows inspiring examples and how to create this new way of interactive systems in practice.
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="subevent8" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">16:15</span>
+					<span class="speaker">Christian Heilmann</span>
+					<span class="topic">Helping or hurting?</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="description">
+							<p>
+							We are in a time of change. The web as we knew it is not only changing in terms of technologies and demands - but user preferences are changing, too. More and more people are experiencing the web first and foremost on mobile devices and tablets which brings new challenges to us as developers. For years now libraries have made it easier for developers to build engaging and beautiful products by abstracting away issues like DOM access and event handling into a predictable and simple syntax. This is great and it gave the web a much bigger boost than anything else. Now is the time for libraries to help with the newer challenge of a changing environment.
+							"The web always wins" is not a given - we have to keep evolving and innovating with it. Libraries are a great solution to make it easy for developers to build products without much hassle but the libraries we use nowadays more and more solve problems of the past rather than simplifying the near future. In this talk Chris Heilmann of Mozilla will show how we can lead the next generation of developers to build for the web instead of adding cruft to it. The mobile revolution is upon us and we have the means and the knowledge to lead it.
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+						<div class="right" itemprop="jobTitle" >
+							<p class="job" >
+								Mozilla Developer
+							</p>
+							<p class="job" itemprop="jobTitle" >
+								JavaScript Author
+							</p>
+							<p class="sidedescription">
+								Chris Heilmann has dedicated a lot of his time making the web better. Originally coming from a radio journalism background, he built his first web site from scratch around 1997 and spent the following years working on lots of large, international web sites. He then spent a few years in Yahoo building products and explaining and training people and is now at Mozilla.Chris wrote and contributed to four books on web development and wrote many articles and hundreds of blog posts for Ajaxian, Smashingmagazine, Yahoo, Mozilla, ScriptJunkie and many more.
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="break6" class="break">
+				<div class="sessionmain">
+					<span class="time">18:00</span>
+					<span class="topic">social event</span>
+				</div>
+			</li>
+		</ul>
+		<ul id="saturday" class="sessions" itemprop="subevents">
+			<li id="break1" class="break"></li>
+		<li id="break2" class="break">
+				<div class="sessionmain">
+					<span class="time">9:00</span>
+					<span class="topic">welcome</span>
+				</div>
+			</li>
+			<li id="subevent1" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">9:15</span>
+					<span class="speaker">Todd Parker</span>
+					<span class="topic">jQuery Mobile and Responsive Web Design</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+								jQuery mobile
+							</p>
+							<p class="job" itemprop="jobTitle" >
+								mobile
+							</p>
+							<p class="sidedescription">
+								Todd, a principal at Filament Group Inc., is a jQuery board member, project and design lead for the jQuery Mobile team, and design lead for jQuery UI. He is involved with the design of the ThemeRoller application and CSS class frameworks. Todd is co-author of the Peachpit book "Designing With Progressive Enhancement", contributor to the O'Reilly "jQuery Cookbook" and frequent presenter on the topics of mobile, progressive enhancement, accessibility, and responsive web design.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								Learn how to leverage the power of jQuery Mobile and Responsive Web Design (RWD) techniques to create web experiences that adapt to all devices from phones, tablets, to desktops and beyond. This session will cover the built-in RWD capabilities of the Mobile framework and walk through real-world examples of how to use media queries and mobile-first thinking to build responsive sites and apps. Techniques for improving  performance will also be covered including how to minimize bandwidth and server requests, handling high resolution displays for images and scalable vector graphics, and selectively layering content and features based on device capabilities.
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="subevent2" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">10:00</span>
+					<span class="speaker">Maximilian Knor</span>
+					<span class="topic">Microsoft ASP.NET &lt;3 jQuery</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside">
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+								Microsoft
+							</p>
+							<p class="job" itemprop="jobTitle" >
+							</p>
+							<p class="sidedescription">
+								Maximilian is developer evangelist at Microsoft and speaker at several conference.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>How ASP.NET MVC and ASP.NET SignalR builds on top of jQuery & jQuery Mobile for client-side features & Single Page Applications.</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+
+				</div>
+			</li>
+			<li id="break3" class="break">
+				<div class="sessionmain">
+					<span class="time">10:45</span>
+					<span class="topic">coffee</span>
+				</div>
+			</li>
+			<li id="subevent3" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">11:15</span>
+					<span class="speaker">Mike West</span>
+					<span class="topic">Mitigate Maliciousness: Securing the client side</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+								Google
+							</p>
+							<p class="job" itemprop="jobTitle" >
+							</p>
+							<p class="sidedescription">
+								Mike is a philosophy student, cleverly disguised as a developer advocate on Google's Chrome team in Munich, Germany. Since it was relatively clear early on that it would be slightly more than difficult to make a living sitting under a tree while reading Kant, he's focused his energies on the web, which happily has proven itself to be a wonderful decision. He's a committer to both Chromium and WebKit, and has even landed a single patch to Firefox.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								jQuery has made it possible for developers to move more and more complex application logic down from the server to the client. This is a huge opportunity for JavaScript developers, and at the same time presents a tempting target for folks with malicious intent. It's more critical than ever to ensure that we're doing the right things with regard to security, and happily, modern browsers are here to help. Here, we'll talk about some of the new ways in which you can mitigate the effects of cross-site scripting and other attacks.
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="subevent4" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">12:00</span>
+					<span class="speaker">Theodore Biadala</span>
+					<span class="topic">Drupal uses jQuery, 6 years later</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+								Drupal
+							</p>
+							<p class="job" itemprop="jobTitle" >
+								Core
+							</p>
+							<p class="sidedescription">
+								Contributes to drupal anything javascript. And maps. He is the javascript maintainer for Drupal 7 and 8.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								With Drupal powering more than 2% of existing websites (including big websites!) the Drupal community has had a lot of exposure to the goodness of jQuery and also to it's bugs and shortcomings. This talk is an outside point of view on jQuery's internals. After explaining some of the genesis of jQuery inside Drupal, we'll focus on what the Drupal community is using, underusing or misusing from jQuery. Then we'll talk about the challenges of Drupal's next version — scheduled to ship this year — and how jQuery fits in the picture, giving some feedback in the process.
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="break4" class="break">
+				<div class="sessionmain">
+					<span class="time">12:45</span>
+					<span class="topic">lunch</span>
+				</div>
+			</li>
+			<li id="subevent5" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">13:30</span>
+					<span class="speaker">Patrick Lauke</span>
+					<span class="topic">Web on TV</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="description">
+							<p>
+								In this talk, we'll take a look at the unique challenges that developer's face when creating webapps and content for so-called "Smart TVs". What role does jQuery have, if any, in relation to cross-TV/platform/device development?
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+						<div class="right" itemprop="jobTitle" >
+							<p class="job" >
+
+							</p>
+							<p class="job" itemprop="jobTitle" >
+								JavaScript Author
+							</p>
+							<p class="sidedescription">
+								Patrick Lauke is an open web standards evangelist who until recently worked in the Developer Relations team at Opera Software ASA.. Patrick has been engaged in the discourse on standards and accessibility since early 2001 - regularly speaking at conferences and contributing to a variety of web development and accessibility related mailing lists and initiatives such as the Web Standards Project. Published works include a chapter in Web Accessibility: Web Standards and Regulatory Compliance, as well as various articles for .net magazine, where he sits on the advisory panel.
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="subevent6" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">14:15</span>
+					<span class="speaker">Dio Synodinos</span>
+					<span class="topic">State of the Art in Web Visualisations</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="description">
+							<p>The more information-rich our societies become, the more demand there is for representing information visually, and the HTML5 platform is one of the best ways to create visualizations and communicate a message. Either for making sense of quantitative data, displaying qualitative information or simply creating the next Mona Lisa, technologies like CSS3, SVG, Canvas, WebGL, etc, provide a very powerful toolbox for developers, designers and artists.</p>
+
+							<p>In this presentation we’re going to start of by examining all the enabling HTML5 technologies that were mentioned, their features and how they are used in practice to deliver captivating user experiences. Then we’re going to move one level up and talk about the frameworks that make these powerful but sometimes overly complex technologies, more accessible to programmers. We’re going to see frameworks like Raphaël, Processing.js, D3.js, Fabric.js, etc, their features and their applicability. Finally, time permitting, we’re going to go over online examples that best demonstrate the power of the web platform for visualizations and analyze how they were created.</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+						<div class="right" itemprop="jobTitle" >
+							<p class="job" >
+								C4Media
+							</p>
+							<p class="job" itemprop="jobTitle" >
+							</p>
+							<p class="sidedescription">
+								Dio Synodinos is the research platform team lead at C4Media and a freelance consultant, focusing on rich Internet applications, web application security, mobile web, and web services. He’s also the lead editor for HTML5 and JavaScript at InfoQ where he also regularly writes about the JVM platform. He is the coauthor of "Pro HTML5 and CSS3 Design Patterns" (published by Apress) and "The Essential Guide to HTML5 and CSS3 Web Design" (published by friendsofED). Going back and forth between server-side programming and UI design for more than a decade, he has been involved in diverse software projects and has contributed to different technical publications.
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="break5" class="break">
+				<div class="sessionmain">
+					<span class="time">15:00</span>
+					<span class="topic">coffee</span>
+				</div>
+			</li>
+			<li id="subevent7" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">15:30</span>
+					<span class="speaker">Anne-Gaelle Colom</span>
+					<span class="topic">Good UI design principles with jQuery Mobile</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio leftside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" itemprop="jobTitle" >Course Leader Mobile and Web Computing
+							</p>
+							<p class="sidedescription">
+								Anne-Gaelle Colom is a Senior Lecturer at the University of Westminster in London, UK and the Course Leader for BEng Mobile and Web Computing. She is passionate about the use of technology in Higher Education as well as the Web and Mobile world. Anne-Gaelle joined the jQuery Mobile team in October 2011 to become the documentation lead a few months later.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								When developing Mobile Web applications, it is essential to ensure that the user will be able to carry out the tasks they require effectively, and that the experience of doing so is a good and enjoyable one. This session will cover how jQuery Mobile naturally helps designers and developers incorporate good UI design principles in their mobile applications. Each good UI design rule will be illustrated with jQuery Mobile examples and demos to show how the framework helps incorporate these rules into mobile web applications. Such illustrations will cover but won't be restricted to the automatic back button in the header, the page loading widget, shortcuts with the searchable lists and panels, affordance with icons, and consistency of style through themes and swatches.
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="subevent8" class="subevent" itemscope itemprop="subevent">
+				<div class="sessionmain">
+					<span class="time">16:15</span>
+					<span class="speaker">Henri Bergius</span>
+					<span class="topic">Create.js - Make websites editable with jQuery</span>
+				</div>
+				<div class="sessiondescription">
+					<div class="bio rightside" >
+						<div class="left" itemprop="jobTitle" >
+							<p class="job" >
+								createJS
+							</p>
+							<p class="sidedescription">
+								Henri Bergius, a.k.a. Bergie, is a former Viking originally from Finland but living in Berlin. When he is not exploring Georgia’s cave cities or running with the bulls in Pamplona, Bergie works on web services built on top of the Midgard toolkit. His company, Nemein, provides web and mobile solutions for  major companies in Finland and abroad. Bergie is involved with free software in 1999 by coordinating the public release of the Midgard cms. Since then, he has been actively working on integrating standards like RDFa into the system and traveling the world advocating interoperation between open-source CMSs.
+							</p>
+						</div>
+						<div class="right" itemprop="description">
+							<p>
+								Create.js is an inline editing toolkit for JavaScript, designed to be used by content management systems and other web applications. It allows users to edit content directly on the web pages where it is presented. Built as a set of jQuery UI widgets, it integrates easily with any web framework, allowing developers to decouple their content editing tools from the rest of the system. This session will introduce the ideas of Decoupled Content Management, and show how jQuery UI and Create.js can be used as the front-end editing tool in any web application.
+							</p>
+							<p>
+								<a href="#" class="close">
+									close
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li id="break6" class="break">
+				<div class="sessionmain">
+					<span class="time">17:00</span>
+					<span class="topic">good bye</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div id="locationmenu">
+		<div id="planeclick"></div>
+		<h1>Location</h1>
+		<ul>
+			<li id="venuemenu"><a href="#locationmenu">Venue</a></li>
+			<li id="directionsmenu"><a href="#directions">Directions</a></li>
+			<li id="accomodationmenu"><a href="#accomodation">Accomodation</a></li>
+		</ul>
+	</div>
+	<div id="directions">
+		<h2>Directions</h2>
+
+		<h3>Underground</h3>
+		<p>U4: Rossauer Lände, then proceed on foot 600 metres to the entrance on Fürstengasse
+		U2: Schottentor, then take the 40 A bus, alighting at Bauernfeldplatz</p>
+
+		<h3>Tram</h3>
+		<p>Line D, alighting at Seegasse or Bauernfeldplatz</p>
+
+		<h3>Bus</h3>
+		<p>40 A, alighting at Bauernfeldplatz</p>
+	</div>
+	<div id="accomodation">
+		<div id="hotel1" class="premiumhotel" itemscope itemtype="http://schema.org/Hotel">
+			<ul class="stars">
+				<li><img src="/resources/2013/eu/img/star_small_white.png" /></li>
+				<li><img src="/resources/2013/eu/img/star_small_white.png" /></li>
+				<li><img src="/resources/2013/eu/img/star_small_white.png" /></li>
+				<li><img src="/resources/2013/eu/img/star_small_white.png" ></li>
+				<li><img src="/resources/2013/eu/img/star_small_white.png" /></li>
+			</ul>
+			<a class="icon" itemprop="map" href="https://maps.google.com/maps?q=Kaerntner+Ring+8,+vienna&amp;hl=en&amp;ie=UTF8&amp;ll=48.201752,16.371067&amp;spn=0.00788,0.01929&amp;sll=48.204942,16.37242&amp;sspn=0.00788,0.01929&amp;hnear=K%C3%A4rntner+Ring+8,+Innere+Stadt+1010+Wien,+Austria&amp;t=m&amp;z=16" target="_blank"><img src="/resources/2013/eu/img/google_white.png" /></a>
+			<a class="icon" itemprop="url" href="http://www.theringhotel.com" target="_blank"><img src="/resources/2013/eu/img/www_white.png" /></a>
+			<div class="partnerhotel">official jQuery Europe<br> partner Hotel</div>
+			<h3 itemprop="name">The Ring Hotel</h3>
+			<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">K&auml;rntner Ring 8</span><br />
+			<span itemprop="postalCode">1010</span> <span itemprop="addressLocality">Vienna</span></p>
+
+			<dl>
+				<dt>Phone: </dt><dd><a itemprop="telephone" href="tel:+43 1 22 1 22">+43 1 22 1 22</a></dd>
+				<dt>Fax: </dt><dd itemprop="faxNumber">+43 1 22 1 22-900</dd>
+				<dt>Email: </dt><dd><a itemprop="email" href="mailto:reservation@theringhotel.com?cc=sdrummer@jjwhotels.com&amp;subject=Book a room for jQuery conference 2013&amp;body=Dear Gentlemen,%0d%0dI would like to book a single room for 1 person from Feb 22nd to Feb 24th with the jQuery special rate for EUR 145 per night.%0d%0dBest regards%0d">reservation@theringhotel.com</a></dd>
+			</dl>
+
+			<p>Get a discounted rate!<br /> Instead <del>€219</del> pay <span itemprop="priceRange"><b>€145</b></span> (code jQuery).<br><a href="mailto:reservation@theringhotel.com?cc=sdrummer@jjwhotels.com&amp;subject=Book a room for jQuery conference 2013&amp;body=Dear Gentlemen,%0d%0dI would like to book a single room for 1 person from Feb 22nd to Feb 24th with the jQuery special rate for EUR 145 per night.%0d%0dBest regards%0d">book now</a></p>
+		</div>
+
+		<div id="hotel2" class="hotel" itemscope itemtype="http://schema.org/Hotel">
+			<ul class="stars">
+				<li><img src="/resources/2013/eu/img/star_small_white.png" /></li>
+				<li><img src="/resources/2013/eu/img/star_small_white.png" /></li>
+				<li><img src="/resources/2013/eu/img/star_small_white.png" /></li>
+				<li><img src="/resources/2013/eu/img/star_small_gray.png" ></li>
+				<li><img src="/resources/2013/eu/img/star_small_gray.png" /></li>
+			</ul>
+			<a class="icon" itemprop="map" href="https://maps.google.com/maps?q=Nordbergstra%C3%9Fe+4,+1090+Wien,+Austria&amp;hl=en&amp;ie=UTF8&amp;ll=48.224358,16.362033&amp;spn=0.007877,0.019269&amp;sll=48.226394,16.362143&amp;sspn=0.063012,0.154152&amp;hnear=Nordbergstra%C3%9Fe+4,+Alsergrund+1090+Wien,+Austria&amp;t=m&amp;z=16" target="_blank"><img src="/resources/2013/eu/img/google_white.png" /></a>
+			<a class="icon" itemprop="url" href="http://www.hotelmozart-vienna.at/en/" target="_blank"><img src="/resources/2013/eu/img/www_white.png" /></a>
+			<h3 itemprop="name">Hotel Mozart</h3>
+			<p>Code: Liechtenstein <br />Single room <span itemprop="priceRange"><b>€45.20</b></span><br />
+			Double room <span itemprop="priceRange"><b>€69.00</b></span></p>
+
+			<dl>
+				<dt>Phone: </dt><dd><a itemprop="telephone" href="tel:+43 1 317 15 37">+43 1 317 15 37</a></dd>
+				<dt>Email: </dt><dd><a itemprop="email" href="mailto:office@hotelmozart-vienna.at?subject=Book a room for jQuery conference 2013&amp;body=Dear Gentlemen,%0d%0dI would like to book a single room for 1 person from Feb 22nd to Feb 24th with the jQuery special rate for EUR 45.20 single (EUR 69.00 double) room per night. Code Liechtenstein.%0d%0dBest regards%0d">office@hotelmozart-vienna.at</a></dd>
+			</dl>
+
+		</div>
+
+		<div id="hotel3" class="hotel" itemscope itemtype="http://schema.org/Hotel">
+			<a class="icon" itemprop="url" href="http://www.wombats-hostels.com/vienna/" target="_blank"><img src="/resources/2013/eu/img/www_white.png" /></a>
+			<h3 itemprop="name">wombats CITY HOSTEL</h3>
+			<p>3 cheap hostels from <span itemprop="priceRange"><b>€19</b></span></p>
+
+			<dl>
+				<dt>Phone: </dt><dd><a itemprop="telephone" href="tel:+43 1 897 23 36">+43 1 897 23 36</a></dd>
+				<dt>Email: </dt><dd><a itemprop="email" href="mailto:office@wombats-vienna.at">office@wombats-vienna.at</a></dd>
+			</dl>
+
+		</div>
+	</div>
+
+	<div id="restaurants">
+		<div class="restaurant" itemscope itemtype="http://schema.org/Restaurant">
+			<ul>
+				<li><a class="icon" itemprop="map" href="https://maps.google.com/maps?q=Wollzeile+38,+1010+Wien,+Austria&amp;hl=en&amp;sll=48.207606,16.378701&amp;sspn=0.015759,0.038538&hnear=Wollzeile+38,+Innere+Stadt+1010+Wien,+Austria&amp;t=m&amp;z=16" target="_blank"><img src="/resources/2013/eu/img/google_safir.png" /></a></li>
+				<li><a class="icon" itemprop="url" href="http://www.plachutta.at/index.php?id=25&amp;L=1" target="_blank"><img src="/resources/2013/eu/img/www_safir.png" /></a></li>
+			</ul>
+			<h3 itemprop="name">Plachutta</h3>
+			<p itemprop="description">The world-famous Tafelspitz<br>
+			restaurant in the heart of Vienna is just as much part of Vienna<br />
+			as St. Stephen’s Cathedral and the Giant Ferris Wheel. A must be.<br>You need to reserve a table.</p>
+		</div>
+		<div class="restaurant" itemscope itemtype="http://schema.org/Restaurant">
+			<ul>
+				<li><a class="icon" itemprop="map" href="https://maps.google.com/maps?q=Wollzeile+5,+1010+Vienna&amp;hl=en&amp;sll=37.0625,-95.677068&amp;sspn=38.281301,78.925781&amp;hnear=Wollzeile+5,+Innere+Stadt+1010+Wien,+Austria&amp;t=m&amp;z=16" target="_blank"><img src="/resources/2013/eu/img/google_safir.png" /></a></li>
+				<li><a class="icon" itemprop="url" href="http://www.figlmueller.at/en/" target="_blank"><img src="/resources/2013/eu/img/www_safir.png" /></a></li>
+			</ul>
+			<h3 itemprop="name">Figlm&uuml;ller</h3>
+			<p itemprop="description">THE Schnitzel! At Figlmüller fine dining goes beyond the edge of the plate: The average schnitzel measures roughly thirty centimeters in diameter and is eaten in no time. Why? Because it tastes tender, juicy, and is covered in a crispy coating. A must be. You need to reserve a table.</p>
+		</div>
+		<div class="restaurant" itemscope itemtype="http://schema.org/Restaurant">
+			<ul>
+				<li><a class="icon" itemprop="map" href="https://maps.google.com/maps?q=kim+kocht&amp;hl=en&amp;ll=48.224444,16.350832&amp;spn=0.030792,0.038795&amp;sll=48.203914,16.369584&amp;sspn=0.030805,0.038795&amp;hq=kim+kocht&amp;t=m&amp;z=15" target="_blank"><img src="/resources/2013/eu/img/google_safir.png" /></a></li>
+				<li><a class="icon" itemprop="url" href="http://www.kimkocht.at/index_eng.htm" target="_blank"><img src="/resources/2013/eu/img/www_safir.png" /></a></li>
+			</ul>
+			<h3 itemprop="name">Kim kocht</h3>
+			<p itemprop="description">Sohyi Kim is one of the few women on Austria’s top dining scene. <br />
+				The native Korean offers innovative and experimental<br /> cuisine based on five elements.</p>
+		</div>
+		<div class="restaurant black" itemscope itemtype="http://schema.org/Restaurant">
+			<ul>
+				<li><a class="icon" itemprop="map" href="https://maps.google.com/maps?q=hotel+sacher&amp;hl=en&amp;sll=35.675147,-95.712891&amp;sspn=73.714408,79.453125&amp;hq=hotel+sacher&amp;t=m&amp;z=15&amp;iwloc=A" target="_blank"><img src="/resources/2013/eu/img/google_black.png" /></a></li>
+				<li><a class="icon" itemprop="url" href="http://www.sacher.com/en-cafe-vienna.htm" target="_blank"><img src="/resources/2013/eu/img/www_black.png" /></a></li>
+			</ul>
+			<h3 itemprop="name">Hotel &amp; Cafe Sacher</h3>
+			<p itemprop="description">Experience the typical Viennese coffee house<br />
+			atmosphere at Café Sacher Wien and treat yourself to an <br />
+			Original Sacher-Torte and an Original Sacher Café.<br />
+			Feel like a Kaiser.</p>
+		</div>
+	</div>
+
+	<div id="leisure">
+		<div class="poi hole1 poi1" itemscope itemtype="http://schema.org/TouristAttraction">
+			<div class="type">Sightseeing</div>
+			<h3 itemprop="name">Schloss Sch&ouml;nbrunn</h3>
+			<p itemprop="description"></p>
+			<div class="icons">
+				<a class="icon" itemprop="map" href="https://maps.google.com/maps?q=schloss+sch%C3%B6nbrunn,+Wien&amp;hl=en&amp;ie=UTF8&amp;sll=48.202955,16.369964&amp;sspn=0.008138,0.009141&amp;hq=schloss+sch%C3%B6nbrunn,+Wien&amp;t=m&amp;z=16" target="_blank"><img src="/resources/2013/eu/img/google_white.png" /></a>
+				<a class="icon" itemprop="url" href="http://www.schoenbrunn.at/en.html" target="_blank"><img src="/resources/2013/eu/img/www_white.png" /></a>
+			</div>
+		</div>
+		<div class="poi hole2 poi2" itemscope itemtype="http://schema.org/TouristAttraction">
+			<div class="type">Clubbing</div>
+			<h3 itemprop="name">Flex</h3>
+			<p itemprop="description"></p>
+			<div class="icons">
+				<a class="icon" itemprop="map" href="https://maps.google.com/maps?q=flex,+Augartenbr%C3%BCcke+1+,+vienna&amp;hl=en&amp;ie=UTF8&amp;sll=48.223066,16.350968&amp;sspn=0.520598,0.585022&amp;hq=flex,+Augartenbr%C3%BCcke+1+,+vienna&amp;t=m&amp;z=15" target="_blank"><img src="/resources/2013/eu/img/google_white.png" /></a>
+				<a class="icon" itemprop="url" href="http://flex.at" target="_blank"><img src="/resources/2013/eu/img/www_white.png" /></a>
+			</div>
+		</div>
+		<div class="poi hole3 poi3" itemscope itemtype="http://schema.org/EventVenue">
+			<div class="type">Nerds place</div>
+			<h3 itemprop="name">Metalab</h3>
+			<p itemprop="description"></p>
+			<div class="icons">
+				<a class="icon" itemprop="map" href="https://maps.google.com/maps?q=Rathausstra%C3%9Fe+6,+1010+Wien&amp;hl=en&amp;ie=UTF8&amp;sll=48.209522,16.356074&amp;sspn=0.008136,0.009141&amp;hnear=Rathausstra%C3%9Fe+6,+Innere+Stadt+1010+Wien,+Austria&amp;t=m&amp;z=17" target="_blank"><img src="/resources/2013/eu/img/google_white.png" /></a>
+				<a class="icon" itemprop="url" href="https://metalab.at/wiki/English" target="_blank"><img src="/resources/2013/eu/img/www_white.png" /></a>
+			</div>
+		</div>
+		<div class="poi hole2 poi4" itemscope itemtype="http://schema.org/Museum">
+			<div class="type">Sightseeing</div>
+			<h3 itemprop="name">Museums Quartier</h3>
+			<p itemprop="description"></p>
+			<div class="icons">
+				<a class="icon" itemprop="map" href="https://maps.google.com/maps?q=MQ,+Wien&amp;hl=en&amp;ll=48.205742,16.365316&amp;spn=0.016274,0.018282&amp;sll=48.202955,16.369964&amp;sspn=0.008138,0.009141&amp;hq=MQ,&amp;hnear=Vienna,+Austria&amp;t=m&amp;z=16&amp;iwloc=B" target="_blank"><img src="/resources/2013/eu/img/google_white.png" /></a>
+				<a class="icon" itemprop="url" href="http://www.mqw.at/" target="_blank"><img src="/resources/2013/eu/img/www_white.png" /></a>
+			</div>
+		</div>
+		<div class="poi hole1 poi5" itemscope itemtype="http://schema.org/TouristAttraction">
+			<div class="type">Classical music</div>
+			<h3 itemprop="name">Vienna<br />State Opera</h3>
+			<p itemprop="description"></p>
+			<div class="icons">
+				<a class="icon" itemprop="map" href="https://maps.google.com/maps?q=opernring+2,+Wien&amp;hl=en&amp;sll=48.20517,16.412458&amp;sspn=0.065097,0.073128&amp;hnear=Opernring+2,+Innere+Stadt+1010+Wien,+Austria&amp;t=m&amp;z=17" target="_blank"><img src="/resources/2013/eu/img/google_white.png" /></a>
+				<a class="icon" itemprop="url" href="http://www.vienna-opera.com/" target="_blank"><img src="/resources/2013/eu/img/www_white.png" /></a>
+			</div>
+		</div>
+		<div class="poi hole3 poi6" itemscope itemtype="http://schema.org/TouristAttraction">
+			<div class="type">Museum</div>
+			<h3 itemprop="name">Schloss Belvedere</h3>
+			<p itemprop="description"></p>
+			<div class="icons">
+				<a class="icon" itemprop="map" href="https://maps.google.com/maps?q=Prinz+Eugen-Stra%C3%9Fe+27,+Wien&amp;hl=en&amp;ie=UTF8&amp;sll=48.199663,16.376843&amp;sspn=0.032552,0.036564&amp;hnear=Prinz-Eugen-Stra%C3%9Fe+27,+Landstra%C3%9Fe+1040+Wien,+Austria&amp;t=m&amp;z=17" target="_blank"><img src="/resources/2013/eu/img/google_white.png" /></a>
+				<a class="icon" itemprop="url" href="http://www.belvedere.at/en/schloss-und-museum" target="_blank"><img src="/resources/2013/eu/img/www_white.png" /></a>
+			</div>
+		</div>
+		<div class="poi hole3 poi7" itemscope itemtype="http://schema.org/TouristAttraction">
+			<div class="type">Sightseeing</div>
+			<h3 itemprop="name">Giant Ferris Wheel</h3>
+			<p itemprop="description"></p>
+			<div class="icons">
+				<a class="icon" itemprop="map" href="https://maps.google.com/maps?q=prater,+leopoldstadt,Wien&amp;hl=en&amp;ll=48.20517,16.412458&amp;spn=0.065097,0.073128&amp;sll=48.192106,16.396393&amp;sspn=0.065114,0.073128&amp;hq=prater,+leopoldstadt,Wien&amp;t=m&amp;z=14" target="_blank"><img src="/resources/2013/eu/img/google_white.png" /></a>
+				<a class="icon" itemprop="url" href="http://www.wienerriesenrad.com/index.php?lang=en" target="_blank"><img src="/resources/2013/eu/img/www_white.png" /></a>
+			</div>
+		</div>
+	</div>
+	<div id="sponsors">
+		<div id="msft" class="sponsor">
+			<a href=" http://www.codefest.at/"><img src="/resources/2013/eu/img/MSFT.png"></a>
+		</div>
+		<div id="netural" class="sponsor">
+			<a href="http://www.netural.com/"><img src="/resources/2013/eu/img/sponsor-netural.png"></a>
+		</div>
+		<div id="karriere" class="sponsor">
+			<a href="http://www.karriere.at/"><img src="/resources/2013/eu/img/sponsor-karriere.png"></a>
+		</div>
+		<div id="gentics" class="sponsor">
+			<a href="http://gentics.com/"><img src="/resources/2013/eu/img/sponsor-gentics.png"></a>
+		</div>
+		<div id="fullstackoptimization" class="sponsor">
+			<a href="http://www.fullstackoptimization.com/"><img src="/resources/2013/eu/img/sponsor-fullstackoptimization.png"></a>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="imprint">
+			<h3>Imprint</h3>
+			<p>
+jQuery Europe is proudly presented by <a href="http://gentics.com">Gentics</a>, a cms software company located in Vienna, Austria.
+Vienna, beside being an awesome city, is located in the heart of Europe. It's a hub between east and west Europe and a city with
+many startups. The best place to chitchat about jQuery. We reserve the right to change speakers and/or session program. All speakers
+listed have confirmed to hold the talk and contributed the above session content.
+			</p>
+
+<h4>Relationship with the jQuery Project.</h4>
+<p>
+Gentics is organising this conference with the permission of the <a href="jquery.org">jQuery Foundation</a>.
+All revenue from the  conference goes to Gentics, who has licensed the jQuery trademark and agreed to
+contribute a portion of the gross revenue from this event to the jQuery Foundation, in support of its mission.
+The jQuery Foundation is a not-for-profit trade association in Boston, MA USA.
+The <a href="http://brand.jquery.org/">jQuery logo and brand</a> is protected by trademark.
+</p>
+		</div>
+		<div id="designer">
+			<h3>Web and graphic design</h3>
+<a href="http://www.skyscraperj.com/">SKYSCRAPER J // DESIGN + MUSIC, Sebastian Jakl</a>
+			<h3>Less, html and js</h3>
+			<a href="http://twitter.com/draftkraft">@draftkraft</a> and <a href="http://twitter.com/electrophanteau">@electrophanteau</a>
+		</div>
+	</div>
+</div>
+</div>
+
+<script>
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-17478954-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
