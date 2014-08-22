@@ -1,0 +1,884 @@
+/* ==|== primary styles =====================================================
+   Author: Isaac Durazo
+   ========================================================================== */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #2c2e35;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 0;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 2.8em;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: .2em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #00A2CA;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #028DAF;
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.boast {
+  font-style: italic;
+  font-size:1.3em;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
+section .container {
+  overflow: auto;
+  padding: 6em 0 0;
+}
+
+section h3 {
+  color: #699241;
+  font-size: 1.8em;
+}
+
+a.button {
+  background-color: #699241;
+  display: inline-block;
+  color: white;
+  line-height: 2.6em;
+  font-size: 1.5em;
+  margin: 0 1em;
+  width: 275px;
+  border-radius: 3px;
+  font-weight: 100;
+  text-align: center;
+}
+
+a.button:hover {
+  background-color: #5E833B;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* ========================
+          Header
+======================== */
+
+header {
+  background-image: url(../img/bg_header.jpg);
+  background-position: center center;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  height: 42em;
+  position: relative;
+}
+
+header #logo {
+  padding-top: 6em;
+}
+
+header h3 {
+  margin: auto;
+  width: 735px;
+}
+
+header h2:last-of-type {
+  display: none;
+}
+
+header .call_to_action {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+}
+
+
+/* ========================
+            Nav
+======================== */
+
+nav {
+  background-color: #2c2e35;
+  text-align: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+nav ul {
+  display: inline-block;
+  height: 3.5em;
+  line-height: 3.75em;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav a {
+  color: white;
+  padding: 16px 1.8em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+nav a:hover, .active {
+  background-color: #474952;
+  color: white;
+  text-decoration: none;
+}
+
+/* Dropdown menu */
+
+nav label {
+    display: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+nav input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+
+/* ========================
+          About
+======================== */
+
+#about .container {
+  padding: 9em 0 0;
+}
+
+#about img {
+  margin: 0 0 1em 2em;
+}
+
+/* ========================
+          program
+======================== */
+
+#program .day {
+  background: #2c2e35;
+  padding: 0.7em;
+  color: white;
+  font-size: 1.33333em;
+}
+
+#program .day-2 {
+  margin-top: 5em; 
+}
+
+#program .event-entity {
+  margin-bottom: 2em;
+  overflow: auto;
+}
+
+#program .event-entity .time {
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+#program .event-entity .block-type {
+  text-align: center;
+  border-top: 1px solid #2c2e35;
+  border-left: 1px solid #2c2e35;
+  border-right: 1px solid #2c2e35;
+  color: #2c2e35;
+  background-color: #EEFCE1;
+  padding: .5em;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+#program .event-entity .block-type.break {
+  border-bottom: 1px solid #2c2e35;
+  background-color: #FFE9E4;
+}
+
+#program .speaker_entity {
+  overflow: auto;
+  border: 1px solid;
+  border-top: 0;
+  padding: 2em;
+  min-height: 11.5em;
+}
+
+#program .speaker_entity .profile {
+  text-align: center;
+  text-transform: uppercase;
+  float: left;
+  margin: 0 2em 1em 0;
+}
+
+#program .speaker_entity .co-presenter.profile {
+  width: 50%;
+  margin: 0 0 1em;
+}
+
+#program .speaker_entity .co-presenter .name {
+  margin-top: .5em;
+}
+
+#program .speaker_entity .name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+#program .speaker_entity .links {
+  font-weight: 100;
+}
+
+#program .speaker_entity .pic {
+  overflow: hidden;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  max-width: 100px;
+  height: 100px;
+}
+
+#program .speaker_entity h3 {
+  font-size: 1.4em;
+  margin-bottom: .8em;
+}
+
+#program .track {
+  width: 49.5%;
+  float: left;
+}
+
+#program .track:last-of-type {
+  float: right;
+}
+
+#program .track:last-of-type .block-type{
+  background-color: #F0F2F7;
+}
+
+.speaker_entity .talk_abstract {
+  display: none;
+}
+
+.speaker_entity.expanded .talk_abstract {
+  display: block;
+}
+
+#program .keynote.event-entity .block-type {
+  background-color: #FFFDE4;
+}
+
+#program .keynote.event-entity .profile {
+  float: left;
+  margin-right: 2em;
+}
+
+#program .keynote.event-entity .speaker_entity {
+  min-height: 0;
+}
+
+#program .keynote.event-entity .keynote-talk_abstract {
+  margin-top:.5em;
+}
+
+button.expand {
+  background: #00A2CA;
+  color: white;
+  border: none;
+  outline-width: 0px;
+  outline: none;
+  padding: .3em .5em;
+}
+
+.expanded button.expand {
+  background: #E03030;
+}
+
+.pre {
+  margin:1em 0;
+}
+
+.expanded .pre {
+  display: none;
+}
+
+.snack-sponsor {
+  max-height: 50px;
+}
+
+/* ========================
+          Location
+======================== */
+
+#location .location_description {
+  margin-bottom: 2em;
+}
+
+#location .location_description img {
+  width: 350px;
+  float: left;
+  margin: 0 1.5em 1.5em 0;
+}
+
+#location .venue_hotel h4 {
+  margin: 0 0 .5em;
+}
+
+#location .hotel a {
+  font-size: 1.2em;
+}
+
+#location .venue_hotel .hotel {
+  margin-bottom: .5em;
+}
+
+#location .venue_hotel .venue-info {
+  margin-bottom: 2em;
+}
+
+#location .venue_hotel .venue-info h3 {
+  margin-bottom: .5em;
+}
+
+#location .venue_hotel a.button {
+  line-height: 3em;
+  width: 250px;
+  margin: 1.5em 0 0 0;
+  font-size: 1em;
+}
+
+
+/* ========================
+          Register
+======================== */ 
+
+#register .register_form  {
+  float: left;
+  margin-right: 4%;
+  text-align: center;
+  border: 1px solid #c4c9d7;
+}
+
+#register .register_form.roost_jquery {
+  margin-right: 0;
+}
+
+#register .roost, #register .jquery {
+  width: 28%;
+}
+
+#register .roost_jquery {
+  width: 35%;
+}
+
+#register .register_form .header {
+  background-color: #f8faff;
+  line-height: 3em;
+  font-size: 2em;
+}
+
+#register .register_form .header img {
+  vertical-align: middle;
+}
+
+#register .register_form .subheader { 
+  line-height: 3em;
+  background-color: #f8faff;
+  border-bottom: 1px solid #c4c9d7;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+#register .register_form .description {
+  text-align: left;
+}
+
+#register .register_form .promocode  {
+  margin: 0 1.2em;
+}
+
+#register .register_form .promocode input {
+  border: 1px solid #c4c9d7;
+  padding: 0;
+  width: 100%;
+  display: block;
+  line-height: 2.5em;
+  text-align: center;
+}
+
+#register .register_form .button {
+  line-height: 3em;
+  margin: 1em auto;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-color: #699241;
+  border: none;
+  width: 90%;
+  color: white;
+}
+
+#register .register_form .select_ticket {
+  line-height: 2em;
+  text-align: right;
+
+}
+
+#register .register_form .select_ticket .price {
+  float: left;
+  font-size: 1.15em;
+  font-weight: 700;
+}
+
+#register .ticket-details {
+  background-color: #f6f6f6;
+  padding: .5em 1em;
+  margin: 0 1em 1em;
+  overflow: auto;
+}
+
+#register .ticket-details.disabled {
+  color: #999999;
+}
+
+#register .disclaimer {
+  font-size: 0.8em;
+}
+
+
+/* ========================
+          Sponsors
+======================== */
+
+#sponsors .column {
+  float: left;
+}
+
+#sponsors .silver_columns, #sponsors .gold_columns, #sponsors .platinum_columns {
+  clear: both;
+}
+
+#sponsors .column {
+  width: 50%;
+}
+
+#sponsors .platinum_columns .column, #sponsors .diamond_columns .column, #sponsors .gold_columns .gold_centered {
+  margin-left: 25%;
+}
+
+#sponsors .sponsor_entity {
+  border: 1px solid #d8d8d8;
+  margin: 0 1em 1em;
+  overflow: auto;
+}
+
+#sponsors .sponsor_entity {
+  min-height: 185px;
+}
+
+#sponsors .sponsor_entity .info {
+  margin: 1em;
+}
+
+#sponsors .sponsor_entity .info h5 {
+  color: #00A2CA;
+  text-align: right;
+  margin: 1em 0;
+}
+
+#sponsors .sponsor_entity .info .logo {
+  display: block;
+  margin: 10px 0;
+}
+
+#sponsors .sponsor_entity .info #mt_logo {
+  position: relative;
+  left: 50%;
+  margin-left: -125px;
+}
+
+
+/* ========================
+          Footer
+======================== */ 
+
+footer {
+  background-color: #2c2e35;
+  color: white;
+  text-align: center;
+  margin-top: 5em;
+  padding: 2em 0;
+}
+
+
+/* ========================
+      Media Queries
+======================== */ 
+
+@media only screen and (max-width: 1024px) { 
+
+  .container {
+    margin: 0 2em;
+  }
+
+}
+
+@media only screen and (max-width: 900px) { 
+  nav a {
+    padding: 16px 1.3em;
+  }
+}
+
+@media only screen and (max-width: 875px) { 
+
+  #register .register_form {
+    margin: 0 0 2em;
+  }
+
+  #register .roost, #register .jquery {
+    width: 48%;
+  }
+
+  #register .jquery {
+    float: right;
+  }
+
+  #register .roost_jquery {
+    width: 99.7%;;
+  }
+
+  #sponsors .sponsor_entity {
+    min-height: 140px;
+  }
+
+}
+
+@media only screen and (max-width: 805px) { 
+  
+  #location .venue_hotel .venue-info {
+    clear: left;
+  }
+
+}
+
+@media only screen and (max-width: 785px) { 
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  section h3 {
+    font-size: 1.4em;
+  }
+
+  header {
+    height: 35em;
+  }
+
+  header #logo img {
+    width: 250px;
+  }
+
+  header h2 {
+    font-size: 2.3em;
+    letter-spacing: 1px;
+  }
+
+  header h3 {
+    width: 100%;
+    font-size: 1.6em;
+  }
+
+  header .button {
+    font-size: 1.3em;
+    width: 260px;
+  }
+
+  nav .container {
+    margin: 0;
+  }
+
+  nav ul {
+    display: none;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    padding: 0 1.3em;
+  }
+
+  nav ul li {
+    float: none;
+    text-align: left;
+    background-color: #2c2e35;
+    border-top: 1px solid #474952;
+  }
+
+  nav a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav label {
+    display: block;
+    min-height: 3.8em;
+  }
+
+  nav label:after {
+    background-image: url("../img/menu-more.png");
+    content: '';
+    position: absolute;
+    right: .65em;
+    top: .65em;
+    font-size: 1.8em;
+    width: 23px;
+    height: 19px;
+  }
+
+  nav input[type=checkbox]:checked ~ ul {
+    display:block;
+  }
+
+  #about .container {
+    padding-top: 6em;
+  }
+
+  section .container {
+    padding-top: 3em;
+  }
+
+  #call .button {
+    font-size: 1.3em;
+  }
+
+  #program .track, #program .track:last-of-type {
+    float: none;
+    width: 100%;
+  }
+
+  #program .track:last-of-type {
+    margin-top: 1em;
+  }
+
+}
+
+@media only screen and (max-width: 700px) { 
+
+  #sponsors .gold_columns .column,
+  #sponsors .platinum_columns .column,
+  #sponsors .diamond_columns .column,
+  #sponsors .gold_columns .gold_centered {
+    width: 100%;
+    margin: inherit;
+  }
+
+  #sponsors .silver_columns .column {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 610px) { 
+
+  header {
+    height: 100%;
+    overflow: auto;
+  }
+
+  header #logo {
+    padding-top: 5em;
+  }
+
+  header #logo img {
+    width: 200px;
+  }
+
+  header h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  header .button {
+    width: 48%;
+    margin: 1em 0;
+  }
+
+  header .call_to_action {
+    position: static;
+  }
+
+  #about .container {
+    padding-top: 4em;
+  }
+
+  #call .button {
+    float: none;
+    width: 100%;
+    margin: 0 0 1em;
+  }
+
+  #location .venue_hotel a.button {
+    width: 100%;
+  }
+
+  #location .location_description img {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #register .register_form {
+    width: 99%;
+    float: none;
+  }
+
+  #program .speaker_entity {
+    padding: 1em;
+  }
+
+  #sponsors .sponsor_entity {
+    min-height: 130px;
+  }
+
+}
+
+@media only screen and (max-width: 545px) {
+
+  .container {
+    margin: 0 1em;
+  }
+
+  header h2 {
+    font-size: 1.8em;
+    letter-spacing: 0;
+  }
+
+  #about img {
+    width: 150px;
+  }
+
+}
+
+@media only screen and (max-width: 480px) { 
+
+  #program .speaker_entity .keynote.profile {
+    float: none;
+    margin: 0;
+  }
+
+  #sponsors .sponsor_entity {
+    min-height: inherit;
+  }
+
+}
+
+@media only screen and (max-width: 435px) { 
+
+  header #logo img {
+    width: 150px;
+  }
+  
+  header h2:first-of-type {
+    display: none;
+  }
+
+  header h2:last-of-type {
+    display: block;
+  }
+
+  header .button { 
+    width: 100%;
+    float: none;
+  }
+
+  section .container {
+    padding-top: 2em;
+  }
+
+  #about .container {
+    padding-top: 3em;
+  }
+
+  #about img { 
+    width: 110px;
+    margin-left: 1em;
+  }
+
+  #program .speaker_entity .profile {
+    float: none;
+    display: block;
+    margin-right: 0;
+  }
+
+  #sponsors .silver_columns .column {
+    width: 100%;
+  }
+
+}
+
