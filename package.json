@@ -1,0 +1,30 @@
+{
+  "name": "events.jquery.org",
+  "title": "jQuery Events & Conferences",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jquery/events.jquery.org",
+  "author": {
+    "name": "jQuery Foundation",
+    "url": "http://jquery.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jquery/events.jquery.org.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jquery/events.jquery.org/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "dependencies": {
+    "grunt": "0.3.17",
+    "grunt-clean": "0.3.0",
+    "grunt-wordpress": "1.0.7",
+    "grunt-jquery-content": "0.12.0",
+    "grunt-check-modules": "0.1.0"
+  }
+}

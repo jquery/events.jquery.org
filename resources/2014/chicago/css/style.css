@@ -1,0 +1,1035 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #2c2e35;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'klavika', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 4em;
+	margin: 0;
+	font-weight: 500;
+	text-shadow: 0 4px 0 rgba(0,0,0,.2);
+}
+
+h2 {
+	font-size: 2.8em;
+	font-weight: 400;
+	letter-spacing: 3px;
+	margin-bottom: .2em;
+}
+
+h3 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: 100;
+	margin: 0 0 1em;
+}
+
+h4 {
+	font-size: 1.3em;
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: #00A2CA;
+	text-decoration: none;
+	z-index: 1;
+	position: relative;
+}
+
+a:hover {
+	color: #028DAF;
+	text-decoration: underline;
+}
+
+p {
+	margin-top: 0;
+}
+
+.overlay {
+	background:transparent;
+	position:relative;
+	width:100%;
+	height:550px; /* iframe height */
+	top:550px;  /* iframe height */
+	margin-top:-550px;  /* iframe height */
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.boast {
+	font-style: italic;
+	font-size:1.3em;
+}
+
+.container {
+	max-width: 980px;
+	margin: auto;
+}
+
+section .container {
+	overflow: auto;
+	padding: 8em 0;
+}
+
+a.button {
+	background: #19a2c9;
+	display: inline-block;
+	color: white;
+	line-height: 2.6em;
+	font-size: 1.3em;
+	margin: .3em 1em 1em;
+	text-align: center;
+	border-bottom: 6px solid #1688A8;
+	padding: 0 2em;
+}
+
+a.button:hover {
+	background: #1997BB;
+	color: white;
+	text-decoration: none;
+}
+
+a.button:active {
+	border-bottom: 0;
+	top: 6px;
+	position: relative;
+}
+
+.button:before {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 0;
+	background: rgba(0,0,0,0);
+	height: 6px;
+	width: 100%;
+}
+
+#register {
+	background: #EEE;
+}
+
+.strike {
+	position: relative;
+}
+
+.strike:after, .strike:before {
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 109%;
+	background: #ff0000;
+	left: -2px;
+	top: .6em;
+}
+
+.strike:after {
+	transform:rotate(14deg);
+	-ms-transform:rotate(14deg); /* IE 9 */
+	-webkit-transform:rotate(14deg); /* Opera, Chrome, and Safari */
+}
+
+.strike:before {
+	transform:rotate(-14deg);
+	-ms-transform:rotate(-14deg); /* IE 9 */
+	-webkit-transform:rotate(-14deg); /* Opera, Chrome, and Safari */
+}
+
+
+/* ========================
+					Header
+======================== */
+
+header {
+	background: url(../img/buildings.png) center bottom repeat-x,url(../img/back-buildings.png) bottom repeat-x, #19a2c9;
+	text-align: center;
+	position: relative;
+	height: 20em;
+}
+
+header #logo {
+	padding-top: 7em;
+}
+
+header h3 {
+	margin: auto;
+	width: 735px;
+}
+
+header .call_to_action {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: -30px;
+}
+
+
+/* ========================
+					Subheader
+======================== */
+
+#subheader {
+	background-image: url(../img/bg-subheader.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+
+#subheader h1 {
+	font-weight: 400;
+	font-size: 3em;
+}
+
+#subheader .container {
+	padding-top: 11em;
+}
+
+#subheader a.button {
+	width: 10em;
+}
+
+
+/* ========================
+						Nav
+======================== */
+
+nav {
+	background-color: #23242A;
+	text-align: center;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
+
+nav ul {
+	display: inline-block;
+	height: 3.5em;
+	line-height: 3.75em;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav a {
+	color: white;
+	padding: 18px 1.5em;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+nav a:hover, .active {
+	background-color: #474952;
+	color: white;
+	text-decoration: none;
+}
+
+/* Dropdown menu */
+
+nav label {
+		display: none;
+		cursor: pointer;
+		-webkit-user-select: none;
+}
+
+nav input[type=checkbox] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+
+/* ========================
+					About
+======================== */
+
+#about img {
+	margin: 0 0 1em 2em;
+}
+
+#call, #register {
+	position: relative;
+	background-color: #2c2e35;
+	color: white;
+}
+
+#call:after, #register:after {
+	content: "";
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: 0.06;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+#call:after {
+	background-image: url(../img/bg-people.jpg);
+}
+
+#register:after {
+	background-image: url(../img/bg-people-2.jpg);
+	z-index: -100; /* temporary */
+}
+
+/* ========================
+					hackathon
+======================== */
+
+#hackathon .container {
+	padding: 0;
+	padding-top: 4em;
+}
+
+#hackathon .prize {
+	float: left;
+	margin-left: 10px;
+	min-height: 250px;
+}
+
+#hackathon .prize ul {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+#hackathon .prize.sponsor {
+	line-height: 275px;
+}
+
+/* ========================
+					program
+======================== */
+
+#program {
+	background: #FDFDFD;
+}
+
+#program .day {
+	background: #2c2e35;
+	padding: 0.7em;
+	color: white;
+	font-size: 1.33333em;
+}
+
+#program .day-2 {
+	margin-top: 5em;
+}
+
+#program .event-entity {
+	margin-bottom: 2em;
+	overflow: auto;
+}
+
+#program .event-entity .time {
+	font-size: 1.2em;
+	margin-bottom: .5em;
+}
+
+#program .event-entity .block-type {
+	text-align: center;
+	border-top: 1px solid #2c2e35;
+	border-left: 1px solid #2c2e35;
+	border-right: 1px solid #2c2e35;
+	color: #2c2e35;
+	background-color: #EEFCE1;
+	padding: .5em;
+	text-transform: uppercase;
+	font-size: 1.3em;
+}
+
+#program .event-entity .block-type.break {
+	border-bottom: 1px solid #2c2e35;
+	background-color: #FFE9E4;
+}
+
+#program .event-entity .block-type.break img {
+	vertical-align: middle;
+	width: 100px;
+}
+
+#program .speaker_entity {
+	overflow: auto;
+	border: 1px solid;
+	padding: 2em;
+	background: white;
+}
+
+#program .speaker_entity .profile {
+	text-align: center;
+	text-transform: uppercase;
+	float: left;
+	margin: 0 2em 1em 0;
+}
+
+#program .speaker_entity .co-presenter.profile {
+	width: 50%;
+	margin: 0 0 1em;
+}
+
+#program .speaker_entity .co-presenter .name {
+	margin-top: .5em;
+}
+
+#program .speaker_entity .name {
+	margin: 0;
+	font-weight: 500;
+	font-size: 1.8em;
+}
+
+#program .speaker_entity .talk {
+	text-align: left;
+}
+
+#program .speaker_entity .links {
+	font-weight: 100;
+}
+
+#program .speaker_entity h3 {
+	font-size: 1.4em;
+	margin-bottom: .8em;
+}
+
+#program .speaker_entity img {
+	float: left;
+	margin: 0 1.5em 1.5em 0;
+	width: 80px;
+	height: 80px;
+}
+
+#program .track {
+	width: 49.5%;
+	float: left;
+}
+
+#program .track:last-of-type {
+	float: right;
+}
+
+#program .track:last-of-type .block-type{
+	background-color: #F0F2F7;
+}
+
+.speaker_entity .talk_abstract {
+	display: none;
+	clear: both;
+}
+
+.speaker_entity.expanded .talk_abstract {
+	display: block;
+}
+
+#program .keynote.event-entity .block-type {
+	background-color: #FFFDE4;
+}
+
+#program .keynote.event-entity .profile {
+	float: left;
+	margin-right: 2em;
+}
+
+#program .keynote.event-entity .speaker_entity {
+	min-height: 0;
+}
+
+#program .keynote.event-entity .keynote-talk_abstract {
+	margin-top:.5em;
+}
+
+button.expand {
+	background: #00A2CA;
+	color: white;
+	border: none;
+	outline-width: 0px;
+	outline: none;
+	padding: .3em .5em;
+}
+
+.expanded button.expand {
+	background: #E03030;
+}
+
+.pre {
+	margin:1em 0;
+	clear: both;
+}
+
+.expanded .pre {
+	display: none;
+}
+
+.snack-sponsor {
+	max-height: 50px;
+}
+
+
+/* ========================
+					Chicago
+======================== */
+
+#chicago {
+	position: relative;
+	height: 550px;
+	background-image: url(../img/chicago-2.jpg);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+
+#chicago a {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: white;
+}
+
+
+/* ========================
+					Location
+======================== */
+
+#location .location_description {
+	margin-bottom: 3em;
+}
+
+#location .location_description img {
+	width: 350px;
+	float: left;
+	margin: 0 1.5em 1.5em 0;
+}
+
+#location .venue_hotel h4 {
+	margin: 0 0 .5em;
+}
+
+#location .hotel a {
+	font-size: 1.2em;
+}
+
+#location .venue_hotel .hotel {
+	margin-bottom: .5em;
+}
+
+#location .venue_hotel .venue-info {
+	margin-bottom: 2em;
+}
+
+#location .venue_hotel .venue-info img {
+	float: left;
+	margin-right: 2em;
+}
+
+#location .venue_hotel .venue-info h3 {
+	margin-bottom: .5em;
+	text-align: left;
+}
+
+#location .venue_hotel a.button {
+	line-height: 3em;
+	width: 250px;
+	margin: 1.5em 0 0 0;
+	font-size: 1em;
+}
+
+
+/* ========================
+					Register
+======================== */
+
+#register .register_form  {
+	float: left;
+	margin-right: 4%;
+	text-align: center;
+	border: 1px solid #c4c9d7;
+	color: #2c2e35;
+}
+
+#register .register_form.roost_jquery {
+	margin-right: 0;
+}
+
+#register .roost, #register .jquery {
+	width: 28%;
+}
+
+#register .roost_jquery {
+	width: 35%;
+}
+
+#register .register_form .header {
+	background-color: #f8faff;
+	line-height: 3em;
+	font-size: 2em;
+}
+
+#register .register_form .header img {
+	vertical-align: middle;
+}
+
+#register .register_form .subheader {
+	line-height: 3em;
+	background-color: #f8faff;
+	border-bottom: 1px solid #c4c9d7;
+	margin-bottom: 1em;
+	font-size: 1.2em;
+}
+
+#register .register_form .description {
+	text-align: left;
+}
+
+#register .register_form .promocode  {
+	margin: 0 1.2em;
+}
+
+#register .register_form .promocode input {
+	border: 1px solid #c4c9d7;
+	padding: 0;
+	width: 100%;
+	display: block;
+	line-height: 2.5em;
+	text-align: center;
+}
+
+#register .register_form .button {
+	margin: 1em auto;
+	border: none;
+	width: 88%;
+	color: white;
+	position: relative;
+	z-index: 1;
+	background: #19a2c9;
+	line-height: 2.6em;
+	text-align: center;
+	border-bottom: 6px solid #1688A8;
+	outline:none;
+	text-transform: uppercase;
+}
+
+#register .register_form .select_ticket {
+	line-height: 2em;
+	text-align: right;
+}
+
+#register .register_form .select_ticket .price {
+	float: left;
+	font-size: 1.15em;
+	font-weight: 700;
+}
+
+#register .ticket-details {
+	background-color: #f6f6f6;
+	padding: .5em 1em;
+	margin: 0 1em 1em;
+	overflow: auto;
+}
+
+#register .ticket-details.disabled {
+	color: #999999;
+}
+
+/* ========================
+					Sponsors
+======================== */
+
+#sponsors h2 {
+	text-align: center;
+	margin-top: 2em;
+	clear: left;
+}
+
+#sponsors .sponsor-detail {
+	margin: 1em 1em 2em 1em;
+	clear: left;
+}
+
+#sponsors .sponsor-detail .sponsor-info.center {
+	text-align: center;
+}
+
+#sponsors .sponsor-detail .sponsor-info img {
+	float: left;
+	margin-right: 1em;
+	margin-bottom: 4em;
+}
+
+#sponsors .sponsor-detail .sponsor-info.center img {
+	float: none;
+	margin-right: inherit;
+	margin-bottom: inherit;
+}
+
+
+/* ========================
+					Footer
+======================== */
+
+footer {
+	background-color: #2c2e35;
+	color: white;
+	text-align: center;
+	margin-top: 5em;
+	padding: 2em 0;
+}
+
+
+/* ========================
+			Media Queries
+======================== */
+
+@media only screen and (max-width: 1024px) {
+
+	.container {
+		margin: 0 2em;
+	}
+
+	nav a {
+		padding: 16px 1em;
+	}
+
+	#hackathon .prize {
+		float: none;
+		min-height: inherit;
+	}
+
+	#hackathon .prize.sponsor {
+		line-height: inherit;
+		padding: 1em;
+	}
+
+}
+
+@media only screen and (max-width: 875px) {
+
+	#register .register_form {
+		margin: 0 0 2em;
+	}
+
+	#register .roost, #register .jquery {
+		width: 48%;
+	}
+
+	#register .jquery {
+		float: right;
+	}
+
+	#register .roost_jquery {
+		width: 99.7%;;
+	}
+
+	#sponsors .sponsor_entity {
+		min-height: 140px;
+	}
+
+}
+
+@media only screen and (max-width: 785px) {
+
+	header {
+		height: 15.5em;
+	}
+
+	header #logo {
+		width: 23em;
+		margin: auto;
+		padding-top: 5em;
+	}
+
+	h1, #subheader h1 {
+		font-size: 2.5em;
+	}
+
+	section h3 {
+		font-size: 1.4em;
+	}
+
+	section .container {
+		padding: 5em 0;
+	}
+
+	header h2 {
+		font-size: 2.3em;
+		letter-spacing: 1px;
+	}
+
+	header h3 {
+		width: 100%;
+		font-size: 1.6em;
+	}
+
+	header .button {
+		font-size: 1.3em;
+		width: 260px;
+	}
+
+	nav .container {
+		margin: 0;
+	}
+
+	nav ul {
+		display: none;
+		width: 100%;
+	}
+
+	nav a {
+		display: block;
+		padding: 0 1.3em;
+	}
+
+	nav ul li {
+		float: none;
+		text-align: left;
+		background-color: #2c2e35;
+		border-top: 1px solid #474952;
+	}
+
+	nav a:hover {
+		color: white;
+		text-decoration: none;
+	}
+
+	nav label {
+		display: block;
+		min-height: 3.8em;
+	}
+
+	nav label:after {
+		background-image: url("../img/menu-more.png");
+		content: '';
+		position: absolute;
+		right: .65em;
+		top: .65em;
+		font-size: 1.8em;
+		width: 23px;
+		height: 19px;
+	}
+
+	nav input[type=checkbox]:checked ~ ul {
+		display:block;
+	}
+
+	#call .button {
+		font-size: 1.3em;
+	}
+
+	#program .track, #program .track:last-of-type {
+		float: none;
+		width: 100%;
+	}
+
+	#program .track:last-of-type {
+		margin-top: 1em;
+	}
+
+	#program .speaker_entity {
+		min-height: inherit;
+	}
+
+}
+
+@media only screen and (max-width: 700px) {
+
+	#sponsors .gold_columns .column,
+	#sponsors .platinum_columns .column,
+	#sponsors .diamond_columns .column,
+	#sponsors .gold_columns .gold_centered {
+		width: 100%;
+		margin: inherit;
+	}
+
+	#sponsors .silver_columns .column {
+		width: 50%;
+	}
+
+}
+
+@media only screen and (max-width: 610px) {
+
+	header h2 {
+		font-size: 2em;
+		margin-bottom: 0;
+	}
+
+	header .button {
+		width: 48%;
+		margin: 1em 0;
+	}
+
+	header .call_to_action {
+		position: static;
+	}
+
+	#about .container {
+		padding-top: 4em;
+	}
+
+	#call .button {
+		float: none;
+		width: 100%;
+		margin: 0 0 1em;
+		padding: 0;
+	}
+
+	#location .venue_hotel a.button {
+		width: 100%;
+	}
+
+	#location .venue_hotel .venue-info .image {
+		height: 10em;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#location .venue_hotel .venue-info img {
+		width: 100%;
+		bottom: 0;
+		position: absolute;
+		margin-bottom: 2em;
+	}
+
+	#register .register_form {
+		width: 99%;
+		float: none;
+	}
+
+	#program .speaker_entity {
+		padding: 1em;
+	}
+
+	#sponsors .sponsor_entity {
+		min-height: 130px;
+	}
+
+}
+
+@media only screen and (max-width: 545px) {
+
+	.container {
+		margin: 0 1em;
+	}
+
+	header h2 {
+		font-size: 1.8em;
+		letter-spacing: 0;
+	}
+
+	#about img {
+		width: 150px;
+	}
+
+	#sponsors .sponsor-detail .sponsor-info p {
+		clear: left;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	#program .speaker_entity .keynote.profile {
+		float: none;
+		margin: 0;
+	}
+
+	#sponsors .sponsor_entity {
+		min-height: inherit;
+	}
+
+	section .container {
+		padding: 2em 0;
+	}
+
+	header #logo {
+		width: 18em;
+	}
+
+	#subheader .container {
+		padding-top: 5em;
+	}
+
+	h1, #subheader h1 {
+		font-size: 2em;
+	}
+
+}
+
+@media only screen and (max-width: 435px) {
+
+	header h2:first-of-type {
+		display: none;
+	}
+
+	header h2:last-of-type {
+		display: block;
+	}
+
+	header .button {
+		width: 100%;
+		float: none;
+	}
+
+	#about .container {
+		padding-top: 3em;
+	}
+
+	#about img {
+		width: 110px;
+		margin-left: 1em;
+	}
+
+	#program .speaker_entity .profile {
+		float: none;
+		display: block;
+		margin-right: 0;
+	}
+
+	#sponsors .silver_columns .column {
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+	header #logo {
+		width: 100%;
+	}
+}
