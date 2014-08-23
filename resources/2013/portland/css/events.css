@@ -1,0 +1,901 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+	.clearfix {
+		clear: both;
+	}
+	.right {
+		float: right;
+	}
+	.breathing-room {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.remove-bottom {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+	#content .black {
+		background: url('../img/dark-grey-tile.png') repeat;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		color: #ccc;
+	}
+	#content .black a {
+		color: #00b1ff;
+	}
+	#content .black a:hover {
+		text-decoration: none;
+	}
+	#content .black h1 {
+		color: white;
+		text-shadow: 0 0 4px rgba(0, 0, 0, 0.85);
+	}
+	.blue {
+		color: #105e94;
+	}
+	.orange {
+		color: #d18f4f;
+	}
+	.white {
+		color: white;
+	}
+	button.expand {
+		background: #0769AD;
+		color: #fff;
+		border: 1px solid #fff;
+		font-weight: bold;
+		-webkit-border-radius: 5px/10px;
+		border-radius: 5px/10px;
+		margin-right: 5px;
+		width: 24px;
+		height: 24px;
+		font-size: 16px;
+		text-align: center;
+		padding: 2px;
+		box-sizing:border-box;  
+		-moz-box-sizing:border-box;  
+		-webkit-box-sizing:border-box;
+		outline: none;
+	}
+
+	body {
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		background: #f8f8f8;
+	}
+	.header.full {
+		background: url('../img/mapimage_black@2x.jpg') no-repeat;
+		background-size: 2000px 700px;
+		/*background-size: 2654px 640px;*/
+		height: 640px;
+		width: 100%;
+		background-position: center;
+		text-align: center;
+		padding-bottom: 25px;
+		padding-top: 25px;
+		clear: both;
+	}	
+		#head-content #logo {
+			width: 50%;
+			margin: 0 auto;
+			margin-bottom: 55px;
+		}
+			#logo img {
+				max-width: 100%;
+			}
+		
+		/*#logo {
+			background: url('../img/logo@2x.png') no-repeat;
+			background-size: 519px 314px;
+			width: 519px;
+			height: 314px;
+			margin: 0 auto;
+			margin-bottom: 55px;
+		}*/
+		.header.full h2 {
+			font-size: 28px;
+			color: #00b1ff;
+			text-shadow: 0 1px 0px rgba(0,0,0,0.75), 0 2px 3px rgba(0,0,0,0.65), 0 4px 8px rgba(0,0,0,0.35);
+			font-weight: bold;
+		}
+		.header.full h1 {
+			font-size: 42px;
+			color: white;
+			text-shadow: 0 2px 3px rgba(0,0,0,0.75);
+			margin-bottom: 100px;
+		}
+		.setout {
+			background: #333333;
+			box-shadow: 0 0 28px 10px #333333;
+			width: 384px;
+			padding: 22px 20px 20px 20px;
+			margin: 0 auto;
+			height: 110px;
+			display: block;
+			margin-bottom: 70px;
+		}
+		.button.huge {
+			font-size: 250%;
+			padding: 20px 100px;
+			float: none;
+			box-shadow: 0 3px 6px rbga(0,0,0,0.5), 0 0 5px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.45), inset 0px -1px 0px rgba(255, 255, 255, 0.45), inset 1px 0px 0px rgba(255, 255, 255, 0.45), inset -1px 1px 0px rgba(255, 255, 255, 0.45);
+		}
+		#nav {  
+			  height: 40px;  
+			  width: 100%;  
+			  background: #333;  
+			  font-size: 14pt;
+			  font-weight: bold;
+			  position: relative;
+			  z-index: 100;
+		}  
+		#nav ul {  
+			  padding: 0;  
+			  margin: 0 auto;  
+			  width: 767px;  
+			  height: 40px;  
+		}  
+			#nav li {  
+				  display: inline;  
+				  float: left;  
+			}
+				#nav li.right {
+					float: right;
+				}
+			#nav a {  
+				  color: #fff;  
+				  display: inline-block;  
+				  width: 127px;  
+				  text-align: center;  
+				  text-decoration: none;  
+				  line-height: 40px;
+			}
+			#nav li a {  
+				  border-right: 1px solid #666;  
+				  box-sizing:border-box;  
+				  -moz-box-sizing:border-box;  
+				  -webkit-box-sizing:border-box;
+				  transition: all 0.3s linear;
+				  -webkit-transition: all 0.3s linear;
+				  -moz-transition: all 0.3s linear;
+				  -o-transition: all 0.3s linear;
+			}  
+				#nav a.buy-btn {
+						background: #d18f4f;
+						transition: all 0.3s linear;
+						-webkit-transition: all 0.3s linear;
+						-moz-transition: all 0.3s linear;
+						-o-transition: all 0.3s linear;
+					}
+					#nav a.buy-btn:hover {
+						background: #cc8540;
+						transition: all 0.1s linear;
+						-webkit-transition: all 0.1s linear;
+						-moz-transition: all 0.1s linear;
+						-o-transition: all 0.1s linear;
+					}
+			#nav li:first-child a {
+				border-left: 1px solid #666;
+			}
+			#nav li:last-child a {  
+				  border-right: 0;  
+			}
+			#nav a:hover, #nav a:active {  
+				  background: rgba(255,255,255,0.10); 
+				  transition: all 0.1s linear;
+				  -webkit-transition: all 0.1s linear;
+				  -moz-transition: all 0.1s linear;
+				  -o-transition: all 0.1s linear;
+			}
+			#nav a#pull {  
+				  display: none;  
+			}      
+		#content {
+			float: none;
+			width: auto;
+		}
+			a {
+				color: #0769AD;
+			}
+			#content h1 {
+				color: #105e94;
+				font-size: 48px;
+				margin-left: 10px;
+				line-height: 50px;
+			}
+			#content h2 {
+				font-weight: normal;
+				font-size: 30px;
+				line-height: 36px;
+				margin-bottom: 20px;
+			}
+			#content h3 {
+				line-height: 28px;
+			}
+			#content figure.left, #content figure.right {
+				max-width: 50%;
+				margin-bottom: 10px;
+			}
+			.column, .columns {
+				padding: 0px;
+			}
+			.sidebar {
+				display: inline-block !important;
+				padding: 25px;
+				background: rgba(0,0,0,0.05);
+				border-radius: 5px;
+			}
+			#map, #map2 {
+				height: 160px;
+			}
+			iframe {
+				border: none;
+				padding: 0px;
+			}
+			.legal {
+				font-size: 10px;
+				line-height: 14px;
+			}
+			#callforpapers .button.large {
+				margin-bottom: 20px;
+			}
+
+		#intro {
+			padding-bottom: 0;
+		}
+
+		#training p.training {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		#training img.left.noborder {
+			padding-right: 20px;
+			position: relative;
+			top: -10px;
+			left: 0px;
+		}
+		#training p {
+			padding-top: 10px;
+		}
+		#training ul.bottom-margined {
+			margin-bottom: 23px;
+		}
+	#tickets h1 {
+		font-size: 48px;
+		padding-bottom: 10px;
+		line-height: 52px;
+	}
+	#tickets iframe {
+		height: 380px;
+	}
+		#tickets .legal {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+	#closing {
+		background: url('../img/gauze.png') repeat;
+		font-size: 12px;
+	}
+	#closing.breathing-room {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	#closing a {
+		text-decoration: none;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		border-bottom: 1px dotted #065791;
+		color: #065791;
+	}
+	#closing a:hover {
+		color: black;
+		border-bottom: 1px dotted black;
+	}
+	#closing h3 {
+		font-size: 16px;
+	}
+	#closing p {
+		line-height: 16px;
+	}
+	#closing ul {
+		list-style: none;
+	}
+	#closing li {
+		margin-bottom: 5px;
+	}
+	#closing li:last-child {
+		margin-bottom: 0px;
+	}
+	#closing #footer-sponsors a {
+		border: none;
+		text-decoration: underline;
+	}
+	#footer {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+		#footer a:hover {
+			text-decoration: none;
+		}
+		.copyright {
+			float: left;
+		}		
+		img.mt-logo {
+			width: 29px;
+			height: 13px;
+			position: relative;
+			top: -1px;
+			left: 0px;
+		}
+		#footer .legal {
+			margin-bottom: 0px;
+			line-height: 16px;
+		}
+			#footer .legal a {
+				text-decoration: none;
+				color: #065791;
+			}
+			#footer .legal a:hover {
+				color: #333;
+			}
+		#footer .right .foot-nav {
+			font-size: 14px;
+			margin-bottom: 0px;
+			position: relative;
+			top: 10px;
+			left: 0px;
+		}
+			#footer .right .foot-nav li {
+				display: inline-block;
+				margin-right: 20px;
+				position: relative;;
+				top: -8px;
+				left: 0px;
+			}
+			#footer .right .foot-nav li:last-child {
+				margin-right: 0px;
+			}
+
+		#program {
+			margin: 0 auto;
+		}
+
+		#program table {
+			width: 100%;
+			margin: 0;
+			border-collapse: collapse;
+			border-spacing: 0;
+			text-shadow: 0 1px rgba(255,255,255,.5);
+			background: #0769AD;
+		}
+
+		#program caption {
+			background: #0769AD;
+			padding: 16px;
+			
+		}
+
+		#program caption h2 {
+			margin: 0;
+			color: #fff;
+		}
+
+		#program th,
+		#program td {
+			padding: 16px;
+			border: 1px solid rgba(255,255,255,.2);
+			-webkit-transition: all linear 0.15s;
+			-moz-transition: all linear 0.15s;
+			-o-transition: all linear 0.15s;
+			transition: all linear 0.15s;
+		}
+
+		#program thead th {
+			border: 1px solid transparent;
+		}
+
+		#program td table td {
+			padding: 0;
+			border: none;
+		}
+
+		#program td table td.row-stack-top {
+			border-bottom: 1px solid #D0C8BD;
+			padding-bottom: 10px;
+		}
+
+		#program td table td.row-stack-bot {
+			padding-top: 10px;
+		}
+
+		#program th {
+			vertical-align:middle;
+			font-size: 14px;
+			color: #fff;
+			text-shadow: 0 -1px rgba(0,0,0,.5);
+			background-color: #333;
+		}
+
+		#program .col-time {
+			width: 10%;
+		}
+
+		#program .col-track {
+			width: 45%;
+		}
+
+		#program thead th {
+			color: #fff;
+		}
+
+		#program tbody td.expanded,
+		#program tbody td:hover {
+			background-color: #FFF;
+		}
+
+		#program tbody tr:nth-child(even) {
+			background-color: rgba(255,255,255,.7); 
+		}
+
+		#program tbody tr:nth-child(odd) {
+			background-color: rgba(255,255,255,.8);
+		}
+
+		#program .inactive {
+			background-color:#ccc;
+		}
+
+		#program h4 {
+			font-size: 18px;
+			line-height: 20px;
+			margin: 0 0 4px;
+			color: #333;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-weight: normal;
+		}
+		.twttr {
+			color: #566F72;
+		}
+		.twttr:hover {
+			text-decoration: underline;
+		}
+		#program h5 {
+			font-size: 14px;
+			line-height: 16px;
+			margin: 0 0 8px;
+			color: #666;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-weight: normal;
+			text-decoration: underline;
+			cursor: pointer;
+		}       
+		#program h5:hover {
+			text-decoration: none;
+		}
+
+		#program h5 a {
+			text-decoration: none;
+		}
+
+		#program h5 i {
+			margin-left: 5px;
+		}
+
+		#program h5 i:hover {
+			margin-left: 5px;
+			color: #0769AD;
+		}
+
+		#program a {
+			font-size: 14px;
+		}
+
+		#program .two-col {
+			text-align: center;
+		}
+
+		#program .two-col-row {
+			cursor: default !important;
+		}
+
+		#program img {
+			margin:0 0 -10px 0;
+		}
+
+		#program tbody tr.now {
+			-webkit-transform: scale(1.1);
+			-moz-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			transform: scale(1.1);
+			background-color: #FFF;
+			-webkit-box-shadow: 0 10px 10px rgba(0,0,0,.5);
+			-moz-box-shadow: 0 10px 10px rgba(0,0,0,.5);
+			-o-box-shadow: 0 10px 10px rgba(0,0,0,.5);
+			box-shadow: 0 10px 10px rgba(0,0,0,.5);
+			-webkit-transition: all linear 0.15s;
+			-moz-transition: all linear 0.15s;
+			-o-transition: all linear 0.15s;
+			transition: all linear 0.15s;
+			box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+		}
+
+		#program tbody tr.now th {
+			background-color: #365052;
+		}
+
+		#program tbody tr td {
+			position: relative;
+			vertical-align: middle;
+		}
+
+		#program tbody tr td.row-stack-top {
+			border: 0;
+			border-right: 1px solid #D0C88D;
+		}
+
+		#program td aside {
+			position: absolute;
+			background-color: #FFF;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 13px;
+			line-height: 18px;
+			margin: 16px 0 0 -16px;
+			z-index: 50;
+			background-color: #0769AD;
+			text-shadow: none;
+			color: #CFDCDD;
+			-webkit-transition: all linear 0.15s;
+			-moz-transition: all linear 0.15s;
+			-o-transition: all linear 0.15s;
+			transition: all linear 0.15s;
+			overflow: hidden;
+			padding: 0 16px;
+			opacity: 0;
+			height: 0;
+		}
+		#program td aside ul {
+			margin: 0.3em 0 0.3em 1em;
+		}
+		#program td aside ul li {
+			padding: 3px 0 0 15px;
+		}
+
+		#program tbody tr.now td aside {
+			z-index: 999999;
+			position: relative;
+			background-color: #FFF;
+			color: #000;
+		}
+
+		#program td.expanded aside,
+		#program tbody tr.now td aside {
+			padding: 16px;
+			opacity: 1;
+			height: auto;
+		}
+
+		#speakers .speaker {
+			margin-bottom: 1.5em;
+			border: 2px solid #0769AD;
+			padding: 1em;
+			-webkit-border-radius: 10px/20px;
+			border-radius: 10px/20px;
+			min-height: 125px;
+			background-color: rgb(203, 224, 238);
+			-webkit-transition: all linear 0.50s;
+			-moz-transition: all linear 0.50s;
+			-o-transition: all linear 0.50s;
+			transition: all linear 0.50s;
+			position: relative;
+		}
+
+		#speakers .speaker button.expand {
+			display: block;
+			position: absolute;
+			right: 9px;
+			top: 68px;
+			
+		}
+
+		#speakers .speaker.expanded {
+			background-color: #fff !important;
+		}
+
+		#speakers .speaker:nth-child(even) {
+			background-color: rgb(178, 210, 230);
+		}
+
+		#speakers .column:nth-child(even) .speaker {
+			background-color: rgb(178, 210, 230);
+		}
+		#speakers .column:nth-child(even) .speaker:nth-child(even) {
+			background-color: rgb(203, 224, 238);
+		}
+
+		#speakers .speaker:last-child {
+			/*margin-bottom: 0;*/
+		}
+
+		#speakers .speaker img {
+			float: right;
+			margin: 0 0 0 16px;
+			-webkit-border-radius: 5px/10px;
+			border-radius: 5px/10px;
+			background-clip: padding-box;
+			width: 75px;
+			height: 75px;
+			
+		}
+		
+		#speakers .speaker h4 {
+			margin-bottom: .5em;
+
+		}
+		#speakers .speaker h4 a {
+			color: #000;
+			text-decoration: none;
+			font-size: 1.8em;
+		}
+		#speakers .speaker h4 a:hover {
+			text-decoration: underline;
+		}
+
+		#speakers .speaker h5 {
+			font-size: 1.2em;
+		}
+
+		#speakers .speaker h5 a {
+			text-decoration: none;
+		}
+
+		#speakers .speaker h5 a:hover {
+			text-decoration: underline;
+		}
+
+		#speakers .speaker p {
+			clear: both;
+			overflow: hidden;
+			margin-bottom: -16px;
+			-webkit-transition: all linear 0.50s;
+			-moz-transition: all linear 0.50s;
+			-o-transition: all linear 0.50s;
+			transition: all linear 0.50s;
+			max-height: 0;
+		}
+
+		#speakers .speaker.expanded p {
+			max-height: 999px;
+			margin-bottom: 0;
+		}
+
+		#sponsors h3 {
+			text-align: center;
+		}
+
+		#content .sponsor-details {
+			float: left;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		#content .sponsor-details h1 {
+			margin: 0;
+			line-height: 24px;
+		}
+
+		#content .sponsor-details h1 a {
+			font-size: 24px;
+			text-decoration: none;
+			margin-left: 0;
+		}
+
+		#content .sponsor-details p {
+			margin: 0;
+		}
+
+		#content .sponsor-details .sponsor-logo {
+			width: 154px;
+			float: left;
+			margin: 2.5em;
+		}
+
+/* #Wufoo restyles
+================================================== */
+		#wufooFormz7x0w7 .wufoo .info h2 {
+			display: none !important;
+		}
+		
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.sidebar {
+			width: 100% !important;
+		}
+		.header.full {
+			height: 540px;
+		}
+			#head-content #logo {
+				width: 90%;
+				margin-bottom: 45px;
+			}
+			#content h1 {
+				line-height: 50px;
+			}
+		#nav {   
+	        height: auto;  
+	    }  
+	    #nav ul {  
+	        width: 100%;  
+	        display: block;  
+	        height: auto;  
+	    }  
+	    #nav li {  
+	        width: 50%;  
+	        float: left;  
+	        position: relative;  
+	    }  
+	    #nav li a {  
+	        border-bottom: 1px solid #666;  
+	        border-right: 1px solid #666;  
+	    }  
+	    #nav a {  
+	        text-align: left;  
+	        width: 100%;  
+	        text-indent: 25px;  
+	    } 
+		#nav li:nth-child(3) a {
+			border-left: 1px solid #666;
+		} 
+	    iframe {
+			  height: 460px;
+	    }
+	    
+		.sidebar {
+			  padding: 25px !important;
+	    }
+	}
+	
+	/*@media screen and (max-width: 600px) {
+		#nav {   
+	        height: auto;  
+	    }  
+	    #nav ul {  
+	        width: 100%;  
+	        display: block;  
+	        height: auto;  
+	    }  
+	    #nav li {  
+	        width: 50%;  
+	        float: left;  
+	        position: relative;  
+	    }  
+	    #nav li a {  
+	        border-bottom: 1px solid #576979;  
+	        border-right: 1px solid #576979;  
+	    }  
+	    #nav a {  
+	        text-align: left;  
+	        width: 100%;  
+	        text-indent: 25px;  
+	    }  
+	}*/
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#content h1, #tickets h1 {
+			line-height: 50px;
+		}
+		#content h2 {
+			font-size: 28px;
+			line-height: 32px;
+		}
+		#nav {  
+	        border-bottom: 0;  
+	    }  
+	    #nav ul {  
+	        display: none;  
+	        height: auto;  
+	    }  
+	    #nav a#pull {  
+	        display: block;  
+	        background-color: #333;  
+	        width: 100%;  
+	        position: relative;  
+	    }  
+	    #nav a#pull:after {  
+	        content:"";  
+	        background: url('../img/nav-icon.png') no-repeat; 
+	        background-size: 20px 20px; 
+	        width: 30px;  
+	        height: 30px;  
+	        display: inline-block;  
+	        position: absolute;  
+	        right: 15px;  
+	        top: 10px;  
+	    } 
+	    .header.full h1 {
+			  margin-bottom: 80px;
+			  line-height: 46px;
+	    }
+	    .setout {
+			  width: 285px;
+			  height: 190px;
+			  margin-bottom: 50px;
+	    }
+	    .button.huge {
+			font-size: 200%;
+			padding: 10px 50px;
+		}
+		#content figure.left {
+			margin-right: 15px;
+		}
+		#content figure.right {
+			margin-left: 15px;
+		}
+		iframe {
+			width: 300px !important;
+			overflow: scroll;
+		}
+		#tickets.breathing-room {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		
+		.sidebar {
+			  padding: 25px !important;
+	}
+
+}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
