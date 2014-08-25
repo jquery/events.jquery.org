@@ -1,0 +1,23 @@
+.modal {
+  display: none;
+  width: 900px;
+  background: #EAEAEA;
+  padding: 15px 30px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background: url(../img/close.png) no-repeat 0 0;
+}
