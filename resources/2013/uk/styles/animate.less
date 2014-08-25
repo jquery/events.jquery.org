@@ -1,0 +1,1426 @@
+/**
+    Wonderland stage
+**/
+
+.wonderland {
+    position: relative;
+    overflow: hidden;
+    height: 430px;
+    width: 100%;
+    background: #e7ebee;
+
+
+    .stage {
+        height: 430px;
+        position: relative;
+        left: 50%;
+
+        .stage-inner {
+            position: relative;
+
+            height: 430px;
+            width: 2000px;
+            margin-left: -1000px;
+            background: #e7ebee url('../sprites/background.jpg') no-repeat center -110px;
+
+            .top-center-transform-origin();
+        }
+
+        div, a {
+            position: absolute;
+            .force-redraw();
+        }
+    }
+}
+
+
+// Responsive resize transitions for js + webkit browsers
+
+.js {
+    .wonderland {
+        -webkit-transition: height 1s ease-in-out;
+
+        .stage .stage-inner {
+            -webkit-transition: -webkit-transform 1s ease-in-out;
+        }
+    }
+
+    .scene .cheshire-cat div {
+        .transition-property(opacity);
+        .duration(1s);
+    }
+}
+
+
+// Responsive sizes for the stage
+
+@media (min-width: 980px) and (max-width: 1199px) {
+    .wonderland {
+        height: 340px;
+
+        .stage-inner{
+            .scaled(0.8);
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .wonderland {
+        height: 255px;
+
+        .stage-inner{
+            .scaled(0.6);
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .wonderland {
+        height: 165px;
+
+        .stage-inner{
+            .scaled(0.4);
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .wonderland {
+        height: 110px;
+
+        .stage-inner{
+            .scaled(0.26);
+        }
+    }
+}
+
+/**
+    Sprites definition
+**/
+
+.wave-front           { .sprite('wave-front', 3000, 215) }
+.wave-back            { .sprite('wave-back', 3000, 215) }
+.cloud                { .sprite('cloud', 134, 146) }
+.tree                 { .sprite('tree', 516, 672) }
+.boating-rabbit       { .sprite('boating-rabbit', 473, 319) }
+.fishy                { .sprite('fishy', 112, 350) }
+.birdy                { .sprite('birdy', 71, 224) }
+.walrus               { .sprite('walrus', 162, 215) }
+.tweedle              { .sprite('tweedle', 168, 250)}
+.dodo                 { .sprite('dodo', 185, 197) }
+.flamingo             { .sprite('flamingo', 153, 268) }
+.hedgehog-hoop        { .sprite('hedgehog-hoop', 61, 61) }
+.hedgehog-scared      { .sprite('hedgehog-scared', 54, 35) }
+.caddy-bag            { .sprite('caddy-bag', 153, 245) }
+.mad-hatter           { .sprite('mad-hatter', 137, 138) }
+.mad-hatter-leg-back  { .sprite('mad-hatter-leg-back', 40, 30) }
+.mad-hatter-leg-front { .sprite('mad-hatter-leg-front', 47, 46) }
+.dormouse             { .sprite('dormouse', 103, 140)}
+.march-hare           { .sprite('march-hare', 155, 164) }
+.march-hare-leg-back  { .sprite('march-hare-leg-back', 30, 24) }
+.march-hare-leg-front { .sprite('march-hare-leg-front', 21, 33) }
+.sign-jquery          { .sprite('sign-jquery', 329, 161) }
+.sign-oxford          { .sprite('sign-oxford', 329, 165) }
+
+.sign-ticket      { .size(143, 95); }
+.sign-ticket span { .sprite('sign-ticket', 143, 95) }
+
+.sign-scene {
+    &.sign-white-rabbit div { .sprite('sign-white-rabbit', 127, 90) }
+    &.sign-tweedles div     { .sprite('sign-tweedles', 127, 90) }
+    &.sign-croquet div      { .sprite('sign-croquet', 127, 90) }
+    &.sign-tea-party div    { .sprite('sign-tea-party', 127, 90) }
+    &.sign-jabberwocky div  { .sprite('sign-jabberwocky', 127, 90) }
+}
+
+.cheshire-cat {
+    .cheshire-cat-head { .sprite('cheshire-cat-head', 101, 72) }
+    .cheshire-cat-grin { .sprite('cheshire-cat-grin', 101, 72) }
+
+    &.cheshire-cat-a .cheshire-cat-body { .sprite('cheshire-cat-body-a', 159, 133) }
+    &.cheshire-cat-b .cheshire-cat-body { .sprite('cheshire-cat-body-b', 149, 134) }
+    &.cheshire-cat-c .cheshire-cat-body { .sprite('cheshire-cat-body-c', 141, 149) }
+}
+
+.jabberwocky {
+    .jabberwocky-body       { .sprite('jabberwocky-body', 601, 470) }
+    .jabberwocky-arm-back   { .sprite('jabberwocky-arm-back', 79, 65) }
+    .jabberwocky-arm-front  { .sprite('jabberwocky-arm-front', 93, 55) }
+    .jabberwocky-claw-back  { .sprite('jabberwocky-claw-back', 77, 83) }
+    .jabberwocky-claw-front { .sprite('jabberwocky-claw-front', 102, 109) }
+    .jabberwocky-flames     { .sprite('jabberwocky-flames', 210, 123) }
+    .jabberwocky-jaw        { .sprite('jabberwocky-jaw', 110, 92) }
+    .jabberwocky-teeth      { .sprite('jabberwocky-teeth', 91, 72) }
+    .jabberwocky-wing-back  { .sprite('jabberwocky-wing-back', 152, 140) }
+    .jabberwocky-wing-front { .sprite('jabberwocky-wing-front', 295, 137) }
+    .jabberwocky-skull      { .sprite('jabberwocky-skull', 219, 203) }
+}
+
+.teapot {
+    &.teapot-a {
+        .size(90, 230);
+        overflow: hidden;
+        .teapot-inner { .sprite('teapot-a', 90, 236); }
+        .tea { .sprite('tea-a', 14, 60); }
+    }
+    &.teapot-b {
+        .size(109, 178);
+        overflow: hidden;
+        .teapot-inner { .sprite('teapot-b', 109, 181); }
+        .tea { .sprite('tea-b', 11, 41); }
+    }
+    &.teapot-c {
+        .size(110, 250);
+        overflow: hidden;
+        .teapot-inner { .sprite('teapot-c', 110, 257); }
+        .tea { .sprite('tea-c', 22, 112); }
+    }
+}
+
+.island {
+    &.island-tweedles  { .sprite('island-tweedles', 446, 159) }
+    &.island-tea-party { .sprite('island-tea-party', 695, 250) }
+    &.island-croquet   { .sprite('island-croquet', 688, 166) }
+}
+
+.group {
+    .size(900, 440);
+}
+
+.layer {
+    .size(1100, 440);
+}
+
+
+/**
+    Default positions
+**/
+
+.wonderland {
+
+    .wave {
+        background-repeat: repeat-x;
+        left: -500px;
+        top: 480px;
+        .wave-surge();
+
+        &.wave-front {
+            margin-top: 50px;
+            .animation-duration(2s);
+        }
+        &.wave-back {
+            .animation-duration(2.4s);
+        }
+    }
+
+    .boating-rabbit{
+        .xy(320,480);
+    }
+
+    .fishy{
+        .xy(0,270);
+        .fishy-jump();
+    }
+
+    .fishy-left-right {
+        top: 150px;
+        .transition-property(top);
+        .duration(1s);
+    }
+
+    .birdy{
+        .xy(0,-260);
+        .birdy-sprite();
+        .transition-property(top);
+        .duration(2s);
+    }
+
+    .jabberwocky{
+        .xy(350, -800);
+        .transition-property(top);
+        .duration(1s);
+
+        .jabberwocky-body       { .xy(0,0); }
+        .jabberwocky-arm-back   {
+            .xy(170, 200);
+            .jabberwocky-arm-back-wiggle();
+        }
+        .jabberwocky-claw-back  {
+            .xy(-37, -5);
+            .jabberwocky-claw-back-wiggle();
+        }
+
+        .jabberwocky-arm-front  {
+            .xy(302, 191);
+            .jabberwocky-arm-front-wiggle();
+        }
+        .jabberwocky-claw-front {
+            .xy(-60, -15);
+            .jabberwocky-claw-front-wiggle();
+        }
+
+        .jabberwocky-wing-back  {
+            .xy(255, 38);
+            .jabberwocky-wing-flap();
+        }
+        .jabberwocky-wing-front {
+            .xy(318, 74);
+            .jabberwocky-wing-flap();
+            .animation-delay(0.05s);
+        }
+
+        .jabberwocky-head       {
+            .xy(-31, 72);
+            .jabberwocky-head-waggle();
+        }
+        .jabberwocky-flames     {
+            .xy(-100, 110);
+            .jabberwocky-flame-plume();
+        }
+        .jabberwocky-jaw        {
+            .xy(17, 125);
+            .jabberwocky-jaw-grind();
+        }
+        .jabberwocky-teeth      {
+            .xy(14, 150);
+            .jabberwocky-teeth-grind();
+        }
+
+    }
+
+    .sign-jquery {
+        .xy(830, -300);
+        .sign-drop();
+    }
+
+    .sign-oxford {
+        .xy(345, -300);
+        .animation-duration(4.1s);
+        .sign-drop();
+    }
+
+    .sign-ticket {
+        .xy(1450, -300);
+        margin-top: 38px;
+        .sign-drop();
+
+        &:hover span {
+            background-position: 0 -95px;
+            .ticket-shake();
+        }
+    }
+
+    .sign-scene {
+        .xy(220, 426);
+
+        // Margin top acts as display none for IE
+        margin-top: 1000px;
+        .transition-property(margin-top);
+        .delay(1.7s);
+        .duration(0s);
+
+        div {
+            .transition-property(-webkit-transform, -moz-transform, -o-transform, transform);
+            .easing(ease-in);
+            .duration(0.2s);
+            .scaled(0, 1);
+            .delay(1.5s);
+        }
+    }
+
+    .tree {
+        top: -190px;
+    }
+
+    .tree-left {
+        left: -600px;
+        .tree-left-slide();
+    }
+
+    .tree-right {
+        left: 2600px;
+        .mirrored();
+        .tree-right-slide();
+    }
+
+    .cloud {
+        top: -240px;
+        .cloud-drop();
+
+        &.cloud-a {
+            margin-top: 65px;
+            left: 730px;
+            .animation-duration(4.2s);
+        }
+        &.cloud-b {
+            left: 1100px;
+            .animation-duration(4.4s);
+        }
+        &.cloud-c {
+            margin-top: 60px;
+            left: 1180px;
+            .animation-duration(4.6s);
+        }
+    }
+
+    .walrus {
+        .xy(130, 265);
+    }
+
+    .dodo {
+        .xy(170, 175);
+    }
+    .flamingo {
+        .xy(450, 100);
+    }
+
+    .hedgehog-hoop {
+        .xy(335, 285);
+    }
+    .hedgehog-scared {
+        .xy(410, 315);
+        .hedgehog-shudder();
+    }
+
+    .caddy-bag {
+        .xy(600, 130)
+    }
+
+    .mad-hatter { .xy(150, 180); }
+    .mad-hatter-leg-back {
+        .xy(236, 286);
+        .mad-hatter-kick();
+        .animation-delay(0.1s);
+    }
+    .mad-hatter-leg-front {
+        .xy(212, 296);
+        .mad-hatter-kick();
+    }
+    .dormouse   { .xy(395, 135); }
+    .march-hare { .xy(600, 160); }
+    .march-hare-leg-back {
+        .xy(625, 291);
+        .march-hare-kick();
+        .animation-delay(0.3s);
+    }
+    .march-hare-leg-front {
+        .xy(648, 302);
+        .march-hare-kick();
+    }
+
+    .tweedle {
+        .tweedle-sprite();
+
+        &.tweedledee {
+            .xy(345, 110);
+        }
+        &.tweedledum {
+            .xy(515, 110);
+            .mirrored();
+            .animation-delay(-0.6s);
+        }
+    }
+
+    .teapot {
+        .transition-property(top);
+        .duration(1s);
+
+        .teapot-inner {
+            .teapot-bob();
+        }
+
+        .tea-filter {
+            height: 0;
+        }
+
+        &.teapot-a {
+            .xy(350, -480);
+            .delay(0.3s);
+            .tea-filter { .xy(12, 174); }
+            .teapot-inner {
+                .animation-delay(0.2s);
+            }
+        }
+        &.teapot-b {
+            .xy(532, -480);
+            .delay(0.2s);
+            .tea-filter { .xy(27, 142); }
+            .teapot-inner {
+                .animation-delay(0.7s);
+            }
+        }
+        &.teapot-c {
+            .xy(737, -480);
+            .delay(0.25s);
+            .tea-filter { .xy(78, 146); }
+        }
+    }
+
+    .island {
+        &.island-tweedles { .xy(300,310); }
+        &.island-croquet { .xy(105,310); }
+        &.island-tea-party { .xy(105,250); }
+    }
+
+    .layer {
+        &.layer-above { .xy(450, -480); }
+        &.layer-below { .xy(450, 480); }
+    }
+
+    .group {
+        .xy(100,480);
+    }
+}
+
+
+
+/**
+    Scene sprite positions
+**/
+
+.scene {
+
+    .wave{
+        top: 320px;
+    }
+
+    .tree-left{
+        left: 240px;
+    }
+
+    .tree-right{
+        left: 1250px;
+    }
+
+    .cloud {
+        top: -75px;
+    }
+
+    .sign-jquery, .sign-oxford, .sign-ticket {
+        top: -32px;
+    }
+
+    .boating-rabbit {
+        .xy(200,150);
+        .boat-sway();
+    }
+
+    .teapot {
+        .tea-filter {
+            width: 50px;
+            height: 100px;
+            overflow: hidden;
+            .transition-property(height);
+            .duration(0.7s);
+            .delay(5.5s);
+        }
+
+        .tea {
+            height: 0;
+            .transition-property(height);
+            .duration(0.3s);
+            .delay(0);
+        }
+    }
+
+    .layer {
+
+        &.layer-above {
+            top: 0;
+            .layer-drop();
+
+            // Hack for silly firefox bug
+            -moz-transform-style: flat;
+        }
+        &.layer-below {
+            top: 0;
+            .layer-bounce();
+        }
+    }
+
+    .group {
+        .group-drop();
+        .xy(100,480);
+    }
+
+    .cheshire-cat {
+        margin-top: 1000px;
+        .transition-property(margin-top);
+        .delay(7.3s);
+        .duration(0s);
+
+        div {
+            .transition-property(none);
+            opacity: 0;
+        }
+
+        .cheshire-cat-body { .delay(4s); }
+        .cheshire-cat-head { .delay(4.9s); }
+        .cheshire-cat-grin { .delay(5.8s); .duration(1.5s); }
+
+        &.cheshire-cat-a {
+            .xy(167, 352);
+
+            .cheshire-cat-body  {  }
+            .cheshire-cat-head, .cheshire-cat-grin {
+                .xy(88, -11);
+            }
+        }
+        &.cheshire-cat-b {
+            .xy(165, 308);
+
+            .cheshire-cat-body  {  }
+            .cheshire-cat-head, .cheshire-cat-grin {
+                .xy(100, 0);
+            }
+        }
+        &.cheshire-cat-c {
+            .xy(174, 332);
+
+            .cheshire-cat-body  {  }
+             .cheshire-cat-head, .cheshire-cat-grin {
+                .xy(84, -22);
+            }
+        }
+    }
+}
+
+.show-cheshire-cat() {
+    margin-top: 0;
+
+    div {
+        opacity: 1;
+        display: block;
+    }
+    .cheshire-cat-body { .delay(10s); }
+    .cheshire-cat-head { .delay(9s); }
+    .cheshire-cat-grin { .delay(8s); }
+}
+
+
+
+.flip-sign() {
+    margin-top: 0;
+    .delay(1.7s);
+
+    div {
+        .transition-property(-webkit-transform, -moz-transform, -o-transform, transform);
+        .easing(ease-out);
+        .scaled(1);
+        .delay(1.7s);
+    }
+}
+
+/**
+    Scene specific positions
+**/
+
+.scene-home{
+    .birdy{
+        .xy(0,-50);
+    }
+
+    .fishy-left-right {
+        top: 0;
+    }
+
+    .group.group-rabbit {
+        .group-bounce();
+        .xy(100,0);
+    }
+
+    .tree-right .cheshire-cat.cheshire-cat-a {
+        .show-cheshire-cat();
+    }
+
+    .sign-scene.sign-white-rabbit {
+        .flip-sign();
+    }
+}
+
+.scene-schedule{
+
+    .group.group-tweedles {
+        .group-bounce();
+        .xy(100,0);
+    }
+
+    .tree-right .cheshire-cat.cheshire-cat-b {
+        .show-cheshire-cat();
+    }
+
+    .sign-scene.sign-tweedles {
+        .flip-sign();
+    }
+}
+
+.scene-workshops {
+
+    .group.group-croquet {
+        .group-bounce();
+        .xy(100,0);
+    }
+
+    .tree-left .cheshire-cat.cheshire-cat-a {
+        .show-cheshire-cat();
+    }
+
+    .sign-scene.sign-croquet {
+        .flip-sign();
+    }
+}
+
+.scene-location {
+
+    .group.group-tea-party {
+        .group-bounce();
+        .xy(100,0);
+    }
+
+    .teapot {
+        .tea {
+            height: 100px;
+            .delay(1.6s);
+            .duration(0.7s);
+        }
+        &.teapot-a { .xy(350, -15); .delay(0.6s); }
+        &.teapot-b { .xy(532, -16); .delay(0.5s); }
+        &.teapot-c { .xy(737, -15); .delay(0.65s); }
+    }
+
+    .tree-right .cheshire-cat.cheshire-cat-c {
+        .show-cheshire-cat();
+    }
+
+    .sign-scene.sign-tea-party {
+        .flip-sign();
+    }
+}
+
+.scene-extras {
+
+    .jabberwocky {
+        .xy(350, 10);
+        .delay(0.1s);
+    }
+
+    .tree-left .cheshire-cat.cheshire-cat-b {
+        .show-cheshire-cat();
+    }
+
+    .sign-scene.sign-jabberwocky {
+        .flip-sign();
+    }
+}
+
+
+
+/**
+    Element animations
+**/
+
+
+/** Wave animations **/
+
+// Wave left/right
+
+.wave-left-right-frames() {
+    to {.translated(10, 0);}
+}
+
+@-webkit-keyframes wave-left-right {.wave-left-right-frames();}
+@-moz-keyframes wave-left-right {.wave-left-right-frames();}
+@-o-keyframes wave-left-right {.wave-left-right-frames();}
+@keyframes wave-left-right {.wave-left-right-frames();}
+
+.wave-left-right {
+    .animation(wave-left-right 7s ease-in-out -13.5s infinite alternate);
+}
+.wave-left-right.delayed {
+    .animation-delay(-11.5s);
+}
+
+
+// Wave up/down
+
+.wave-up-down-frames() {
+    to {.translated(0, 10);}
+}
+
+@-webkit-keyframes wave-up-down {.wave-up-down-frames();}
+@-moz-keyframes wave-up-down {.wave-up-down-frames();}
+@-o-keyframes wave-up-down {.wave-up-down-frames();}
+@keyframes wave-up-down {.wave-up-down-frames();}
+
+.wave-up-down {
+    .animation(wave-up-down 7s ease-in-out -3s infinite alternate);
+}
+.wave-up-down.delayed {
+    .animation-delay(-8s);
+}
+
+// Wave surging in
+
+.wave-surge-frames() {
+    0%   { top: 480px; }
+    50%  { top: 480px; }
+    100% { top: 320px; }
+}
+
+@-webkit-keyframes wave-surge { .wave-surge-frames(); }
+@-moz-keyframes wave-surge { .wave-surge-frames(); }
+@-o-keyframes wave-surge { .wave-surge-frames(); }
+@keyframes wave-surge { .wave-surge-frames(); }
+
+.wave-surge {
+    .animation(wave-surge, 1.4s ease-in-out 0s);
+}
+
+
+/** Fish animations **/
+
+// Fish left/right
+
+.fishy-left-right-frames() {
+    from {left: 900px;}
+    to {left: -200px;}
+}
+
+@-webkit-keyframes fishy-left-right {.fishy-left-right-frames;}
+@-moz-keyframes fishy-left-right {.fishy-left-right-frames;}
+@-o-keyframes fishy-left-right {.fishy-left-right-frames;}
+@keyframes fishy-left-right {.fishy-left-right-frames;}
+
+.fishy-left-right{
+    .animation(fishy-left-right 6.5s linear 0s infinite);
+}
+
+// Fish jump
+
+.fishy-jump-frames() {
+    0% {
+        .rotated(90deg);
+        left: 0;
+    }
+    40% {
+        .rotated(-54deg);
+        left: 255px;
+    }
+    50% {
+        .rotated(-90deg);
+        left: 300px;
+    }
+    50.01% {
+        .rotated(90deg);
+        left: 0;
+    }
+    100% {
+        .rotated(90deg);
+        left: 0;
+    }
+}
+
+@-webkit-keyframes fishy-jump {.fishy-jump-frames();}
+@-moz-keyframes fishy-jump {.fishy-jump-frames();}
+@-o-keyframes fishy-jump {.fishy-jump-frames();}
+@keyframes fishy-jump {.fishy-jump-frames();}
+
+.fishy-jump{
+    .animation(fishy-jump 3s linear 3s infinite);
+}
+
+
+/** Scene animations **/
+
+// Bounce for a group on scene change
+
+.group-bounce-frames() {
+    0%   {top: 480px;}
+    25%  {top: 480px;}
+    75%  {top: -20px;}
+    87%  {top: 10px;}
+    100% {top: 0px;}
+}
+
+@-webkit-keyframes group-bounce {.group-bounce-frames();}
+@-moz-keyframes group-bounce {.group-bounce-frames();}
+@-o-keyframes group-bounce {.group-bounce-frames();}
+@keyframes group-bounce {.group-bounce-frames();}
+
+.group-bounce {
+    .animation(group-bounce 2s ease-in-out 0s 1);
+}
+
+.group-drop-frames() {
+    0%   {top: 0;}
+    20%  {top: -15px;}
+    50%  {top: 480px;}
+    100% {top: 480px;}
+}
+
+@-webkit-keyframes group-drop {.group-drop-frames();}
+@-moz-keyframes group-drop {.group-drop-frames();}
+@-o-keyframes group-drop {.group-drop-frames();}
+@keyframes group-drop {.group-drop-frames();}
+
+.group-drop {
+    .animation(group-drop 2s ease-in-out 0s 1);
+}
+
+
+// Bounce for a layer
+// Delay built into animation to keep sprite at correct location
+
+.layer-bounce-frames() {
+    0%   {top: 480px;}
+    70%  {top: 480px;}
+    90%  {top: -20px;}
+    95%  {top: 10px;}
+    100% {top: 0px;}
+}
+
+@-webkit-keyframes layer-bounce {.layer-bounce-frames();}
+@-moz-keyframes layer-bounce {.layer-bounce-frames();}
+@-o-keyframes layer-bounce {.layer-bounce-frames();}
+@keyframes layer-bounce {.layer-bounce-frames();}
+
+.layer-bounce {
+    .animation(layer-bounce 5.8s ease-in-out 0s 1);
+}
+
+// Drop for a layer
+// Delay built into animation to keep sprite at correct location
+
+.layer-drop-frames() {
+    0%   {top: -480px;}
+    70%  {top: -480px;}
+    100% {top: 0;}
+}
+
+@-webkit-keyframes layer-drop {.layer-drop-frames();}
+@-moz-keyframes layer-drop {.layer-drop-frames();}
+@-o-keyframes layer-drop {.layer-drop-frames();}
+@keyframes layer-drop {.layer-drop-frames();}
+
+.layer-drop {
+    .animation(layer-drop 5s ease-in-out 0s 1);
+}
+
+
+/** Bird animationos **/
+
+// Bird left/right
+
+.birdy-left-right-frames() {
+    0% {.translated(500, 0);}
+    50% {.translated(0, 0);}
+    100% {.translated(500, 0);}
+}
+
+@-webkit-keyframes birdy-left-right {.birdy-left-right-frames();}
+@-moz-keyframes birdy-left-right {.birdy-left-right-frames();}
+@-o-keyframes birdy-left-right {.birdy-left-right-frames();}
+@keyframes birdy-left-right {.birdy-left-right-frames();}
+
+.birdy-left-right {
+    .animation(birdy-left-right 24s ease-in-out 0s infinite);
+}
+.birdy-left-right.faster {
+    .animation-duration(8s);
+}
+
+
+// Bird up/down
+
+.birdy-up-down-frames() {
+    to {.translated(0,20);}
+}
+
+@-webkit-keyframes birdy-up-down {.birdy-up-down-frames();}
+@-moz-keyframes birdy-up-down {.birdy-up-down-frames();}
+@-o-keyframes birdy-up-down {.birdy-up-down-frames();}
+@keyframes birdy-up-down {.birdy-up-down-frames();}
+
+.birdy-up-down {
+    .animation(birdy-up-down 3s ease-in-out 0s infinite alternate);
+}
+
+
+// Bird flip
+
+.birdy-flip-frames() {
+    40% {.not-mirrored();}
+    45% {.mirrored();}
+    90% {.mirrored();}
+    95% {.not-mirrored();}
+}
+
+@-webkit-keyframes birdy-flip {.birdy-flip-frames();}
+@-moz-keyframes birdy-flip {.birdy-flip-frames();}
+@-o-keyframes birdy-flip {.birdy-flip-frames();}
+@keyframes birdy-flip {.birdy-flip-frames();}
+
+.birdy-flip {
+    width: 71px;
+    .animation(birdy-flip 8s ease-in-out 0s infinite);
+}
+
+
+// Bird sprite frames
+
+.birdy-sprite-frames() {
+    @height: 224px;
+
+    .frame(@height, 0%, 1);
+    .frame-swap(@height, 50%, 1, 2);
+    .frame(@height, 100%, 2);
+}
+
+@-webkit-keyframes birdy-sprite {.birdy-sprite-frames();}
+@-moz-keyframes birdy-sprite {.birdy-sprite-frames();}
+@-o-keyframes birdy-sprite {.birdy-sprite-frames();}
+@keyframes birdy-sprite {.birdy-sprite-frames();}
+
+.birdy-sprite {
+    .animation(birdy-sprite 0.25s ease-in-out 0s infinite alternate);
+}
+
+
+/** Boat animations **/
+
+// Boat sway animation
+
+.boat-sway-frames() {
+    from { .rotated(6deg); }
+    to { .rotated(0deg); }
+}
+
+@-webkit-keyframes boat-sway { .boat-sway-frames(); }
+@-moz-keyframes boat-sway { .boat-sway-frames(); }
+@-o-keyframes boat-sway { .boat-sway-frames(); }
+@keyframes boat-sway { .boat-sway-frames(); }
+
+.boat-sway {
+    .animation(boat-sway 8s ease-in-out 1s infinite alternate);
+}
+
+
+/** Hedgehog animations **/
+
+// Hedgehog shudder
+
+.hedgehog-shudder-frames() {
+    0% { .rotated(0deg); }
+    4% { .rotated(3deg); }
+    8% { .rotated(-3deg); }
+    12% { .rotated(3deg); }
+    16% { .rotated(-3deg); }
+    19% { .rotated(3deg); }
+    22% { .rotated(-3deg); }
+    25% { .rotated(3deg); }
+    28% { .rotated(-3deg); }
+    31% { .rotated(0deg); }
+    100% { .rotated(0deg); }
+}
+
+@-webkit-keyframes hedgehog-shudder { .hedgehog-shudder-frames(); }
+@-moz-keyframes hedgehog-shudder { .hedgehog-shudder-frames(); }
+@-o-keyframes hedgehog-shudder { .hedgehog-shudder-frames(); }
+@keyframes hedgehog-shudder { .hedgehog-shudder-frames(); }
+
+.hedgehog-shudder {
+    .animation(hedgehog-shudder, 2s linear 0s infinite);
+}
+
+
+/** Tweedle animations **/
+
+// Tweedle sprite
+
+.tweedle-sprite-frames() {
+    @height: 255;
+
+    .frame(@height, 0%, 1);
+    .frame-swap(@height, 20%, 1, 2);
+    .frame-swap(@height, 27%, 2, 3);
+    .frame-swap(@height, 34%, 3, 4);
+    .frame-swap(@height, 43%, 4, 5);
+    .frame-swap(@height, 70%, 5, 6);
+    .frame-swap(@height, 77%, 6, 7);
+    .frame-swap(@height, 84%, 7, 8);
+    .frame-swap(@height, 91%, 8, 1);
+    .frame(@height, 100%, 1);
+}
+
+@-webkit-keyframes tweedle-sprite { .tweedle-sprite-frames(); }
+@-moz-keyframes tweedle-sprite { .tweedle-sprite-frames(); }
+@-o-keyframes tweedle-sprite { .tweedle-sprite-frames(); }
+@keyframes tweedle-sprite { .tweedle-sprite-frames(); }
+
+.tweedle-sprite {
+    .animation(tweedle-sprite, 1.2s linear 0s infinite normal);
+}
+
+/** Jabberwocky animations **/
+
+// Back arm wiggling
+
+.jabberwocky-arm-back-wiggle-frames() {
+    to {
+        .rotated(5deg);
+        top: 195px;
+    }
+}
+
+@-webkit-keyframes jabberwocky-arm-back-wiggle { .jabberwocky-arm-back-wiggle-frames(); }
+@-moz-keyframes jabberwocky-arm-back-wiggle { .jabberwocky-arm-back-wiggle-frames(); }
+@-o-keyframes jabberwocky-arm-back-wiggle { .jabberwocky-arm-back-wiggle-frames(); }
+@keyframes jabberwocky-arm-back-wiggle { .jabberwocky-arm-back-wiggle-frames(); }
+
+.jabberwocky-arm-back-wiggle {
+    .animation(jabberwocky-arm-back-wiggle, 0.4s ease-in-out 0s infinite alternate);
+}
+
+
+// Back claw wiggling
+
+.jabberwocky-claw-back-wiggle-frames() {
+    to {
+        .rotated(4deg);
+        left: -40px;
+    }
+}
+
+@-webkit-keyframes jabberwocky-claw-back-wiggle { .jabberwocky-claw-back-wiggle-frames(); }
+@-moz-keyframes jabberwocky-claw-back-wiggle { .jabberwocky-claw-back-wiggle-frames(); }
+@-o-keyframes jabberwocky-claw-back-wiggle { .jabberwocky-claw-back-wiggle-frames(); }
+@keyframes jabberwocky-claw-back-wiggle { .jabberwocky-claw-back-wiggle-frames(); }
+
+.jabberwocky-claw-back-wiggle {
+    .animation(jabberwocky-claw-back-wiggle, 0.4s ease-in-out 0.1s infinite alternate);
+}
+
+
+// Front arm wiggling
+
+.jabberwocky-arm-front-wiggle-frames() {
+    to {
+        .rotated(4deg);
+        top:187px;
+    }
+}
+
+@-webkit-keyframes jabberwocky-arm-front-wiggle { .jabberwocky-arm-front-wiggle-frames(); }
+@-moz-keyframes jabberwocky-arm-front-wiggle { .jabberwocky-arm-front-wiggle-frames(); }
+@-o-keyframes jabberwocky-arm-front-wiggle { .jabberwocky-arm-front-wiggle-frames(); }
+@keyframes jabberwocky-arm-front-wiggle { .jabberwocky-arm-front-wiggle-frames(); }
+
+.jabberwocky-arm-front-wiggle {
+    .animation(jabberwocky-arm-front-wiggle, 0.4s ease-in-out 0.2s infinite alternate);
+}
+
+
+// Front claw wiggling
+
+.jabberwocky-claw-front-wiggle-frames() {
+    to {
+        .rotated(-6deg);
+        top: -11px;
+        left: -58px;
+    }
+}
+
+@-webkit-keyframes jabberwocky-claw-front-wiggle { .jabberwocky-claw-front-wiggle-frames(); }
+@-moz-keyframes jabberwocky-claw-front-wiggle { .jabberwocky-claw-front-wiggle-frames(); }
+@-o-keyframes jabberwocky-claw-front-wiggle { .jabberwocky-claw-front-wiggle-frames(); }
+@keyframes jabberwocky-claw-front-wiggle { .jabberwocky-claw-front-wiggle-frames(); }
+
+.jabberwocky-claw-front-wiggle {
+    .animation(jabberwocky-claw-front-wiggle, 0.4s ease-in-out 0.18s infinite alternate);
+}
+
+// Front claw wiggling
+
+.jabberwocky-wing-flap-frames() {
+    to {
+        .rotated(4deg);
+        margin-top: 9px;
+    }
+}
+
+@-webkit-keyframes jabberwocky-wing-flap { .jabberwocky-wing-flap-frames(); }
+@-moz-keyframes jabberwocky-wing-flap { .jabberwocky-wing-flap-frames(); }
+@-o-keyframes jabberwocky-wing-flap { .jabberwocky-wing-flap-frames(); }
+@keyframes jabberwocky-wing-flap { .jabberwocky-wing-flap-frames(); }
+
+.jabberwocky-wing-flap {
+    .animation(jabberwocky-wing-flap, 0.6s ease-in-out 0s infinite alternate);
+}
+
+
+// Head waggling
+
+.jabberwocky-head-waggle-frames() {
+    0% {
+        .rotated(-3deg);
+        margin-left: -5px;
+        margin-top: 4px;
+    }
+    25% {
+        .rotated(-3deg);
+        margin-left: -5px;
+        margin-top: 4px;
+    }
+    50% {
+        .rotated(0deg);
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    75% {
+        .rotated(0deg);
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    100% {
+        .rotated(-3deg);
+        margin-left: -5px;
+        margin-top: 4px;
+    }
+}
+
+@-webkit-keyframes jabberwocky-head-waggle { .jabberwocky-head-waggle-frames(); }
+@-moz-keyframes jabberwocky-head-waggle { .jabberwocky-head-waggle-frames(); }
+@-o-keyframes jabberwocky-head-waggle { .jabberwocky-head-waggle-frames(); }
+@keyframes jabberwocky-head-waggle { .jabberwocky-head-waggle-frames(); }
+
+.jabberwocky-head-waggle {
+    .animation(jabberwocky-head-waggle, 1.6s ease-in 0s infinite);
+}
+
+.jabberwocky-flame-plume-frames() {
+    0% {
+        .rotated(3deg);
+    }
+    25% {
+        .rotated(4deg);
+        margin-top: -2px;
+    }
+    50% {
+        .rotated(7deg);
+        margin-left: -10px;
+        margin-top: -4px;
+    }
+    75% {
+        .rotated(7deg);
+        margin-left: -10px;
+        margin-top: -4px;
+    }
+    100% {
+        .rotated(3deg);
+    }
+}
+
+@-webkit-keyframes jabberwocky-flame-plume { .jabberwocky-flame-plume-frames(); }
+@-moz-keyframes jabberwocky-flame-plume { .jabberwocky-flame-plume-frames(); }
+@-o-keyframes jabberwocky-flame-plume { .jabberwocky-flame-plume-frames(); }
+@keyframes jabberwocky-flame-plume { .jabberwocky-flame-plume-frames(); }
+
+.jabberwocky-flame-plume {
+    .animation(jabberwocky-flame-plume, 1.6s linear 0.2s infinite);
+}
+
+.jabberwocky-teeth-grind-frames() {
+    0% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 3px;
+    }
+    65% {
+        margin-top: 4px;
+        margin-left: -3px;
+        .rotated(4deg);
+    }
+    80% {
+        margin-top: 4px;
+        margin-left: -3px;
+        .rotated(2deg);
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+@-webkit-keyframes jabberwocky-teeth-grind { .jabberwocky-teeth-grind-frames(); }
+@-moz-keyframes jabberwocky-teeth-grind { .jabberwocky-teeth-grind-frames(); }
+@-o-keyframes jabberwocky-teeth-grind { .jabberwocky-teeth-grind-frames(); }
+@keyframes jabberwocky-teeth-grind { .jabberwocky-teeth-grind-frames(); }
+
+.jabberwocky-teeth-grind {
+    .animation(jabberwocky-teeth-grind, 1.6s linear 0s infinite);
+}
+
+.jabberwocky-jaw-grind {
+    .animation(jabberwocky-teeth-grind, 1.6s linear 0s infinite);
+}
+
+
+/**
+    Tea animations!
+**/
+
+.teapot-bob-frames() {
+    to { margin-top: 10px; }
+}
+
+@-webkit-keyframes teapot-bob { .teapot-bob-frames(); }
+@-moz-keyframes teapot-bob { .teapot-bob-frames(); }
+@-o-keyframes teapot-bob { .teapot-bob-frames(); }
+@keyframes teapot-bob { .teapot-bob-frames(); }
+
+.teapot-bob {
+    .animation(teapot-bob, 1.4s ease-in-out 0s infinite alternate);
+}
+
+
+/**
+    Tea party animations
+**/
+
+// Mad hatter kick
+
+.mad-hatter-kick-frames() {
+    to {
+        .rotated(-30deg);
+        margin-top: -8px;
+        margin-left: 3px;
+    }
+}
+
+@-webkit-keyframes mad-hatter-kick { .mad-hatter-kick-frames(); }
+@-moz-keyframes mad-hatter-kick { .mad-hatter-kick-frames(); }
+@-o-keyframes mad-hatter-kick { .mad-hatter-kick-frames(); }
+@keyframes mad-hatter-kick { .mad-hatter-kick-frames(); }
+
+.mad-hatter-kick {
+    .animation(mad-hatter-kick, 0.4s linear 0s infinite alternate);
+}
+
+
+// March hare kick
+
+.march-hare-kick-frames() {
+    to {
+        .rotated(-15deg);
+        margin-left: 3px;
+    }
+}
+
+@-webkit-keyframes march-hare-kick { .march-hare-kick-frames(); }
+@-moz-keyframes march-hare-kick { .march-hare-kick-frames(); }
+@-o-keyframes march-hare-kick { .march-hare-kick-frames(); }
+@keyframes march-hare-kick { .march-hare-kick-frames(); }
+
+.march-hare-kick {
+    .animation(march-hare-kick, 0.3s linear 0s infinite alternate);
+}
+
+
+/**
+    Ticket shake animation
+**/
+
+.ticket-shake-frames() {
+    0%   { .rotated(0deg); }
+    25%  { .rotated(4deg); }
+    50%  { .rotated(-4deg); }
+    75%  { .rotated(4deg); }
+    100% { .rotated(0deg); }
+}
+
+@-webkit-keyframes ticket-shake { .ticket-shake-frames(); }
+@-moz-keyframes ticket-shake { .ticket-shake-frames(); }
+@-o-keyframes ticket-shake { .ticket-shake-frames(); }
+@keyframes ticket-shake { .ticket-shake-frames(); }
+
+.ticket-shake {
+    .animation(ticket-shake, 0.2s linear 0s);
+}
+
+
+/**
+    Cloud animations
+**/
+
+.cloud-drop-frames() {
+    0%   { top: -240px; }
+    75%  { top: -240px; }
+    100% { top: -75px; }
+}
+
+@-webkit-keyframes cloud-drop { .cloud-drop-frames(); }
+@-moz-keyframes cloud-drop { .cloud-drop-frames(); }
+@-o-keyframes cloud-drop { .cloud-drop-frames(); }
+@keyframes cloud-drop { .cloud-drop-frames(); }
+
+.cloud-drop {
+    .animation(cloud-drop, 4.2s ease-in-out 0s);
+}
+
+
+/**
+    Top sign animations
+**/
+
+.sign-drop-frames() {
+    0%   { top: -300px; }
+    75%  { top: -300px; }
+    100% { top: -32px; }
+}
+
+@-webkit-keyframes sign-drop { .sign-drop-frames(); }
+@-moz-keyframes sign-drop { .sign-drop-frames(); }
+@-o-keyframes sign-drop { .sign-drop-frames(); }
+@keyframes sign-drop { .sign-drop-frames(); }
+
+.sign-drop {
+    .animation(sign-drop, 3.8s ease-in-out 0s);
+}
+
+/**
+    Tree sliding animations
+**/
+
+.tree-left-slide-frames() {
+    0%   { left: -600px; }
+    70%  { left: -600px; }
+    100% { left: 240px; }
+}
+
+@-webkit-keyframes tree-left-slide { .tree-left-slide-frames(); }
+@-moz-keyframes tree-left-slide { .tree-left-slide-frames(); }
+@-o-keyframes tree-left-slide { .tree-left-slide-frames(); }
+@keyframes tree-left-slide { .tree-left-slide-frames(); }
+
+.tree-left-slide {
+    .animation(tree-left-slide, 3s ease-in-out 0s);
+}
+
+
+.tree-right-slide-frames() {
+    0%   { left: 2600px; }
+    75%  { left: 2600px; }
+    100% { left: 1250px; }
+}
+
+@-webkit-keyframes tree-right-slide { .tree-right-slide-frames(); }
+@-moz-keyframes tree-right-slide { .tree-right-slide-frames(); }
+@-o-keyframes tree-right-slide { .tree-right-slide-frames(); }
+@keyframes tree-right-slide { .tree-right-slide-frames(); }
+
+.tree-right-slide {
+    .animation(tree-right-slide, 3.5s ease-in-out 0s);
+}
