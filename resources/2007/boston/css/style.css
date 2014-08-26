@@ -1,0 +1,97 @@
+html, body { margin: 0; padding: 0;}
+body {
+	background: #cee9f4 url(side_top.jpg) repeat-x;
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	font: 15px/22.5px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+h1 {
+	font-size: 1.9em;
+	font-weight: bold;
+	color: #222;
+	margin: .5em 0 0;
+	border-bottom: 1px solid #bbb;
+	padding-bottom: .4em;
+}
+h2 {
+	font-size: 1.5em;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 1em 0 .6em;
+}
+hr {
+	height: 1px;
+	color: #aaa;
+	background-color: #aaa;
+	border: 0;
+	margin: .2em 0 .2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: black;
+	background: none;
+	font-weight: normal;
+	margin: 0;
+	padding-top: .5em;
+	padding-bottom: .17em;
+	border-bottom: 1px solid #aaa;
+}
+h1 { font-size: 188%; }
+h2 { font-size: 150%; }
+h3, h4, h5, h6 {
+	border-bottom: none;
+	font-weight: bold;
+}
+h3 { font-size: 132%; }
+h4 { font-size: 116%; }
+h5 { font-size: 100%; }
+h6 { font-size: 80%;  }
+
+ul {
+	line-height: 1.5em;
+	list-style-type: square;
+	margin: .3em 0 0 1.5em;
+	padding: 0;
+	list-style-image: url(/web/20070707202301/http://docs.jquery.com/skins/monobook/bullet.gif);
+}
+ol {
+	line-height: 1.5em;
+	margin: .3em 0 0 3.2em;
+	padding: 0;
+	list-style-image: none;
+}
+li {
+	margin-bottom: .1em;
+}
+dt {
+	font-weight: bold;
+	margin-bottom: .1em;
+}
+dl {
+	margin-top: .2em;
+	margin-bottom: .5em;
+}
+dd {
+	line-height: 1.5em;
+	margin-left: 2em;
+	margin-bottom: .1em;
+}
+#jq-footer {
+	background: #404141 url(side_bottom.jpg) repeat-x;
+	height: 40px;
+	color:#fff;
+	font-size: 13px;
+	clear:both;
+	padding-top: 1px;
+	text-align: center;
+}
+#jq-footerwrap {
+	width: 958px;
+	margin: 0 auto;
+	height: 100%;
+	text-align: left;
+	background: #404141 url(content_black.jpg) repeat-y;
+	overflow: hidden;
+	position: relative;
+}
