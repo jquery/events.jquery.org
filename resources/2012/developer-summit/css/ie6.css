@@ -1,0 +1,6 @@
+#wrapper header nav li, #wrapper header nav li a, #wrapper header nav ul { display: inline !important; }
+#wrapper #call_to_action { margin-right: -20px !important}
+.frame { display: none}
+body.speakers #speaker-large li img{ {
+left: -110px;
+}
