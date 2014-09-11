@@ -153,25 +153,11 @@ module.exports = [
 		end: new Date( "March 16, 2014" )
 	},
 	{
-		title: "jQuery Virtual Training: April",
-		location: "Online",
-		date: "April 16 - 17 2014",
-		url: "http://appendto.com/what-we-do/training/schedule/jquery-virtual-training-april-2014/",
-		end: new Date( "April 17, 2014" )
-	},
-	{
 		title: "jQuery UK 2014",
 		location: "Oxford, UK",
 		date: "May 16 2014",
 		url: "http://jqueryuk.com/?utm_source=jqueryorg&utm_medium=banner&utm_campaign=jqueryorgbanner",
 		end: new Date( "May 16, 2014" )
-	},
-	{
-		title: "jQuery Virtual Training: June",
-		location: "Online",
-		date: "June 17 - 19 2014",
-		url: "http://appendto.com/what-we-do/training/schedule/jquery-virtual-training-june-2014/",
-		end: new Date( "June 19, 2014" )
 	},
 	{
 		title: "jQuery Europe 2013",
@@ -195,25 +181,11 @@ module.exports = [
 		end: new Date( "April 19, 2013" )
 	},
 	{
-		title: "jQuery Virtual Training: UK",
-		location: "Online",
-		date: "May 21 - 23 2013",
-		url: "http://appendto.com/training/jquery-virtual-training-uk/",
-		end: new Date( "May 23, 2013" )
-	},
-	{
 		title: "jQuery Conference Portland",
 		location: "Portland, OR",
 		date: "June 13 - 14 2013",
 		url: "/2013/portland/",
 		end: new Date( "June 14, 2013" )
-	},
-	{
-		title: "jQuery Virtual Training: July",
-		location: "Online",
-		date: "July 23 - 25 2013",
-		url: "http://appendto.com/training/jquery-virtual-training-july-2013/",
-		end: new Date( "July 25, 2013" )
 	},
 	{
 		title: "jQuery Conference Austin 2013",
