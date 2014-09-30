@@ -631,6 +631,10 @@ button.expand {
 	text-align: center;
 }
 
+#register .register_form .promocode input {
+	margin-top: 1em;
+}
+
 #register .register_form .button {
 	margin: 1em auto;
 	border: none;
