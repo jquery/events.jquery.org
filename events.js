@@ -1,5 +1,29 @@
 module.exports = [
 	{
+		title: "jQuery UK 2015",
+		location: "Oxford, UK",
+		date: "Mar 6 2015",
+		url: "http://jqueryuk.com/2015/?source=jqorg-listing",
+		image: "/resources/images/event-2015-oxford-bkg.jpg",
+		end: new Date( "March 6, 2015" ),
+		host: {
+			name: "White October Events",
+			url: "http://whiteoctoberevents.co.uk/"
+		}
+	},
+	{
+		title: "JavaScript Summit",
+		location: "Online",
+		date: "Nov 18 - 20 2014",
+		url: "http://jssummit.com/",
+		image: "/resources/images/event-2014-jssummit-bkg.jpg",
+		end: new Date( "November 20, 2014" ),
+		host: {
+			name: "Environments for Humans",
+			url: "http://environmentsforhumans.com/"
+		}
+	},
+	{
 		title: "Roost",
 		location: "Chicago, IL",
 		date: "Sep 10 & 11 2014",
@@ -29,7 +53,7 @@ module.exports = [
 		date: "Oct 13 - 15 2014",
 		url: "http://2014.cssdevconf.com/",
 		image: "/resources/images/event-2014-cssdev-bkg.jpg",
-		end: new Date( "September 13, 2014" ),
+		end: new Date( "October 15, 2014" ),
 		host: {
 			name: "Environments for Humans",
 			url: "http://environmentsforhumans.com/"
