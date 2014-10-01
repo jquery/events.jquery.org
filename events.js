@@ -104,7 +104,7 @@ module.exports = [
 	{
 		title: "jQuery Europe 2013",
 		location: "Vienna, Austria",
-		date: "Feb 22 - 23 2014",
+		date: "Feb 22 - 23 2013",
 		url: "http://events.jquery.org/2013/eu/",
 		end: new Date( "February 23, 2013" )
 	},
