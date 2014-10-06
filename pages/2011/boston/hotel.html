@@ -1,0 +1,66 @@
+<script>{
+	"title": "jQuery Conference: Boston 2011",
+	"pageTemplate": "page-boston-2011.php"
+}</script>
+
+<section class="call_out">
+	<article>
+		<header>
+			<hgroup>
+				<h1>Hotels</h1>
+				<h2>The jQuery Team has reserved a room block at the Royal Sonesta Hotel.</h2>
+				<h3>The jQuery Room Block has been SOLD OUT!</h3>
+				<p><br>The jQuery Core Team, along with the jQuery Conference speakers, will all be staying at the Royal Sonesta. jQuery room block guests staying at the Sonesta receive benefits like priority registration and swag pickup, priority access to conference group activities (details coming soon!) and the best opportunity to network with the best and brightest. </p>
+
+			</hgroup>
+		</header>
+		<div class="hotel" id="hotel-1">
+			<h2>Royal Sonesta Hotel Boston <small>Venue Hotel</small></h2>
+			<div class="hotel-tabs">
+				<ul>
+					<li class="info-tab"><a  href="#hotel-1-info">Information</a></li>
+					<li class="map-tab last-tab"><a href="#hotel-1-map">Map</a></li>
+				</ul>
+				<div id="hotel-1-info">
+					<div class="info-block">
+
+						<p>
+							<strong>Cost per night:</strong><br />
+							$273.53/night (tax included)
+						</p>
+
+						<h3>Sold Out</h3>
+					</div>
+					<div class="address-block">
+						<p><strong>Royal Sonesta Hotel Boston</strong><br />
+						40 Edwin Land Boulevard<br />
+						Cambridge, MA 02142 USA</p>
+						<p>1.617.806.4200 </p>
+						<p><a href="https://gc.synxis.com/rez.aspx?Hotel=12050&Chain=5157&arrive=9/30/2011&depart=10/2/2011&adult=1&child=0&group=JQUI11A">Website &rarr;</a></p>
+					</div>
+				</div>
+				<div id="hotel-1-map">
+					<a href="http://maps.google.com/maps?q=Royal+Sonesta+Hotel,40+Edwin+Land+Boulevard+Cambridge,+MA+02142+USA&hl=en&z=16">View on Google Maps</a>
+				</div>
+			</div>
+			<div class="hotel-photo">
+				<ul>
+					<li><img src="/resources/2011/boston/images/RoyalSonesta/rs-1.jpg" /></li>
+					<li><img src="/resources/2011/boston/images/RoyalSonesta/rs-2.jpg" /></li>
+				</ul>
+			</div>
+		</div>
+		<p>Note: Guests booking rooms at the Royal Sonesta as part of the jQuery room block will receive confirmation of block status via email. Email confirmations are sent every Saturday, so if you don't receive a confirmation by the Saturday following your booking, <a href="mailto:eventbrite@jquery.com">contact the Events Team</a> to verify that your room is indeed part of our block.</p>
+	</article>
+</section>
+<script src="/resources/2011/boston/js/jquery.nivo.slider.pack.js"></script>
+<script>
+	$(".hotel-tabs").tabs();
+	$(".hotel-photo ul").nivoSlider({
+		effect: "sliceDown",
+		directionNav: false,
+		controlNav: false,
+		pauseTime: 5000,
+		slices: 5
+	});
+</script>
