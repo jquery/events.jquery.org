@@ -1,0 +1,109 @@
+<script>{
+	"title": "jQuery Conference: San Francisco Bay Area 2011",
+	"pageTemplate": "page-sf-bay-area-2011.php"
+}</script>
+
+<section class="call_out">
+	<article>
+		<header>
+			<hgroup>
+				<h1>Hotels</h1>
+				<h2>Though there are many places to stay in Mountain View, CA, below are two locations we recommend.</h2>
+			</hgroup>
+		</header>
+		<div class="hotel" id="hotel-1">
+			<h2>Hilton Garden Inn Silicon Valley <small>Preferred Hotel</small></h2>
+			<div class="hotel-tabs">
+				<ul>
+					<li class="info-tab"><a  href="#hotel-1-info">Information</a></li>
+					<li class="map-tab last-tab"><a href="#hotel-1-map">Map</a></li>
+				</ul>
+				<div id="hotel-1-info">
+					<div class="info-block">
+						<p>
+							<strong>Distance from venue:</strong><br />
+							Approximately 4 miles away.
+						</p>
+						<p>
+							<strong>Transportation to venue:</strong><br />
+							Carpool <em>A shuttle may be available, but plan to provide your own transportation.</em>
+						</p>
+						<p>
+							<strong>Approximate Cost:</strong><br />
+							From ~$89 to ~$129 depending on the night, only by using the discount code below.
+						</p>
+						<p>
+							<strong>jQuery Discount Code:</strong> <code>JQ1</code>
+						</p>
+					</div>
+					<div class="address-block">
+						<p><strong>Hilton Garden Inn<br />Silicon Valley</strong><br />
+						840 E. El Camino Real<br />
+						Mountain View, California</p>
+						<p>1-650-964-1700</p>
+						<p><a href="http://hiltongardeninn.hilton.com/en/gi/hotels/index.jhtml?ctyhocn=SJCMVGI">Website &rarr;</a></p>
+					</div>
+				</div>
+				<div id="hotel-1-map">
+					<a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Hilton+Garden+Inn+Silicon+Valley+840+E.+El+Camino+Real+Mountain+View,+California&sll=0,0&sspn=151.169875,229.21875&ie=UTF8&hq=Hilton+Garden+Inn&hnear=840+E+El+Camino+Real,+Mountain+View,+Santa+Clara,+California+94041&ll=37.37616,-122.061753&spn=0.011493,0.01399&z=16&iwloc=A" title="View on Google Maps">View on Google Maps</a>
+				</div>
+			</div>
+			<div class="hotel-photo">
+				<ul>
+					<li><img src="/resources/2011/sf-bay-area/images/Hilton/HGI-1.jpeg" /></li>
+					<li><img src="/resources/2011/sf-bay-area/images/Hilton/HGI-2.jpeg" /></li>
+					<li><img src="/resources/2011/sf-bay-area/images/Hilton/HGI-3.jpeg" /></li>
+				</ul>
+			</div>
+		</div>
+		<div class="hotel" id="hotel-2">
+			<h2>Hotel Avante</h2>
+			<div class="hotel-tabs">
+				<ul>
+					<li class="info-tab"><a  href="#hotel-2-info">Information</a></li>
+					<li class="map-tab last-tab"><a href="#hotel-2-map">Map</a></li>
+				</ul>
+				<div id="hotel-2-info">
+					<div class="info-block">
+						<p>
+							<strong>Distance from venue:</strong><br />
+							Approximately 4 miles away.
+						</p>
+						<p>
+							<strong>Transportation to venue:</strong><br />
+							Carpool <em>A shuttle may be available, but plan to provide your own transportation.</em>
+						</p>
+						<p>
+							<strong>Approximate Cost:</strong><br />
+							~$175 a night
+						</p>
+					</div>
+					<div class="address-block">
+						<p><strong>Hotel Avante</strong><br />
+						860 East El Camino Real<br />
+						Mountain View, California</p>
+						<p>1-800-538-1600</p>
+						<p><a href="http://www.jdvhotels.com/hotels/siliconvalley/avante">Website &rarr;</a></p>
+					</div>
+				</div>
+				<div id="hotel-2-map">
+					<a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Hotel+Avante+860+East+El+Camino+Real+Mountain+View,+California&aq=&sll=37.37616,-122.061625&sspn=0.045971,0.055962&ie=UTF8&hq=Hotel+Avante&hnear=860+E+El+Camino+Real,+Mountain+View,+Santa+Clara,+California+94041&z=16&iwloc=A" title="View on Google Maps">View on Google Maps</a>
+				</div>
+			</div>
+			<div class="hotel-photo">
+				<img src="/resources/2011/sf-bay-area/images/HotelAvante/HA-1.jpeg" />
+			</div>
+		</div>
+	</article>
+</section>
+<script src="/resources/2011/sf-bay-area/js/jquery.nivo.slider.pack.js"></script>
+<script>
+	$(".hotel-tabs").tabs();
+	$(".hotel-photo ul").nivoSlider({
+		effect: "sliceDown",
+		directionNav: false,
+		controlNav: false,
+		pauseTime: 5000,
+		slices: 5
+	});
+</script>
