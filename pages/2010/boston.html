@@ -1,0 +1,33 @@
+<script>{
+  "title": "jQuery Conference: Boston 2010",
+  "pageTemplate": "page-boston-2010.php"
+}</script>
+<script src="/resources/2010/boston/js/jquery.cookie.js"></script>
+<script src="/resources/2010/boston/js/speakers.js"></script>
+
+
+<section class="call_out">
+  <article>
+    <header>
+      <hgroup>
+        <h1>Location</h1>
+        <h2 class="sub-details">Hilton Boston Logan Airport &bull; 1-617-568-6700 &bull; One Hotel Drive, Boston, Massachusetts</h2>
+      </hgroup>
+    </header>
+    <ul class="details">
+      <li><img src="/resources/2010/boston/images/hilton-1.jpg" width="288" height="195" alt="Hilton Outside" /></li>
+      <li id="hilton-map">
+        <img src="http://maps.google.com/maps/api/staticmap?center=42.368120,-71.030645&amp;zoom=13&amp;markers=size:mid|color:blue|42.367439,-71.023221&amp;size=285x195&amp;sensor=false" width="285" height="195" alt="map" />
+      </li>
+    </ul>
+    <p>We had a few separate blocks of discounted rooms at the Hilton available but those have been sold out. Weekend rates at the Hilton are $299/night.  We have a <a href="http://forum.jquery.com/topic/cheaper-hotel-options-near-boston-airport">list of alternate hotel options</a> near the venue on the forum. </p>
+    <p>Also note that parking at the Hilton will cost $32/day.</p>
+  </article>
+</section>
+<?php include 'speakers/_speakers_home.php'; ?>
+<script type="text/javascript" charset="utf-8">
+  // Hack/Fix
+  $(function(){
+    $("#speakers").addClass("thumbs").removeClass("list");
+  })
+</script>
