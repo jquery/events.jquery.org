@@ -1,5 +1,17 @@
 module.exports = [
 	{
+		title: "jQuery India 2015",
+		location: "Bangalore, India",
+		date: "July 22-25 2015",
+		url: "http://jqueryconf.in",
+		image: "/resources/images/event-2015-india-bkg.png",
+		end: new Date( "July 25, 2015" ),
+		host: {
+			name: "AgileFAQs Technology",
+			url: "http://agilefaqs.com/"
+		}
+	},
+	{
 		title: "jQuery UK 2015",
 		location: "Oxford, UK",
 		date: "Mar 6 2015",
