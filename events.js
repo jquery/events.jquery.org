@@ -26,6 +26,18 @@ module.exports = [
 	{
 		title: "JavaScript Summit",
 		location: "Online",
+		date: "Feb 10 - 12 2015",
+		url: "http://jssummit.com/",
+		image: "/resources/images/event-2015-javascriptsummit-bkg.jpg",
+		end: new Date( "February 12, 2015" ),
+		host: {
+			name: "Environments for Humans",
+			url: "http://environmentsforhumans.com/"
+		}
+	},
+	{
+		title: "JavaScript Summit",
+		location: "Online",
 		date: "Nov 18 - 20 2014",
 		url: "http://jssummit.com/",
 		image: "/resources/images/event-2014-jssummit-bkg.jpg",
