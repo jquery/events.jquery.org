@@ -1,5 +1,17 @@
 module.exports = [
 	{
+		title: "jQuery SF 2015",
+		location: "San Francisco, CA",
+		date: "June 22-23 2015",
+		url: "http://jquerysf.com",
+		image: "/resources/images/event-2015-sf-bkg.jpg",
+		end: new Date( "June 23, 2015" ),
+		host: {
+			name: "Famo.us",
+			url: "http://famo.us/"
+		}
+	},
+	{
 		title: "jQuery India 2015",
 		location: "Bangalore, India",
 		date: "July 22-25 2015",
