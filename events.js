@@ -1,5 +1,17 @@
 module.exports = [
 	{
+		title: "CSS Dev Conf 2015",
+		location: "The Queen Mary, CA",
+		date: "Oct 26-28 2015",
+		url: "http://2015.cssdevconf.com/",
+		image: "/resources/images/event-2015-ca-cssdevconf-bkg.png",
+		end: new Date( "October 28, 2015" ),
+		host: {
+			name: "Environments for Humans",
+			url: "http://environmentsforhumans.com/"
+		}
+	},
+	{
 		title: "jQuery SF 2015",
 		location: "San Francisco, CA",
 		date: "June 22-23 2015",
