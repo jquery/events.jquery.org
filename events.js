@@ -1,5 +1,17 @@
 module.exports = [
 	{
+		title: "CSS Summit 2015",
+		location: "Online",
+		date: "July 7-9 2015",
+		url: "http://csssummit.com/",
+		image: "/resources/images/event-2015-csssummit-bkgd.jpg",
+		end: new Date( "July 9, 2015" ),
+		host: {
+			name: "Environments for Humans",
+			url: "http://environmentsforhumans.com/"
+		}
+	},
+	{
 		title: "CSS Dev Conf 2015",
 		location: "The Queen Mary, CA",
 		date: "Oct 26-28 2015",
