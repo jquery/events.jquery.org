@@ -40,7 +40,7 @@ module.exports = [
 		location: "Bangalore, India",
 		date: "July 22-25 2015",
 		url: "http://jqueryconf.in",
-		image: "/resources/images/event-2015-india-bkg.png",
+		image: "/resources/images/event-2015-india-bkg.jpg",
 		end: new Date( "July 25, 2015" ),
 		host: {
 			name: "AgileFAQs Technology",
