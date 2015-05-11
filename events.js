@@ -31,7 +31,7 @@ module.exports = [
 		image: "/resources/images/event-2015-sf-bkg.jpg",
 		end: new Date( "June 23, 2015" ),
 		host: {
-			name: "Famo.us",
+			name: "Famous",
 			url: "http://famo.us/"
 		}
 	},
