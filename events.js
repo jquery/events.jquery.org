@@ -1,5 +1,17 @@
 module.exports = [
 	{
+		title: "jQuery Berlin 2015",
+		location: "Berlin, Germany",
+		date: "December 8-9 2015",
+		url: "http://jqueryconf.de/",
+		image: "/resources/images/event-2015-berlin-bkg.jpg",
+		end: new Date( "December 9, 2015" ),
+		host: {
+			name: "ppedv AG",
+			url: "http://ppedv.com/"
+		}
+	},
+	{
 		title: "CSS Summit 2015",
 		location: "Online",
 		date: "July 7-9 2015",
