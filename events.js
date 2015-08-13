@@ -12,6 +12,18 @@ module.exports = [
 		}
 	},
 	{
+		title: "jQuery Developer Summit",
+		location: "New York, NY",
+		date: "Oct 16-18, 2015",
+		url: "/2015/developer-summit/",
+		image: "/resources/images/event-2015-developer-summit-bkg.jpg",
+		end: new Date( "October 18, 2015" ),
+		host: {
+			name: "jQuery Foundation",
+			url: "https://www.jquery.org"
+		}
+	},
+	{
 		title: "CSS Summit 2015",
 		location: "Online",
 		date: "July 7-9 2015",

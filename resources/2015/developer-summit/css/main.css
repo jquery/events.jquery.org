@@ -1,0 +1,22 @@
+
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+/*
+  Colors: 
+    Dark Blue:  #131b28
+    Ligher Blue: #1fa2c9
+
+*/
+
+/* Fix for Webkit */
+html, body { height: 100%;}
+
+html {
+  background: #1fa2c9;
+}
+
+body {
+  background: transparent;
+  color: #fff;
+}
