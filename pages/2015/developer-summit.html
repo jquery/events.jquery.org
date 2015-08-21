@@ -1,44 +1,187 @@
 <script>{
-  "title": "jQuery Developer Summit 2012: Dulles, VA",
+  "title": "jQuery Foundation Developer Summit 2015: New York, NY",
   "pageTemplate": "page-blank.php",
   "customFields": [
     {
       "key": "stylesheets",
       "value": [
+        "http://yui.yahooapis.com/pure/0.2.1/base-min.css",
+        "http://fonts.googleapis.com/css?family=Raleway:700,400|Open+Sans:400italic,400,800,700",
         "/resources/2015/developer-summit/css/main.css"
       ]
     }
   ]
 }</script>
 
-<!--[if IE]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<!--[if lte IE 6]>
-  <script src="/resources/2012/developer-summit/css/ie6.css"></script>
-<![endif]-->
+<!-- This makes HTML5 elements work on IE 8 and earlier -->
+<script>
+  document.createElement("section");
+  document.createElement("footer");
+  document.createElement("header");
+  document.createElement("nav");
+</script>
 
-<div id="wrapper">
-  <a href="/"><h1>jQuery Developer Summit</h1></a>
-  <h2>New York, NY - <time datetime="2015-10-16"><em>October 16 – 18, 2015</em></time>
+<nav id="menu" role="custom-dropdown">
+  <div class="container">
 
-  <section id="partners">
-    <h3>Partners</h3>
+    <input type="checkbox" id="button">
+    <label for="button" onclick=""></label>
+
     <ul>
-      <li><a href="http://wocintechchat.com">#WoCinTechChat</a></li>
+      <li><a class="nav-btn" href="#home">HOME</a></li>
+      <li><a class="nav-btn" href="#partners">PARTNERS</a></li>
+      <li><a class="nav-btn" href="#about">ABOUT</a></li>
+      <li><a class="nav-btn" href="#program">PROGRAM</a></li>
+      <li><a class="nav-btn" href="#location">LOCATION</a></li>
+      <li><a class="nav-btn" href="#register">REGISTER</a></li>
+      <li><a class="nav-btn" href="#sponsors">SPONSORS</a></li>
+      <li><a class="nav-btn" href="#conduct">CONDUCT</a></li>
     </ul>
-  </section>
+  </div>
+</nav>
 
-  <section id="headline-banner">
-    <h2>Three days of learning about - and contributing to - real open source projects with peers and the jQuery community.</h2>
-    <p>The jQuery Developer Summit is a three-day event aimed at making open source accessible to, and inclusive of, members of underrepresented groups Participants of all skill levels and disciplines will learn best practices from jQuery open source contributors, and will leave having made contributions to one of the jQuery Foundation's projects.</p>
-  </section>
+<header id="home">
+  <div class="container">
+    <h1>jQuery Foundation Developer Summit</h1>
+    <h2>New York, NY<br><time datetime="2015-10-16"><em>October 16 – 18, 2015</em></time></h2>
+  </div>
+</header>
 
-  <section id="program">
+<section id="partners">
+  <div class="container">
+    <h1>Partners</h1>
+    <ul>
+      <li><h2><a href="http://wocintechchat.com">#WoCinTechChat</a></h2></li>
+    </ul>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h1>Open Source is for Everyone</h1>
+    <h3>Three days of learning about - and contributing to - real open source projects with peers and the jQuery Foundation community.</h3>
+    <p>The jQuery Foundation Developer Summit is a three-day event aimed at making open source accessible to, and inclusive of, members of underrepresented groups. Participants of all skill levels and disciplines will learn best practices and essential skills from current open source contributors and project representatives, and will leave having made contributions to an open source project that interests them.</p>
+  </div>
+</section>
+
+<section id="program">
+  <div class="container">
     <h3>Program</h3>
-  </section>
+    <div class="day-1">
+      <h3 class="day">Friday, October 16</h3>
+      <div class="event-entity">
+        <div class="time">7:00PM - 11:00PM</div>
+        <div class="block-type break">Event Kickoff</div>
+        <div class="speaker_entity">
+          <h3 class="talk">Registration, Preparation, and Celebration</h3>
+          <div>
+            <p>Come get checked in to the event and mingle with your fellow participants and project contributors over some food and drinks. We'll take this opportunity to get to know you and make sure everyone is prepared for the weekend.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</div>
+    <div class="day-1">
+      <h3 class="day">Saturday, October 17</h3>
+
+      <div class="event-entity">
+        <div class="time">9:00 - 10:00</div>
+        <div class="block-type break">Registration / Breakfast</div>
+      </div>
+
+      <div class="keynote event-entity">
+        <div class="time">10:00 - 12:00</div>
+        <div class="keynote block-type">Speaking Program</div>
+        <div class="speaker_entity">
+          <div>
+            <p>We'll start the day with some talks on a number of topics related to different technologies and conventions around contributing to open source. Speakers will cover topics like Git, command line, debugging and developer tools, virtual machines, testing, triage, documentation and more.
+            </p>
+            <p>Speaker and session details to come.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="keynote event-entity">
+        <div class="time">12:00 - 12:30</div>
+        <div class="keynote block-type">Discipline Introduction</div>
+        <div class="speaker_entity">
+          <div>
+            <p>Take this time to meet the folks that will be leading the afternoon working sessions. Groups will be divided by discipline like documentation, testing, issue triage, etc. Find one or more that seem interesting to you to learn more about.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-entity">
+        <div class="time">12:30 - 1:30</div>
+        <div class="block-type break">Lunch</div>
+      </div>
+
+      <div class="keynote event-entity">
+        <div class="time">1:30 - 3:30</div>
+        <div class="keynote block-type">Working Sessions</div>
+        <div class="speaker_entity">
+          <div>
+            <p>Dive into one of the working sessions and learn about different aspects of contributing to and running an open source project. Feel free to mingle and sit in on multiple sessions and dig into aspects of open source to which you would like to contribute.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-entity">
+        <div class="time">3:30 - 4:00</div>
+        <div class="block-type break">Break</div>
+      </div>
+
+      <div class="keynote event-entity">
+        <div class="time">4:00 - 6:00</div>
+        <div class="keynote block-type">Working Sessions Continued</div>
+        <div class="speaker_entity">
+          <div>
+            <p>Dive into one of the working sessions and learn about different aspects of contributing to and running an open source project. Feel free to mingle and sit in on multiple sessions and dig into aspects of open source to which you would like to contribute.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="keynote event-entity">
+        <div class="time">6:45 - 10:00</div>
+        <div class="keynote block-type">Social Event</div>
+        <div class="speaker_entity">
+          <div>
+            <p>After a day of hard work, come out and unwind.</p>
+            <p>Details TBD</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="location">
+  <div class="container">
+    <h1>Location</h1>
+  </div>
+</section>
+
+<section id="register">
+  <div class="container">
+    <h1>Register</h1>
+  </div>
+</section>
+
+<section id="sponsors">
+  <div class="container">
+    <h1>Sponsors</h1>
+  </div>
+</section>
+
+<section id="conduct">
+  <div class="container">
+    <h1>Conduct</h1>
+    <p>The jQuery Foundation believes that everyone deserves a thoroughly pleasant event experience, regardless of who they are. We adhere to the <a href="https://jquery.org/conduct/" target="_blank">jQuery Foundation Code of Conduct</a> and expect that all of our speakers, attendees, and volunteers will do the same.</p>
+  </div>
+</section>
+
 <script type="text/javascript">
 var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-1076265-1']); _gaq.push(['_trackPageview']); _gaq.push(['_setDomainName', '.jquery.org']);
 (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
