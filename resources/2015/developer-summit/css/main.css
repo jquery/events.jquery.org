@@ -279,8 +279,13 @@ nav input[type=checkbox] {
 					About
 ======================== */
 
-#about img {
-	margin: 0 0 1em 2em;
+#about .col-md-3 {
+	font-weight: bold;
+	text-align: center;
+}
+
+#about .col-md-3 img {
+	width: 150px;
 }
 
 #call, #register {
