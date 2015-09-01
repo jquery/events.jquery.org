@@ -162,14 +162,16 @@ a.button:active {
 ======================== */
 
 header {
-	background: #19a2c9;
 	text-align: center;
 	position: relative;
-	padding-top: 5em;
+	padding-top: 7em;
+	color: #fff;
+	background: url(../img/tribeca_zeldman.jpg) #19a2c9;
+	background-size: cover;
 }
 
-header #logo {
-	padding-top: 7em;
+header h2 {
+	text-shadow: 0 4px 0 rgba(0,0,0,.2);
 }
 
 header h3 {
@@ -185,6 +187,14 @@ header .call_to_action {
 	bottom: -30px;
 }
 
+#main-logo {
+	text-indent: -9999px;
+	background: url(../img/summit_logo.png);
+	background-repeat: none;
+	height: 230px;
+	width: 415px;
+	margin: 0 auto;
+}
 
 /* ========================
 					Subheader
