@@ -14,7 +14,7 @@ h1, h2, h3, h4 {
 
 h1 {
 	text-align: center;
-	font-size: 4em;
+	font-size: 3em;
 	margin: 0;
 	font-weight: 500;
 	text-shadow: 0 4px 0 rgba(0,0,0,.2);
@@ -87,14 +87,9 @@ p {
 	font-size:1.3em;
 }
 
-.container {
-	max-width: 1010px;
-	margin: auto;
-}
 
 section .container {
 	overflow: auto;
-	padding: 4em 0;
 }
 
 a.button {
@@ -170,7 +165,6 @@ header {
 	background: #19a2c9;
 	text-align: center;
 	position: relative;
-	height: 15em;
 	padding-top: 5em;
 }
 
@@ -245,7 +239,7 @@ nav ul li {
 
 nav a {
 	color: white;
-	padding: 18px 1.5em;
+	padding: 18px 1em;
 	font-weight: 100;
 	letter-spacing: 1px;
 }
