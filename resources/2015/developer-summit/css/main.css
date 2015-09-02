@@ -89,7 +89,8 @@ p {
 
 
 section .container {
-	overflow: auto;
+	overflow: hidden;
+	padding: 1em 0;
 }
 
 a.button {
@@ -281,21 +282,47 @@ nav input[type=checkbox] {
 
 #partners {
 	text-align: center;
-	background-color: #DDD;
+	background-color: #19a2c9;
+}
+
+#partners .row a {
+	display: block;
+	margin: 1em auto;
+}
+#partners .row a img {
+	height: 250px;
+	width: 250px;
+}
+
+.logo-wocintechchat {
+	background: #000;
+}
+
+.logo-manhattanjs {
+    background-color: #485367;
 }
 
 
 /* ========================
 					About
 ======================== */
+#about {
+	background: #DDD;
+}
 
-#about .col-md-3 {
+/* ========================
+					Summary
+======================== */
+
+#summary .col-md-3 {
 	font-weight: bold;
 	text-align: center;
 }
 
-#about .col-md-3 img {
+#summary .col-md-3 img {
 	width: 150px;
+	display: block;
+	margin: 0 auto;
 }
 
 #call, #register {
