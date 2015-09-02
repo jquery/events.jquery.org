@@ -1,6 +1,7 @@
 module.exports = function( grunt ) {
 
 grunt.loadNpmTasks( "grunt-jquery-content" );
+grunt.loadNpmTasks( "grunt-contrib-watch" );
 
 grunt.initConfig({
 	"build-posts": {
@@ -8,6 +9,15 @@ grunt.initConfig({
 	},
 	"build-resources": {
 		all: "resources/**"
+	},
+	watch: {
+		all: {
+			files: ['Gruntfile.js', 'pages/**/*.html', 'resources/**/*.css'],
+			tasks: ['deploy'],
+			options: {
+				interrupt: true
+			}
+		}
 	},
 	wordpress: (function() {
 		var config = require( "./config" );
@@ -30,5 +40,6 @@ grunt.registerTask( "build-events", "Generate events.json resource", function() 
 });
 
 grunt.registerTask( "build", [ "build-posts", "build-resources", "build-events" ] );
+grunt.registerTask( "default", [ "deploy" ] );
 
 };
