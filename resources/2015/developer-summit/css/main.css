@@ -165,7 +165,7 @@ a.button:active {
 header {
 	text-align: center;
 	position: relative;
-	padding: 7em 0 2em;
+	padding: 7em 0 3em;
 	color: #fff;
 	background: url(../img/tribeca_zeldman.jpg) #19a2c9;
 	background-size: cover;
@@ -191,10 +191,24 @@ header .call_to_action {
 #main-logo {
 	text-indent: -9999px;
 	background: url(../img/summit_logo.png);
-	background-repeat: none;
+	background-repeat: no-repeat;
 	height: 230px;
 	width: 415px;
 	margin: 0 auto;
+}
+
+header .photo-credit {
+	position: absolute;
+	bottom: 0;
+	background: rgba(255,255,255,0.3);
+	right: 0;
+	margin: 1em;
+	display: inline-block;
+	padding: 0 .5em;
+}
+
+header .photo-credit a {
+	color: #000;	
 }
 
 /* ========================
@@ -750,10 +764,6 @@ footer {
 }
 
 @media only screen and (max-width: 800px) {
-
-	header {
-		height: 15.5em;
-	}
 
 	header #logo {
 		width: 23em;
