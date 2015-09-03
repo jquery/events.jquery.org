@@ -165,7 +165,7 @@ a.button:active {
 header {
 	text-align: center;
 	position: relative;
-	padding-top: 7em;
+	padding: 7em 0 2em;
 	color: #fff;
 	background: url(../img/tribeca_zeldman.jpg) #19a2c9;
 	background-size: cover;
@@ -280,16 +280,12 @@ nav input[type=checkbox] {
 					Partners
 ======================== */
 
-#partners {
-	text-align: center;
-	background-color: #19a2c9;
-}
 
-#partners .row a {
+#home .row a {
 	display: block;
 	margin: 1em auto;
 }
-#partners .row a img {
+#home .row a img {
 	height: 250px;
 	width: 250px;
 }
@@ -307,6 +303,9 @@ nav input[type=checkbox] {
 					About
 ======================== */
 #about {
+	background-color: #19a2c9;
+}
+#intro {
 	background: #DDD;
 }
 
@@ -361,12 +360,8 @@ nav input[type=checkbox] {
 					program
 ======================== */
 
-#program {
-	background: #FDFDFD;
-}
-
 #program .day {
-	background: #2c2e35;
+	background: #e33f58;
 	padding: 0.7em;
 	color: white;
 	font-size: 1.33333em;
@@ -392,15 +387,17 @@ nav input[type=checkbox] {
 	border-left: 1px solid #2c2e35;
 	border-right: 1px solid #2c2e35;
 	color: #2c2e35;
-	background-color: #EEFCE1;
+	background-color: #00A2CA;
 	padding: .5em;
 	text-transform: uppercase;
 	font-size: 1.3em;
+	color: #fff;
 }
 
 #program .event-entity .block-type.break {
 	border-bottom: 1px solid #2c2e35;
-	background-color: #FFE9E4;
+	background-color: #111a27;
+	color: #fff;
 }
 
 #program .event-entity .block-type.break img {
@@ -480,7 +477,7 @@ nav input[type=checkbox] {
 }
 
 #program .keynote.event-entity .block-type {
-	background-color: #FFFDE4;
+	background-color: #19a2c9;
 }
 
 #program .keynote.event-entity .profile {
@@ -676,9 +673,9 @@ button.expand {
 ======================== */
 
 
-#sponsors img {
+#sponsors a, #sponsors a img {
 	margin: 0 auto;
-	display: inline-block;
+	display: block;
 }
 
 
@@ -971,10 +968,6 @@ footer {
 	header .button {
 		width: 100%;
 		float: none;
-	}
-
-	#partners h2 {
-		font-size: 1.8em;
 	}
 
 	#about .container {
