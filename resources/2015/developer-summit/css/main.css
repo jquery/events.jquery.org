@@ -673,7 +673,10 @@ button.expand {
 ======================== */
 
 
-#sponsors a, #sponsors a img {
+#sponsors ul {
+	margin: 1em 0;
+}
+#sponsors ul a, #sponsors ul a img {
 	margin: 0 auto;
 	display: block;
 }
