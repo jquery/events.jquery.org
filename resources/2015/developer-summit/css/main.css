@@ -90,7 +90,7 @@ p {
 
 section .container {
 	overflow: hidden;
-	padding: 1em 0;
+	padding: 2em 0;
 }
 
 a.button {
@@ -675,31 +675,10 @@ button.expand {
 					Sponsors
 ======================== */
 
-#sponsors h2 {
-	text-align: center;
-	margin-top: 2em;
-	clear: left;
-}
 
-#sponsors .sponsor-detail {
-	margin: 1em 1em 2em 1em;
-	clear: left;
-}
-
-#sponsors .sponsor-detail .sponsor-info.center {
-	text-align: center;
-}
-
-#sponsors .sponsor-detail .sponsor-info img {
-	float: left;
-	margin-right: 1em;
-	margin-bottom: 4em;
-}
-
-#sponsors .sponsor-detail .sponsor-info.center img {
-	float: none;
-	margin-right: inherit;
-	margin-bottom: inherit;
+#sponsors img {
+	margin: 0 auto;
+	display: inline-block;
 }
 
 
