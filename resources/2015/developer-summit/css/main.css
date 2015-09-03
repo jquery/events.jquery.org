@@ -309,6 +309,11 @@ nav input[type=checkbox] {
 	background: #DDD;
 }
 
+#intro ul {
+	list-style: inside;
+	padding-left: 1em;
+}
+
 /* ========================
 					Summary
 ======================== */
