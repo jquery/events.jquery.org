@@ -15,7 +15,7 @@ module.exports = [
 		title: "jQuery Developer Summit",
 		location: "New York, NY",
 		date: "Oct 16-18, 2015",
-		url: "/2015/developer-summit/",
+		url: "http://events.jquery.org/2015/developer-summit/",
 		image: "/resources/images/event-2015-developer-summit-bkg.jpg",
 		end: new Date( "October 18, 2015" ),
 		host: {
